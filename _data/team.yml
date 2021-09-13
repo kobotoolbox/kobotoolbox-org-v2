@@ -1,0 +1,67 @@
+- first_name: Phuong
+  last_name: Pham
+  position: co-founder
+  is_vip: true
+  vip_order: 1
+
+- first_name: Patrick
+  last_name: Vinck
+  position: co-founder
+  is_vip: true
+  vip_order: 2
+
+- first_name: Tino
+  last_name: Kreutzer
+  position: chief operating &amp; innovation officer
+  is_vip: true
+  vip_order: 3
+
+- first_name: John
+  last_name: Milner
+  position: lead developer
+  is_vip: true
+  vip_order: 4
+
+- first_name: Ignacio
+  last_name: Rebollo
+  position: design lead
+
+- first_name: Olivier
+  last_name: Leger
+  position: back-end lead
+
+- first_name: Leszek
+  last_name: Pietrzak
+  position: front-end lead
+
+- first_name: Anji
+  last_name: Tong
+  position: developer
+
+- first_name: Joshua
+  last_name: Beretta
+  position: developer
+
+- first_name: Jacqueline
+  last_name: Morrissette
+  position: developer
+
+- first_name: Kalyan
+  last_name: Lama
+  position: user support lead
+
+- first_name: Stephane
+  last_name: Aloo
+  position: support specialist
+
+- first_name: Alex
+  last_name: Dorey
+  position: systems architect
+
+- first_name: Mae-Lin
+  last_name: DeLange
+  position: communications assistant
+
+- first_name: Caitlin
+  last_name: Reid
+  position: communications lead

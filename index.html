@@ -181,7 +181,8 @@ pageid: "home"
 <section id="dev" class="section">
     <div class="container">
         <h2>Development</h2>
-        <p class="centered">Our work is open-source. For more on our projects and to learn how you can contribute, <!--click on one of the projects below. You can also go to--> visit our <a href="https://github.com/kobotoolbox" target="_blank">organization page on GitHub</a>.<!-- for a full list of our projects. </p>
+        <p class="centered">Our work is open-source. For more on our projects and to learn how you can contribute, <!--click on one of the projects below. You can also go to--> visit our <a href="https://github.com/kobotoolbox" target="_blank">organization page on GitHub</a>.<!-- for a full list of our projects.--> </p>
+        <!--
         <div class="main-projects">
             <div class="repo-item">
                 <a href="https://github.com/kobotoolbox/kpi" target="_blank">KoBoToolbox (KPI)</a>
@@ -204,51 +205,26 @@ pageid: "home"
         <div class="team">
             <h3>Our Team</h3>
             <div class="team-list">
+
+                {% assign sorted_vip = site.data.team | sort: "vip_order" %}
+                {% for person in sorted_vip %}
+                {% if person.is_vip == true %}
                 <div class="team-item">
-                    <b>Phuong Pham</b> <span>co-founder</span>
+                    <b>{{ person.first_name }}&nbsp;{{ person.last_name }}</b>
+                    <span>{{ person.position }}</span>
                 </div>
+                {% endif %}
+                {% endfor %}
+
+                {% assign sorted_team = site.data.team | sort: "first_name" %}
+                {% for person in sorted_team %}
+                {% if person.is_vip != true %}
                 <div class="team-item">
-                    <b>Patrick Vinck</b> <span>co-founder</span>
+                    <b>{{ person.first_name }}&nbsp;{{ person.last_name }}</b>
+                    <span>{{ person.position }}</span>
                 </div>
-                <div class="team-item">
-                    <b>Tino Kreutzer</b> <span>chief operating &amp; innovation officer</span>
-                </div>
-                <div class="team-item">
-                    <b>John Milner</b> <span>lead developer</span>
-                </div>
-                <div class="team-item">
-                    <b>Ignacio Rebollo</b> <span>design lead</span>
-                </div>
-                <div class="team-item">
-                    <b>Olivier Leger</b> <span>back-end lead</span>
-                </div>
-                <div class="team-item">
-                    <b>Leszek Pietrzak</b> <span>front-end lead</span>
-                </div>
-                <div class="team-item">
-                    <b>Anji Tong</b> <span>developer</span>
-                </div>
-                <div class="team-item">
-                    <b>Joshua Beretta</b> <span>developer</span>
-                </div>
-                <div class="team-item">
-                    <b>Jacqueline Morrissette</b> <span>developer</span>
-                </div>
-                <div class="team-item">
-                    <b>Kevin Coughlin</b> <span>administrator</span>
-                </div>
-                <div class="team-item">
-                    <b>Kalyan Lama</b> <span>user support lead</span>
-                </div>
-                <div class="team-item">
-                    <b>Stephane Aloo</b> <span>support specialist</span>
-                </div>
-                <div class="team-item">
-                    <b>Alex Dorey</b> <span>systems architect</span>
-                </div>
-                <div class="team-item">
-                    <b>Mae-Lin DeLange</b> <span>communications assistant</span>
-                </div>
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
         <p class="centered small">We test our products using <a href="https://www.browserstack.com/" target="_blank">BrowserStack</a>. </p>
