@@ -7,7 +7,7 @@
             <li><a href="{{ site.baseurl }}/#sign-up">Sign Up</a></li>
             <li class="hide-mobile"><a href="{{ site.baseurl }}/#about">About</a></li>
             {% if site.isBlogEnabled %}
-                {% if page.is_blog_index or page.collection == 'posts' %}
+                {% if page.dir == '/blog/' or page.collection == 'posts' %}
                     <li class="hide-mobile current"><a href="{{ site.baseurl }}/blog">Blog</a></li>
                 {% else %}
                     <li class="hide-mobile"><a href="{{ site.baseurl }}/#blog">Blog</a></li>
