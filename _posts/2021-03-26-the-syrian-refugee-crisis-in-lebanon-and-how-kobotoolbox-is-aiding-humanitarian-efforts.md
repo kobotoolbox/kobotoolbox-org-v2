@@ -25,7 +25,7 @@ estimated amount [are
 registered](https://data2.unhcr.org/en/situations/syria/location/71) with the
 UNHCR.
 
-![© UNHCR Shawn Baldwin](/images/unhcr_image_01.jpg "© UNHCR Shawn Baldwin")
+![© UNHCR Shawn Baldwin](/images/blog/unhcr_image_01.jpg "© UNHCR Shawn Baldwin")
 *©UNHCR Shawn Baldwin*
 
 To better understand Lebanon's refugee crisis, a collaborative effort by the
@@ -54,7 +54,7 @@ married off. Only 20% of those aged 15 and older are legal residents. Most live
 in conditions below basic humanitarian standards, and access to clean water and
 sanitation is scarce.
 
-![Infographic from 2020 VASyR report](/images/unhcr_image_02.jpg "Infographic
+![Infographic from 2020 VASyR report](/images/blog/unhcr_image_02.jpg "Infographic
 from 2020 VASyR report")
 *Infographic from 2020 VASyR report*
 
@@ -79,7 +79,7 @@ Once the collection process is complete, data validation, cleaning and
 preliminary analysis take place over three months using a range of external
 tools, after which the report can be compiled.
 
-![© UNHCR Ivor Prickett](/images/unhcr_image_03.jpg "© UNHCR Ivor Prickett")
+![© UNHCR Ivor Prickett](/images/blog/unhcr_image_03.jpg "© UNHCR Ivor Prickett")
 *©UNHCR Ivor Prickett*
 
 With few teams on the ground, limited time and harsh conditions, efficient and
