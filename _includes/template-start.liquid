@@ -15,7 +15,7 @@
     site information
     {% endcomment %}
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
-    <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.shortdescription }}{% endif %}"/>
+    <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.shortdescription }}{% endif %}"/>
     <base href="{{ site.baseurl }}"/>
     <link rel="home" href="{{ site.baseurl }}"/>
 
@@ -30,11 +30,11 @@
     {% endcomment %}
     <meta property="og:locale" content="en_US"/>
     <meta property="og:site_name" content="{{ site.name }}"/>
-    <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}"/>
-    <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.shortdescription }}{% endif %}"/>
+    <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines }}{% else %}{{ site.title }}{% endif %}"/>
+    <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.shortdescription }}{% endif %}"/>
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}"/>
     <meta name="twitter:site" content="@kobotoolbox"/>
-    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.shortdescription }}{% endif %}"/>
+    <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines }}{% else %}{{ site.shortdescription }}{% endif %}"/>
 
     {% comment %}
     OG tags for blog posts
