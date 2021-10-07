@@ -32,7 +32,7 @@
     <meta property="og:site_name" content="{{ site.name }}"/>
     <meta property="og:title" content="{% if page.title %}{{ page.title | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}"/>
     <meta property="og:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.shortdescription }}{% endif %}"/>
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}"/>
     <meta name="twitter:site" content="@kobotoolbox"/>
     <meta name="twitter:description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.shortdescription }}{% endif %}"/>
 
@@ -51,11 +51,11 @@
         <meta name="twitter:title" content="{{page.title}}"/>
 
         {% if page.thumbnail %}
-            <meta name="twitter:image" content="{{page.thumbnail}}"/>
-            <meta property="og:image" content="{{page.thumbnail}}"/>
+            <meta name="twitter:image" content="{{ page.thumbnail | prepend: site.baseurl }}"/>
+            <meta property="og:image" content="{{ page.thumbnail | prepend: site.baseurl }}"/>
         {% else %}
-            <meta name="twitter:image" content="{{ site.default_og_image | prepend: site.baseurl | prepend: site.url }}"/>
-            <meta property="og:image" content="{{ site.default_og_image | prepend: site.baseurl | prepend: site.url }}"/>
+            <meta name="twitter:image" content="{{ site.default_og_image | prepend: site.baseurl }}"/>
+            <meta property="og:image" content="{{ site.default_og_image | prepend: site.baseurl }}"/>
         {% endif %}
     {% else %}
     {% comment %}
@@ -64,8 +64,8 @@
         <meta property="og:type" content="website"/>
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:title" content="{{site.name}}"/>
-        <meta name="twitter:image" content="{{ site.default_og_image | prepend: site.baseurl | prepend: site.url }}"/>
-        <meta property="og:image" content="{{ site.default_og_image | prepend: site.baseurl | prepend: site.url }}"/>
+        <meta name="twitter:image" content="{{ site.default_og_image | prepend: site.baseurl }}"/>
+        <meta property="og:image" content="{{ site.default_og_image | prepend: site.baseurl }}"/>
     {% endif %}
 
     {% comment %}
