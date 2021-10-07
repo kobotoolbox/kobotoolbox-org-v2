@@ -5,9 +5,10 @@ title:
 date: 08-10-2021
 author: staff at Purposeful and KoBo Inc.
 summary:
-    Throughout Sierra Leone, girls face many barriers to accessing education and
-    opportunities. When COVID-19 hit, this meant thousands more girls were out
-    of school and facing isolation.
+    Purposeful, a feminist hub based in Sierra Leone, was able to stay connected
+    with over 15,000 girls throughout the country during COVID-19 by loading the
+    KoBoCollect app onto 700 smartphones and distributing them to over 700
+    mentors for their Girls' Circle program.
 ---
 
 Throughout Sierra Leone, girls face many barriers to accessing education and
