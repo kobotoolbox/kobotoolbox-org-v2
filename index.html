@@ -148,7 +148,7 @@ pageid: "home"
     <div class="logos-group logos-group--main">
         {% for partner in site.data.partners %}
         {% if partner.is_main == true %}
-        <a href="{{ partner.url }}" class="partner partner--{{partner.name}}" title="{{partner.title}}">>
+        <a href="{{ partner.url }}" class="partner partner--{{partner.name}}" title="{{partner.title}}">
             <img src="{{ site.baseurl }}/{{ partner.logo }}" alt="{{partner.name}}" />
         </a>
         {% endif %}
