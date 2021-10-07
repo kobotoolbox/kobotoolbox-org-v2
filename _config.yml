@@ -35,3 +35,6 @@ defaults:
 # this flag manages the visibility of blog, i.e. it hides blog link from top
 # navigation and blog section from main page
 isBlogEnabled: false
+
+# used for Open Graph (i.e. social sharing)
+default_og_image: "/images/deafault_og_image.png"

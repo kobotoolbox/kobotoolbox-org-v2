@@ -1,6 +1,6 @@
 ---
 title: TWB and KoBo Inc develop speech recognition technology to capture voices of speakers of marginalized languages
-summary: Translators without Borders (TWB) and KoBo Inc. with funding from the Cisco Foundation, will develop automatic speech recognition technology to help humanitarians better collect data from speakers of marginalized languages in low-literacy contexts. 
+summary: Translators without Borders (TWB) and KoBo Inc. with funding from the Cisco Foundation, will develop automatic speech recognition technology to help humanitarians better collect data from speakers of marginalized languages in low-literacy contexts.
 ---
 
 Cambridge, Mass., USA – September 1, 2020
