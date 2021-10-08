@@ -741,6 +741,54 @@ header ul#nav li a:hover {
   margin-top: 0px;
 }
 
+.image {
+  display: block;
+}
+
+.image.image--left {
+  float: left;
+  margin: 1rem 1rem 1rem 0;
+}
+
+.image.image--right {
+  float: right;
+  margin: 1rem 0 1rem 1rem;
+}
+
+.image.image--left,
+.image.image--right {
+  width: 30%;
+  min-width: 250px;
+}
+
+.image.image--full {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.image__link {
+  display: block;
+}
+
+.image__link[href] {
+  cursor: pointer;
+}
+
+.image__link[href]:hover {
+  -webkit-box-shadow: 0 0 1px 1px #2095f3;
+          box-shadow: 0 0 1px 1px #2095f3;
+}
+
+.image__img {
+  display: block;
+}
+
+.image__caption {
+  font-style: italic;
+  border-bottom: 1px solid #dfe1e7;
+  padding: 0.33rem 0;
+}
+
 html {
   line-height: 1.25em;
 }
@@ -899,7 +947,7 @@ table tbody td, table tbody th, table thead td, table thead th {
 
 section.section {
   padding: 80px 30px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid #dfe1e7;
 }
 
 section.section:first-of-type {
@@ -1125,9 +1173,15 @@ section.section-text-page .container h3 {
   display: block;
 }
 
+.post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .post-related {
-  border-top: 1px dotted #ddd;
-  margin-top: 1rem;
+  border-top: 1px solid #dfe1e7;
+  margin-top: 2rem;
   padding-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1157,7 +1211,7 @@ section.section-text-page .container h3 {
 }
 
 .post-summary {
-  border-top: 1px dotted #ddd;
+  border-top: 1px solid #dfe1e7;
   max-width: 1000px;
   margin: 0 auto;
   padding: 1rem 0;
