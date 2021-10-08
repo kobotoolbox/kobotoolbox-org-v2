@@ -1,7 +1,7 @@
 name: "KoBoToolbox"
 shortdescription: "Data Collection Tools for Challenging Environments"
 description: "KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
-baseurl: "https://kobotoolbox.org"
+baseurl: "https://www.kobotoolbox.org"
 
 # site configuration
 safe: true
