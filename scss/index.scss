@@ -15,6 +15,7 @@
 @import "sections/join-our-team";
 @import "sections/partners";
 @import "sections/sign-up";
+@import "components/image";
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
@@ -152,7 +153,7 @@ table {
 
 section.section {
   padding: 80px 30px;
-  border-bottom: 1px solid #DDD;
+  border-bottom: 1px solid $lightgray;
 
   &:first-of-type {
     padding-top: 70px;
@@ -374,9 +375,16 @@ section.section-text-page {
   display: block;
 }
 
+// clear fix for floating images
+.post-content::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .post-related {
-  border-top: 1px dotted #ddd;
-  margin-top: 1rem;
+  border-top: 1px solid $lightgray;
+  margin-top: 2rem;
   padding-top: 1rem;
   display: flex;
 }
@@ -404,7 +412,7 @@ section.section-text-page {
 }
 
 .post-summary {
-  border-top: 1px dotted #ddd;
+  border-top: 1px solid $lightgray;
   max-width: $max_width;
   margin: 0 auto;
   padding: 1rem 0;
