@@ -1,7 +1,7 @@
 ---
 title:
     Using the Public Collections Feature to Power Your Survey Creation
-date: 11-26-2021
+date: 26-11-2021
 author: KoBo Inc.
 summary:
     KoBoToolbox’s Public Collections feature makes it easy to create, store, and share questions across surveys, teams, and organizations. KoBoToolbox’s Public Collections feature makes it easy to create, store, and share questions across surveys, teams, and organizations.
