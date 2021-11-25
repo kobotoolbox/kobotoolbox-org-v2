@@ -5,14 +5,14 @@ date: 26-11-2021
 author: KoBo Inc.
 summary:
     KoBoToolbox’s Public Collections feature makes it easy to create, store, and share questions across surveys, teams, and organizations. KoBoToolbox’s Public Collections feature makes it easy to create, store, and share questions across surveys, teams, and organizations.
-thumbnail: /images/blog/survey setup.png
+thumbnail: /images/blog/survey_setup.png
 ---
 
 Creating surveys can be time-consuming and intimidating. You start putting your form together but drafting questions takes longer than expected. You take care to make sure you’re wording each question perfectly to ensure you will gather the right information while doing your best to keep your survey easy to complete for your target audience. 
 
 You also need to spend time building out complicated skip logic throughout the survey. You wish there was an easier way to have high quality questions, organized appropriately, that allow you to collect the information you need in a timely manner. 
 
-{% include image.liquid file="/images/blog/survey setup.png" type="full" %}
+{% include image.liquid file="/images/blog/survey_setup.png" type="full" %}
 
 For years, KoBoToolbox users have enjoyed the [Question Library feature](https://support.kobotoolbox.org/question_library.html) to **create** and **reuse** survey form content and to the share the same content with other users.
 
@@ -28,13 +28,13 @@ The Public Collections feature helps standardize data collection for thousands o
 
 You can use Public Collections as a starting point for a new form, rather than building one from scratch as the Public Collections are fully integrated with KoBoToolbox’s [formbuilder](https://support.kobotoolbox.org/formbuilder.html). Once you **develop**, **save**, and **share** sets of questions in your public collection, you can easily import them into new data collection projects on the KoBoToolbox platform.
 
-{% include image.liquid file="/images/blog/pub collections formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
+{% include image.liquid file="/images/blog/pub_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
 
 Using this feature to **save**, **share**, and **reuse** question blocks is particularly useful as they already contain skip logic conditions, making it possible to rapidly deploy complex question sequences.
 
 You can also **search**, **filter**, and **sort** through collections shared by other individuals and organizations to quickly find content relevant to your survey topic. Simply drag-and-drop the required questions and question blocks into your new form, and then customize them as needed. Edits made in your own library will not affect the original library versions.
 
-{% include image.liquid file="/images/blog/public collections.gif" type="full" %}
+{% include image.liquid file="/images/blog/public_collections.gif" type="full" %}
 
 If you find a collection that’s particularly useful, click **subscribe**, which allows you to use the blocks from that collection in the formbuilder or start your survey with a template from the collection.
 
