@@ -57,7 +57,7 @@ Once you **develop**, **save**, and **share** sets of questions in your public
 collection, you can easily import them into new data collection projects on the
 KoBoToolbox platform.
 
-{% include image.liquid file="/images/blog/pub_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
+{% include image.liquid file="/images/blog/public_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
 
 Using this feature to **save**, **share**, and **reuse** question blocks is
 particularly useful as they already contain skip logic conditions, making it
