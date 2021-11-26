@@ -12,27 +12,36 @@ KoBo Inc. and the Joint Data Center on Forced Displacement (JDC), an initiative 
 {% include image.liquid file="/images/blog/UNHCR_survey_refugees_bangladesh.jpg" caption="UNHCR staff surveys refugees in Bangladesh." type="full" %}
 
 > "By supporting KoBoToolbox, the JDC continues to invest in effective solutions to promote forced displacement-sensitive data methods.
-> Improving the quality of data collected is essential to better understand the socioeconomic situation of those forcibly displaced and hence allow for better policy-responses by host governments or development partners." -
+> Improving the quality of data collected is essential to better understand the
+socioeconomic situation of those forcibly displaced and hence allow for better
+policy-responses by host governments or development partners." --
 > Björn Gillsäter, Head of the JDC
 
 Over the past decade, the global forced displacement crisis has increased in scale, length, and complexity, resulting in substantial impacts to forcibly displaced persons and host communities. The COVID-19 pandemic has only contributed to worsening these realities. Given this context, quality data and analytical work are critical for stakeholders when deciding appropriate policy responses and operational approaches.
 
 Through this joint initiative, JDC and KoBo Inc. will work together to help overcome these data issues. Free and easy-to-use data platforms, such as KoBoToolbox, have proven essential in humanitarian and displacement settings, providing access to real-time information on the ground for a broad range of stakeholders. Therefore, the JDC is investing in the development of KoBo’s governance and long-term sustainability as well as enhancing feature development and capacity building for KoBoToolbox. This will strengthen KoBo Inc.’s role as an accessible public good for data collection and analysis. Humanitarian actors and development practitioners will benefit from an enriched user experience, enhanced knowledge management, and improved decision-making abilities.
 
-> “This partnership comes at a critical time for our organization as KoBoToolbox has recently surpassed 300 million survey submissions and our user-base continues to grow every day. Partnering with JDC will ensure that we continue to improve our services to better support the thousands of local and global organizations that rely on KoBoToolbox in their daily work of saving lives and serving displaced peoples and communities." -
+> “This partnership comes at a critical time for our organization as KoBoToolbox
+has recently surpassed 300 million survey submissions and our user-base
+continues to grow every day. Partnering with JDC will ensure that we continue to
+improve our services to better support the thousands of local and global
+organizations that rely on KoBoToolbox in their daily work of saving lives and
+serving displaced peoples and communities." --
 > Patrick Vinck, co-founder of KoBo.
 
 This initiative will first develop a sustainability plan and oversight protocols to ensure the continued development and maintenance of KoBoToolbox in collaboration with the World Bank Group, UNHCR, and other key contributors and stakeholders. In terms of feature development, the user interface and graphics will be improved and upgraded and documentation will be created to outline the importance of these changes in the forced displacement data context. Additionally, training sessions and technical support materials will be developed and knowledge gaps among the KoBoToolbox user community will be identified and addressed.
 
-This initiative recognizes the need for reliable, comparable, and timely data for evidence-based responses to improve the lives of refugees and host communities, as outlined by UNHCR’s Global Compact on Refugees framework. The areas of focus will address issues around improving the quality of socioeconomic data by the implementation of innovative tools and methods at the different stages of data production, as identified by KoBoToolbox users in both the World Bank Group and UNHCR. It is also an essential step towards ensuring long-term sustainability of the platform as a free and reliable resource. 
+This initiative recognizes the need for reliable, comparable, and timely data for evidence-based responses to improve the lives of refugees and host communities, as outlined by UNHCR’s Global Compact on Refugees framework. The areas of focus will address issues around improving the quality of socioeconomic data by the implementation of innovative tools and methods at the different stages of data production, as identified by KoBoToolbox users in both the World Bank Group and UNHCR. It is also an essential step towards ensuring long-term sustainability of the platform as a free and reliable resource.
 
-About KoBo Inc.
+---
+
+**About KoBo Inc.**
 
 KoBo Inc. works to ensure that humanitarian action and initiatives promoting peace, human rights and sustainable development are informed by high quality, up-to-date data generated by affected communities using simple, reliable, and secure technologies. KoBo Inc. is a non-profit organization, affiliated with the Harvard Humanitarian Initiative, which hosts and maintains KoBoToolbox, the world’s most popular tool for data collection, management, and visualization for humanitarian action.
 
 For media inquiries, contact Caitlin Reid, Communications Lead, at [caitlin@kobotoolbox.org](mailto:caitlin@kobotoolbox.org)
 
-About the Joint Data Center on Forced Displacement
+**About the Joint Data Center on Forced Displacement**
 
 The World Bank-UNHCR Joint Data Center on Forced Displacement (JDC) aims to enhance the ability of stakeholders to make timely and evidence-informed decisions that can improve the lives of affected people. Based in Copenhagen, this international data center is focused on the collection, analysis, and dissemination of primary microdata. Managed and owned equally by the World Bank Group and UNHCR, the JDC synergizes efforts between the two founding organizations to strengthen data systems and fill data gaps regarding refugees and other displaced persons.
 
