@@ -8,7 +8,7 @@ summary:
     KoBo Inc. and JDC have partnered to strengthen KoBoToolbox, part of JDC’s
     ongoing effort to strengthen data systems and fill data gaps in order to
     improve the lives of people affected by displacement.
-thumbnail: /images/blog/survey_setup.png
+thumbnail: /images/blog/UNHCR_survey_refugees_bangladesh.jpg
 ---
 
 KoBo Inc. and the Joint Data Center on Forced Displacement (JDC), an initiative
