@@ -378,13 +378,15 @@ header ul#nav li a:hover {
 
 #about h2,
 #mission h2,
-#contact h2 {
+#contact h2,
+#donate h2 {
   text-align: center;
 }
 
 #about,
 #mission,
-#contact {
+#contact,
+#donate {
   background: #f8f8f8;
 }
 
