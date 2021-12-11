@@ -5,7 +5,7 @@
   "repository": "https://github.com/kobotoolbox/kobotoolbox.org.git",
   "bugs": "https://github.com/kobotoolbox/kobotoolbox.org/issues",
   "scripts": {
-    "_compile": "node-sass --output-style=expanded --source-map=true scss/index.scss css/index.css",
+    "_compile": "sass --style=expanded --source-map scss/index.scss css/index.css",
     "_prefix": "postcss css/index.css --use=autoprefixer --map=false --output=css/index.css",
     "styles-watch": "npm run _compile -- --watch",
     "styles-build": "npm run _compile && npm run _prefix",
@@ -15,7 +15,7 @@
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "browserslist": "^4.16.7",
-    "node-sass": "^6.0.1",
+    "sass": "^1.41.0",
     "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
     "pre-commit": "^1.2.2"

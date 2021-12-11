@@ -29,10 +29,9 @@
   display: inline-block;
   height: 50px;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
 }
-
 @media screen and (min-width: 769px) {
   #slider li {
     font-size: 1.5rem;
@@ -154,12 +153,10 @@
     opacity: 0;
   }
 }
-
 #slider ul {
   -webkit-animation: slide 12s infinite;
           animation: slide 12s infinite;
 }
-
 #slider ul:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
@@ -173,7 +170,6 @@
   margin: 0;
   list-style: none;
 }
-
 .rslides li {
   -webkit-backface-visibility: hidden;
   position: absolute;
@@ -185,13 +181,11 @@
   padding: 0;
   list-style-type: none;
 }
-
 .rslides li:first-child {
   position: relative;
   display: block;
   float: left;
 }
-
 .rslides li img {
   display: block;
   height: auto;
@@ -211,7 +205,6 @@ header {
   display: flex;
   z-index: 999;
 }
-
 header h1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -222,12 +215,10 @@ header h1 {
   background: url("../images/kobologo.svg") no-repeat 0 100%;
   background-size: contain;
 }
-
 header h1 a, header h1 a:hover {
   color: transparent;
   font-size: 1em;
 }
-
 header ul#nav {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
@@ -236,31 +227,26 @@ header ul#nav {
   padding: 24px 30px;
   list-style-type: none;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
 }
-
 header ul#nav li {
   display: inline-block;
   margin-left: 1.2em;
   margin-right: 0px;
 }
-
 header ul#nav li a {
   color: #ffffff;
   text-decoration: none;
 }
-
 header ul#nav li a:hover {
   opacity: 0.8;
 }
-
 @media screen and (min-width: 769px) {
   header ul#nav li.current a {
     color: #2095f3;
   }
 }
-
 @media screen and (max-width: 359px) {
   header ul#nav {
     padding: 24px 15px;
@@ -277,17 +263,14 @@ header ul#nav li a:hover {
   background-color: rgba(65, 68, 83, 0.8);
   text-align: right;
 }
-
 .topnav ul {
   list-style: none;
   margin: 0;
   padding: 0 28px;
 }
-
 .topnav ul li {
   display: inline-block;
 }
-
 .topnav ul li a {
   display: inline-block;
   color: #ffffff;
@@ -295,12 +278,10 @@ header ul#nav li a:hover {
   text-decoration: none;
   font-size: 16px;
 }
-
 .topnav ul li a:hover {
   color: #ffffff;
   opacity: 0.8;
 }
-
 .topnav ul li a.topnav__button {
   background-color: #2095f3;
   color: #ffffff;
@@ -310,7 +291,6 @@ header ul#nav li a:hover {
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
 @media screen and (min-width: 769px) {
   .topnav ul li.current a:not(.topnav__button) {
     color: #2095f3;
@@ -341,13 +321,11 @@ header ul#nav li a:hover {
 #committee {
   text-align: center;
 }
-
 #committee a {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
 }
-
 #committee img {
   max-height: 65px;
   width: auto;
@@ -356,13 +334,11 @@ header ul#nav li a:hover {
 #vision h3 {
   margin-top: 50px;
 }
-
 #vision a {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
 }
-
 #vision img {
   max-height: 65px;
   width: auto;
@@ -371,22 +347,21 @@ header ul#nav li a:hover {
 #join {
   text-align: center;
 }
-
 #join .button {
   margin-top: 40px;
 }
 
 #about h2,
 #mission h2,
-#contact h2,
-#donate h2 {
+#donate h2,
+#contact h2 {
   text-align: center;
 }
 
 #about,
 #mission,
-#contact,
-#donate {
+#donate,
+#contact {
   background: #f8f8f8;
 }
 
@@ -399,13 +374,11 @@ header ul#nav li a:hover {
 #mission h3 {
   margin-top: 50px;
 }
-
 #mission a {
   display: inline-block;
   margin-right: 10px;
   margin-left: 10px;
 }
-
 #mission img {
   max-height: 65px;
   width: auto;
@@ -414,7 +387,6 @@ header ul#nav li a:hover {
 #contact {
   text-align: center;
 }
-
 #contact .button {
   margin-top: 40px;
 }
@@ -422,11 +394,9 @@ header ul#nav li a:hover {
 #about {
   background: #f8f8f8;
 }
-
 #about .container {
   max-width: 640px;
 }
-
 #about .video {
   position: relative;
   width: 100%;
@@ -434,7 +404,6 @@ header ul#nav li a:hover {
   height: 0;
   padding-bottom: 56.25%;
 }
-
 #about iframe {
   width: 100%;
   height: 100%;
@@ -448,7 +417,6 @@ header ul#nav li a:hover {
   background: #def0f9;
   text-align: center;
 }
-
 #covid .covid-icon {
   width: 71px;
 }
@@ -456,7 +424,6 @@ header ul#nav li a:hover {
 #dev {
   background: #FFF;
 }
-
 #dev .main-projects {
   max-width: 450px;
   display: -webkit-box;
@@ -468,36 +435,30 @@ header ul#nav li a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-
 #dev .main-projects .repo-item {
   padding: 1em 0.5em;
   width: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 #dev .main-projects .repo-item span {
   display: block;
   font-size: 0.9em;
   color: #a6aaba;
 }
-
 #dev .main-projects .repo-item a {
   text-decoration: none;
   color: #0d89ed;
   font-weight: 600;
 }
-
 #dev .main-projects .repo-item a:hover {
   color: #38a1f4;
 }
-
 #dev .team {
   max-width: 700px;
   margin: 40px auto;
   text-align: center;
 }
-
 #dev .team .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -512,7 +473,6 @@ header ul#nav li a:hover {
           justify-content: center;
   margin: 0 auto;
 }
-
 #dev .team .team-item {
   text-align: left;
   padding: 1em;
@@ -520,18 +480,15 @@ header ul#nav li a:hover {
           box-sizing: border-box;
   width: 33.3%;
 }
-
 @media screen and (max-width: 768px) {
   #dev .team .team-item {
     width: 50%;
     padding-top: 0.5em;
   }
 }
-
 #dev .team .team-item b {
   white-space: nowrap;
 }
-
 #dev .team .team-item span {
   display: block;
   font-size: 0.9em;
@@ -544,11 +501,9 @@ header ul#nav li a:hover {
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none;
 }
-
 #examples h2, #examples h3, #examples p {
   color: white;
 }
-
 #examples .group-examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +516,6 @@ header ul#nav li a:hover {
   max-width: 830px;
   margin: 0 auto;
 }
-
 #examples .group-examples .example-item {
   padding: 25px;
   padding-right: 15px;
@@ -570,13 +524,11 @@ header ul#nav li a:hover {
           box-sizing: border-box;
   text-align: left;
 }
-
 @media screen and (max-width: 768px) {
   #examples .group-examples .example-item {
     width: 50%;
   }
 }
-
 #examples .group-examples .example-item a {
   font-size: 18px;
   line-height: 20px;
@@ -584,10 +536,9 @@ header ul#nav li a:hover {
   text-decoration: none;
   opacity: 0.75;
 }
-
 #examples .group-examples .example-item a span {
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #FFF;
   opacity: 0.75;
   display: block;
@@ -595,13 +546,11 @@ header ul#nav li a:hover {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 #examples .group-examples .example-item a span:hover {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 #examples .group-examples .example-item a:hover, #examples .group-examples .example-item a:hover span {
   opacity: 1;
 }
@@ -610,11 +559,9 @@ header ul#nav li a:hover {
   background: #f8f8f8;
   text-align: center;
 }
-
 #help .container {
   max-width: 750px;
 }
-
 @media screen and (min-width: 769px) {
   #help .two-cols {
     -webkit-box-align: end;
@@ -626,17 +573,14 @@ header ul#nav li a:hover {
 #join-our-team h2 small {
   text-transform: none;
 }
-
 #join-our-team table {
   width: 100%;
 }
-
 #join-our-team td {
   border: none;
   vertical-align: top;
   max-width: 33%;
 }
-
 #join-our-team td h3 {
   margin: 0 !important;
 }
@@ -646,11 +590,9 @@ header ul#nav li a:hover {
   background: rgba(65, 68, 83, 0.8);
   border-bottom: none;
 }
-
 #partners h2, #partners h3 {
   color: white;
 }
-
 #partners h3 {
   margin-top: 50px;
 }
@@ -659,55 +601,43 @@ header ul#nav li a:hover {
   display: inline-block;
   margin: 10px;
 }
-
 .logos-group img {
   vertical-align: middle;
   height: auto;
   width: auto;
 }
-
 .logos-group.logos-group--main a {
   margin: 30px;
 }
-
 .logos-group.logos-group--main img {
   height: 65px;
 }
-
 .logos-group.logos-group--additional {
   padding: 10px 40px;
 }
-
 .logos-group.logos-group--additional a {
   margin-bottom: 25px;
 }
-
 .logos-group.logos-group--additional img {
   min-height: 32px;
   max-height: 45px;
 }
-
 .logos-group.logos-group--additional img[src$=".svg"] {
   height: 45px;
 }
-
 .logos-group .partner:hover {
   scale: 1.1;
 }
-
 .logos-group .partner.partner--koboinc img {
   max-height: 50px;
   -webkit-transform: translateY(-5px);
       -ms-transform: translateY(-5px);
           transform: translateY(-5px);
 }
-
 .logos-group .partner.partner--hgc img {
   min-height: 65px;
 }
-
-.logos-group .partner.partner--hilton img,
-.logos-group .partner.partner--irc img {
+.logos-group .partner.partner--hilton img, .logos-group .partner.partner--irc img {
   min-height: 65px;
   max-height: 65px;
 }
@@ -715,30 +645,25 @@ header ul#nav li a:hover {
 #sign-up {
   background: #FFF;
 }
-
 #sign-up a.button {
   margin-bottom: 1em;
 }
-
 #sign-up .try-now {
   text-align: center;
   margin-bottom: 0px;
   padding-top: 50px;
 }
-
 @media screen and (max-width: 768px) {
   #sign-up .try-now {
     padding-bottom: 1.5em;
     padding-top: 1.5em;
   }
 }
-
 #sign-up .try-now p {
   font-size: 0.8em;
   margin-top: -1em;
   color: #a6aaba;
 }
-
 #sign-up .try-now h4 {
   margin-top: 0px;
 }
@@ -794,17 +719,14 @@ header ul#nav li a:hover {
 html {
   line-height: 1.25em;
 }
-
 html {
   font-size: 14px;
 }
-
 @media screen and (min-width: 320px) {
   html {
     font-size: calc(14px + 4 * ((100vw - 320px) / 680));
   }
 }
-
 @media screen and (min-width: 1000px) {
   html {
     font-size: 18px;
@@ -812,16 +734,15 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #414453;
 }
-
 body.home, body.khc, body.kobo {
   background-color: black;
 }
 
 h1, h2, h3 {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   line-height: 1.25em;
 }
@@ -832,16 +753,14 @@ a {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 a:hover {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
   color: #0a6dbc;
 }
-
 a.button {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   background: #2095f3;
   color: white;
@@ -852,15 +771,12 @@ a.button {
   display: inline-block;
   border-radius: 5px;
 }
-
 a.button.button--covid-red {
   background: #ff6473;
 }
-
 a.button.button--covid-red:hover {
   background: #ff182e;
 }
-
 a.button:hover {
   background: #0a6dbc;
   color: white;
@@ -875,7 +791,6 @@ p.centered {
   max-width: 690px;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 767px) {
   p.centered {
     margin: 1em auto;
@@ -892,20 +807,16 @@ table {
   border-collapse: collapse;
   font-size: 0.9em;
 }
-
 table td, table th {
   padding: 0.5em;
 }
-
 table th {
   text-align: left;
 }
-
 table td.centered,
 table th.centered {
   text-align: center;
 }
-
 table tbody td, table tbody th, table thead td, table thead th {
   border: 1px solid currentColor;
 }
@@ -915,7 +826,6 @@ table tbody td, table tbody th, table thead td, table thead th {
     display: none !important;
   }
 }
-
 .bg {
   background-image: url("../images/kobo-bg-hands.jpg");
   background-repeat: no-repeat;
@@ -937,12 +847,10 @@ table tbody td, table tbody th, table thead td, table thead th {
        -o-transition-timing-function: ease-in;
           transition-timing-function: ease-in;
 }
-
 .bg.bg--khc {
   background-image: url("../images/kobo-bg-khc.jpg");
   background-position: center center;
 }
-
 .bg.bg--ready {
   opacity: 1;
 }
@@ -951,24 +859,20 @@ section.section {
   padding: 80px 30px;
   border-bottom: 1px solid #dfe1e7;
 }
-
 section.section:first-of-type {
   padding-top: 70px;
 }
-
 section.section h2 {
   text-align: center;
   text-transform: uppercase;
   font-size: 2rem;
   margin-top: 1em;
 }
-
 section.section h3 {
   text-transform: uppercase;
   font-size: 1.4em;
   margin-top: 0px;
 }
-
 section.section h3 span {
   border-bottom: 1px dotted #52c5d0;
 }
@@ -977,7 +881,6 @@ section.section h3 span {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .container.container--centered {
   text-align: center;
 }
@@ -998,42 +901,35 @@ section.section h3 span {
     padding-bottom: 20px;
   }
 }
-
 .two-cols img {
   max-width: 100%;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.2);
 }
-
 .two-cols img.no-shadow {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-
 .two-cols .col-list ul {
   margin: 0;
   padding: 0;
 }
-
 .two-cols .col-list ul li {
   list-style-type: circle;
   margin-bottom: 0.8em;
   margin-left: 1.5em;
 }
-
 .two-cols .col-list ul li span {
   display: block;
   font-size: 0.75em;
   color: #a6aaba;
 }
-
 @media screen and (max-width: 768px) {
   .two-cols .col-list {
     clear: both;
     padding-top: 30px;
   }
 }
-
 @media screen and (min-width: 769px) {
   .two-cols {
     display: -webkit-box;
@@ -1076,23 +972,19 @@ footer {
   text-align: center;
   color: white;
 }
-
 footer p {
   font-size: 0.9em;
   margin: 0.4em 0;
 }
-
 footer p:last-child {
   margin-top: 1.5em;
 }
-
 footer p a {
   color: white;
   opacity: 0.6;
   text-decoration: none;
   margin: 0px 10px;
 }
-
 footer p a:hover {
   color: white;
   opacity: 1;
@@ -1104,9 +996,8 @@ section.section-slider {
   position: relative;
   min-height: 600px;
 }
-
 section.section-slider:after {
-  content: ' ';
+  content: " ";
   background: rgba(65, 68, 83, 0.75);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(65, 68, 83, 0.9)), to(rgba(65, 68, 83, 0.5)));
   background: -o-linear-gradient(top, rgba(65, 68, 83, 0.9) 0%, rgba(65, 68, 83, 0.5) 100%);
@@ -1117,25 +1008,21 @@ section.section-slider:after {
   left: 0px;
   top: 0px;
 }
-
 section.section-slider .container {
   padding-top: 200px;
   position: relative;
   z-index: 2;
 }
-
 @media screen and (min-width: 769px) {
   section.section-slider .container {
     padding-top: 300px;
   }
 }
-
 section.section-slider h1 {
   text-transform: uppercase;
   padding: 1em 2em;
   font-size: 2.5rem;
 }
-
 @media screen and (max-width: 550px) {
   section.section-slider h1 {
     padding: 1em 0;
@@ -1146,13 +1033,11 @@ section.section-slider h1 {
 section.section-text-page .container {
   max-width: 900px;
 }
-
 section.section-text-page .container h1 {
   text-transform: uppercase;
   padding-top: 50px;
   text-align: center;
 }
-
 section.section-text-page .container h3 {
   margin-top: 2em;
 }
@@ -1193,21 +1078,17 @@ section.section-text-page .container h3 {
 .post-related__link {
   width: calc(50% - 0.5rem);
 }
-
 .post-related__link.post-related__link--previous {
   text-align: left;
   margin-right: 0.5rem;
 }
-
 .post-related__link.post-related__link--previous:only-child {
   margin-right: 50%;
 }
-
 .post-related__link.post-related__link--next {
   text-align: right;
   margin-left: 0.5rem;
 }
-
 .post-related__link.post-related__link--next:only-child {
   margin-left: 50%;
 }
@@ -1218,21 +1099,18 @@ section.section-text-page .container h3 {
   margin: 0 auto;
   padding: 1rem 0;
 }
-
 .post-summary .post-summary__title {
   font-size: 1.5rem;
   text-transform: none;
   margin: 1rem 0.5rem;
   text-align: left;
 }
-
 .post-summary .post-summary__date {
   float: right;
   margin: 1rem 0.5rem 1rem 1rem;
   font-style: italic;
   line-height: 1.85rem;
 }
-
 .post-summary .post-summary__summary {
   margin: 1rem 0.5rem;
 }
@@ -1254,11 +1132,9 @@ section.section-text-page .container h3 {
           flex-direction: row;
   text-align: left;
 }
-
 .banner.banner--covid {
   border-left: 4px solid #ff6473;
 }
-
 .banner.banner--covid .banner__image-wrapper {
   background-color: #def0f9;
   width: 100px;
@@ -1267,18 +1143,15 @@ section.section-text-page .container h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .banner.banner--covid .banner__image {
   width: 71px;
 }
-
 .banner .banner__text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin: 15px;
 }
-
 .banner .banner__text h1 {
   padding: 0;
   margin: 0;
@@ -1286,12 +1159,10 @@ section.section-text-page .container h3 {
   text-transform: none;
   font-weight: bold;
 }
-
 .banner .banner__text p {
   margin: 0.25em auto 0;
   font-size: 0.8em;
 }
-
 .banner .banner__action {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -1299,4 +1170,5 @@ section.section-text-page .container h3 {
   text-decoration: none;
   padding: 15px;
 }
+
 /*# sourceMappingURL=index.css.map */
