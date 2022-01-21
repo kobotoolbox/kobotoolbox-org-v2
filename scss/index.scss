@@ -292,6 +292,10 @@ footer {
       text-decoration: none;
       margin: 0px 10px;
 
+      &.inline {
+        margin: 0;
+      }
+
       &:hover {
         color: white;
         opacity: 1;

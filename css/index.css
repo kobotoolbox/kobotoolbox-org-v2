@@ -985,6 +985,9 @@ footer p a {
   text-decoration: none;
   margin: 0px 10px;
 }
+footer p a.inline {
+  margin: 0;
+}
 footer p a:hover {
   color: white;
   opacity: 1;
