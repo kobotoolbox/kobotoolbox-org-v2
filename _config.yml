@@ -38,3 +38,7 @@ isBlogEnabled: false
 
 # used for Open Graph (i.e. social sharing)
 default_og_image: "/images/deafault_og_image.png"
+
+# FundraiseUp stuff
+fundraiseup_js_id: "ASAUFVGL"
+fundraiseup_html_id: "XESYHRGF"

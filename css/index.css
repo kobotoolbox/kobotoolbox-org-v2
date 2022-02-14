@@ -716,6 +716,11 @@ header ul#nav li a:hover {
   padding: 0.33rem 0;
 }
 
+.kobo-fundraiseup {
+  display: block;
+  text-align: center;
+}
+
 html {
   line-height: 1.25em;
 }

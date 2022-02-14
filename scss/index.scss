@@ -16,6 +16,7 @@
 @import "sections/partners";
 @import "sections/sign-up";
 @import "components/image";
+@import "components/fundraiseup";
 
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
