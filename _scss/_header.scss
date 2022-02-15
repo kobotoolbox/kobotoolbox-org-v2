@@ -2,20 +2,32 @@
 
 header {
   position: fixed;
+  z-index: 999;
   height: 70px;
   background: #414453;
   color: $white;
   width: 100%;
   display: flex;
-  z-index: 999;
+  flex-direction: row;
+  align-items: center;
 
   h1 {
     flex-grow: 1;
-    margin: 15px 20px;
+    margin: 0 0 0 20px;
     padding: 0;
     color: transparent;
-    background: url("../images/kobologo.svg") no-repeat 0 100%;
+    background: url("../images/kobologo_for_dark_bg.svg") no-repeat 0 100%;
     background-size: contain;
+
+    @media (max-width: 600px) {
+      background: url("../images/koboicon.svg") no-repeat 0 100%;
+      font-size: 0.5em;
+    }
+
+    a {
+      display: block;
+      height: 40px;
+    }
 
     a, a:hover {
       color: transparent;
@@ -23,10 +35,19 @@ header {
     }
   }
 
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   ul#nav {
     flex-grow: 0;
-    margin: 0px;
-    padding: 24px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0 30px 0 0;
     list-style-type: none;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
@@ -40,6 +61,7 @@ header {
       a {
         color: $white;
         text-decoration: none;
+        white-space: nowrap;
 
         &:hover {
           opacity: 0.8;

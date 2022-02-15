@@ -10,12 +10,14 @@
 @import "sections/about";
 @import "sections/covid";
 @import "sections/dev";
+@import "sections/donate";
 @import "sections/examples";
 @import "sections/help";
 @import "sections/join-our-team";
 @import "sections/partners";
 @import "sections/sign-up";
 @import "components/image";
+@import "components/banner";
 @import "components/fundraiseup";
 
 html {
@@ -54,7 +56,7 @@ a {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     background: $blue;
-    color: white;
+    color: white !important;
     text-transform: uppercase;
     padding: 8px 20px;
     padding-top: 10px;
@@ -72,7 +74,6 @@ a {
 
     &:hover {
       background: darken($blue, 15%);
-      color: white;
     }
   }
 }
@@ -438,60 +439,6 @@ section.section-text-page {
 
   .post-summary__summary {
     margin: 1rem 0.5rem;
-  }
-}
-
-.banner {
-  position: absolute;
-  z-index: 10;
-  top: 70px + 30px;
-  left: 30px;
-  right: 30px;
-  background: $white;
-  color: $black;
-  display: flex;
-  flex-direction: row;
-  text-align: left;
-
-  &.banner--covid {
-    border-left: 4px solid $covid-red;
-
-    .banner__image-wrapper {
-      background-color: $covid-blue;
-      width: 100px;
-      height: 100px;
-      padding: 15px;
-      box-sizing: border-box;
-    }
-
-    .banner__image {
-      width: 71px;
-    }
-  }
-
-  .banner__text {
-    flex: 1;
-    margin: 15px;
-
-    h1 {
-      padding: 0;
-      margin: 0;
-      font-size: inherit;
-      text-transform: none;
-      font-weight: bold;
-    }
-
-    p {
-      margin: 0.25em auto 0;
-      font-size: 0.8em;
-    }
-  }
-
-  .banner__action {
-    align-self: flex-end;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 15px;
   }
 }
 

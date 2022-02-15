@@ -14,13 +14,13 @@ kramdown:
 timezone: US/Eastern
 port: 2038 # 0 to 65535
 exclude:
-  - scss
   - node_modules
   - README.md
   - package.json
   - package-lock.json
-  - Gulpfile.js
 permalink: /blog/:title
+sass:
+  sass_dir: _scss
 defaults:
   -
     scope:
