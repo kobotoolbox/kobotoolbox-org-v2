@@ -1,32 +1,11 @@
 @import "../variables";
 
-#donate-logo,
 #donate {
   h2 {
     text-align: center;
   }
 }
 
-#donate-logo,
 #donate {
   background: $whitesmoke;
-}
-
-.donate-page #donate {
-  padding-top: 20px;
-}
-
-#donate-logo {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  a {
-    display: inline-block;
-  }
-
-  img {
-    height: 50px;
-    vertical-align: top;
-  }
 }

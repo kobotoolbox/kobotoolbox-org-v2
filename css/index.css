@@ -534,31 +534,12 @@ header ul#nav li a:hover {
   color: #a6aaba;
 }
 
-#donate-logo h2,
 #donate h2 {
   text-align: center;
 }
 
-#donate-logo,
 #donate {
   background: #f8f8f8;
-}
-
-.donate-page #donate {
-  padding-top: 20px;
-}
-
-#donate-logo {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#donate-logo a {
-  display: inline-block;
-}
-#donate-logo img {
-  height: 50px;
-  vertical-align: top;
 }
 
 #examples {
