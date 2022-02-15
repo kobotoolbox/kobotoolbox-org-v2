@@ -196,6 +196,7 @@
 
 header {
   position: fixed;
+  z-index: 999;
   height: 70px;
   background: #414453;
   color: #ffffff;
@@ -203,17 +204,33 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  z-index: 999;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header h1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 15px 20px;
+  margin: 0 0 0 20px;
   padding: 0;
   color: transparent;
   background: url("../images/kobologo_for_dark_bg.svg") no-repeat 0 100%;
   background-size: contain;
+}
+@media (max-width: 600px) {
+  header h1 {
+    background: url("../images/koboicon.svg") no-repeat 0 100%;
+    font-size: 0.5em;
+  }
+}
+header h1 a {
+  display: block;
+  height: 40px;
 }
 header h1 a, header h1 a:hover {
   color: transparent;
@@ -245,8 +262,8 @@ header ul#nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0px;
-  padding: 0 30px;
+  margin: 0;
+  padding: 0 30px 0 0;
   list-style-type: none;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
@@ -260,6 +277,7 @@ header ul#nav li {
 header ul#nav li a {
   color: #ffffff;
   text-decoration: none;
+  white-space: nowrap;
 }
 header ul#nav li a:hover {
   opacity: 0.8;
