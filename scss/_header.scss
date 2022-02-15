@@ -14,7 +14,7 @@ header {
     margin: 15px 20px;
     padding: 0;
     color: transparent;
-    background: url("../images/kobologo.svg") no-repeat 0 100%;
+    background: url("../images/kobologo_for_dark_bg.svg") no-repeat 0 100%;
     background-size: contain;
 
     a, a:hover {
@@ -23,10 +23,19 @@ header {
     }
   }
 
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
   ul#nav {
     flex-grow: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 0px;
-    padding: 24px 30px;
+    padding: 0 30px;
     list-style-type: none;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;

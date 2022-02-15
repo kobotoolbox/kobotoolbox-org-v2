@@ -5,7 +5,7 @@
             <li class="hide-mobile"><a href="{{ site.baseurl }}/#home">Home</a></li>
             <li class="hide-mobile"><a href="{{ site.baseurl }}/#features">Features</a></li>
             <li><a href="{{ site.baseurl }}/#sign-up">Sign Up</a></li>
-            <li class="hide-mobile"><a href="{{ site.baseurl }}/#about">About</a></li>
+            <li {% if page.dir == '/kobo/' %}class="current"{% endif %}><a href="{{ site.baseurl }}/kobo">About</a></li>
             {% if site.isBlogEnabled %}
                 {% if page.dir == '/blog/' or page.collection == 'posts' %}
                     <li class="hide-mobile current"><a href="{{ site.baseurl }}/blog">Blog</a></li>
@@ -15,6 +15,9 @@
             {% endif %}
             <li class="hide-mobile"><a href="{{ site.baseurl }}/#help">Help</a></li>
             <li class="hide-mobile"><a href="{{ site.baseurl }}/join-our-team/index.html">Jobs</a></li>
+            <li>
+                <a class="button" href="{{ site.baseurl }}/donate">Donate</a>
+            </li>
         </ul>
     </nav>
 </header>

@@ -212,19 +212,41 @@ header h1 {
   margin: 15px 20px;
   padding: 0;
   color: transparent;
-  background: url("../images/kobologo.svg") no-repeat 0 100%;
+  background: url("../images/kobologo_for_dark_bg.svg") no-repeat 0 100%;
   background-size: contain;
 }
 header h1 a, header h1 a:hover {
   color: transparent;
   font-size: 1em;
 }
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 header ul#nav {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0px;
-  padding: 24px 30px;
+  padding: 0 30px;
   list-style-type: none;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
@@ -351,16 +373,14 @@ header ul#nav li a:hover {
   margin-top: 40px;
 }
 
-#about h2,
+#aboutkobo h2,
 #mission h2,
-#donate h2,
 #contact h2 {
   text-align: center;
 }
 
-#about,
+#aboutkobo,
 #mission,
-#donate,
 #contact {
   background: #f8f8f8;
 }
@@ -494,6 +514,33 @@ header ul#nav li a:hover {
   font-size: 0.9em;
   margin-top: 5px;
   color: #a6aaba;
+}
+
+#donate-logo h2,
+#donate h2 {
+  text-align: center;
+}
+
+#donate-logo,
+#donate {
+  background: #f8f8f8;
+}
+
+.donate-page #donate {
+  padding-top: 20px;
+}
+
+#donate-logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#donate-logo a {
+  display: inline-block;
+}
+#donate-logo img {
+  height: 50px;
+  vertical-align: top;
 }
 
 #examples {
@@ -768,7 +815,7 @@ a.button {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   background: #2095f3;
-  color: white;
+  color: white !important;
   text-transform: uppercase;
   padding: 8px 20px;
   padding-top: 10px;
@@ -784,7 +831,6 @@ a.button.button--covid-red:hover {
 }
 a.button:hover {
   background: #0a6dbc;
-  color: white;
 }
 
 img {
