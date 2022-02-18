@@ -5,12 +5,12 @@ date: 17-02-2022
 author: Mae-Lin DeLange
 summary:
 The Caribbean Development Bank, an institution dedicated to reducing inequality in its member countries, has provided critical training to over 200 aid workers on using the KoboCollect app to gather data for emergency response and disaster risk management, which is used to empower communities to become partners in building their own resilience.
-thumbnail: /images/blog/purposeful_01.jpg
+thumbnail: /images/blog/CDB_blog_01.jpg
 ---
 
 Latin America and the Caribbean are two of the most disaster-prone regions in the world. In the last two decades, [over 152 million people](https://reliefweb.int/report/world/natural-disasters-latin-america-and-caribbean-2000-2019) have been displaced and horribly affected by 1,205 disasters, with earthquakes and hurricanes being the most common. As climate change causes increasingly severe hurricane seasons and greater devastation, disaster management and response preparedness are more essential than ever.
 
-{% include image.liquid file="/images/blog/purposeful_01.jpg" caption="© Purposeful" type="full" %}
+{% include image.liquid file="/images/blog/CDB_blog_01.jpg" caption="CDRRF Data Collection Volunteer administering the Livelihood Baseline Assessment Survey in Toledo District, Belize using KoBoToolbox. © Caribbean Development Bank" type="full" %}
 
 In these emergency situations where access to real-time data is critical, KoboToolbox makes a difference. The [Caribbean Development Bank (CDB)](https://www.caribank.org) is one of many organizations using KoboToolbox to improve response capacity in disaster scenarios.
 
@@ -20,7 +20,7 @@ Aiken’s efforts seek to strengthen disaster risk management and climate change
 
 Learn more about Richardo’s innovative work below *(Note: The following conversation has been edited for length and clarity)*.
 
-{% include image.liquid file="/images/blog/purposeful_02.jpg" caption="© Purposeful" type="left" %}
+{% include image.liquid file="/images/blog/CDB_blog_02.jpg" caption="CDRRF Data Collection Volunteer administering Livelihood Baseline Assessment in Chateaubelair, St. Vincent and the Grenadines, using KoBoToolbox. © Caribbean Development Bank" type="left" %}
 
 **What is CDB doing to strengthen disaster risk management, risk preparedness, and climate change adaptation capacity across communities? How does this relate to data collection?**
 
@@ -71,6 +71,7 @@ The speed and ease of data collection and analysis has been significantly enhanc
 **Since starting to use KoboToolbox, CDB has hosted several training sessions. How did these sessions get started?**
 
 **RA:** Once we decided to use KoboToolbox, we knew we wanted to ensure that all the relevant persons had the skills to use the platform. We had our first training session with over 50 of our stakeholders in December 2019 and then our second one in 2020. Our third and [most recent training session](http://www.thebahamasweekly.com/publish/caribbean-news/CDEMA_and_CDB_partner_to_enhance_Emergency_Data_Collection_Capacity_in_the_Caribbean68276.shtml) was hosted on June 9, 2021, in collaboration with Caribbean Disaster Emergency Management Agency (CDEMA) and was attended by over 200 humanitarian aid workers and frontline disaster responders.  
+{% include image.liquid file="/images/blog/CDB_blog_03.jpg" caption="Richardo Aiken, chairing the Virtual KoBotoolbox Training Webinar, hosted by CDB and CDEMA. © Caribbean Development Bank" type="left" %}
 
 **Given the increasingly active hurricane seasons and worsening natural disasters, was this a factor when organizing the latest training session?**
 
