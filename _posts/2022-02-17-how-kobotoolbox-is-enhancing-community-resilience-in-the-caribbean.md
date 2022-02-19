@@ -1,5 +1,5 @@
 ---
-title: How KoboToolbox is enhancing community resilience in the Caribbean
+title: How the Caribbean Development Bank is using KoboToolbox to enhance community resilience in the Caribbean
 date: 17-02-2022
 author: Mae-Lin DeLange
 summary:
