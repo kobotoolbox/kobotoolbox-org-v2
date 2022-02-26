@@ -1,0 +1,32 @@
+@use "utils";
+@use "fonts";
+@use "variables";
+@use "colors";
+
+html {
+  // Sorry for complexity here, but we want the fluid size to become
+  // $root_font_size at 1440px. That is why we are introducing two scales,
+  // first up to 1440px and second from 1441px.
+  @media (max-width: 1440px) {
+    @include utils.fluid_type(
+      360px,
+      1440px,
+      variables.$root_font_size - 3px,
+      variables.$root_font_size
+    );
+  }
+
+  @media (min-width: 1441px) {
+    @include utils.fluid_type(
+      1440px,
+      1920px,
+      variables.$root_font_size,
+      variables.$root_font_size + 3px
+    );
+  }
+
+  height: 100%;
+  font-family: fonts.$family_default;
+  background-color: colors.$kobo_white;
+  color: colors.$kobo_gray_24;
+}

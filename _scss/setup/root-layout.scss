@@ -1,0 +1,46 @@
+@use "utils";
+@use "colors";
+@use "variables";
+
+$header-height: 70px;
+
+// Base division is simple three top-down sections: header, main, and footer.
+
+.root {
+  min-height: 100%;
+  height: 100%;
+}
+
+.root__header {
+  @include utils.center-row_flex;
+
+  height: utils.rem($header-height);
+}
+
+.root__main {
+  min-height: calc(100% - #{utils.rem($header-height)});
+}
+
+.root__footer {
+  @include utils.center-row-flex;
+
+  color: colors.$kobo-white;
+  background-color: colors.$kobo-gray-40;
+}
+
+// Building blocks of each section - we allow full size anything within
+// the `row`, but content must be contained within `row-content`.
+
+.root__row {
+  width: 100%;
+}
+
+.root__row-content {
+  margin: 0 auto;
+  width: 100%;
+  max-width: utils.rem(variables.$content-width);
+}
+
+.root__row-content--wide {
+  max-width: utils.rem(variables.$wide-content-width);
+}

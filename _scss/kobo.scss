@@ -1,0 +1,9 @@
+// 0. We don't import variables into global context.
+
+// 1. setup styles
+@import "setup/fonts";
+@import "setup/base";
+@import "setup/root-layout";
+
+// 2. components
+@import "components/image";

@@ -1,10 +1,10 @@
 ---
 title: Using the Public Collections Feature to Power Your Survey Creation
 date: 26-11-2021
-author: KoBo Inc.
+author: Kobo Inc.
 summary:
-    KoBoToolbox’s Public Collections feature makes it easy to create, store, and
-    share questions across surveys, teams, and organizations. KoBoToolbox’s
+    KoboToolbox’s Public Collections feature makes it easy to create, store, and
+    share questions across surveys, teams, and organizations. KoboToolbox’s
     Public Collections feature makes it easy to create, store, and share
     questions across surveys, teams, and organizations.
 thumbnail: /images/blog/survey_setup.png
@@ -23,7 +23,7 @@ timely manner.
 
 {% include image.liquid file="/images/blog/survey_setup.png" type="full" %}
 
-For years, KoBoToolbox users have enjoyed the
+For years, KoboToolbox users have enjoyed the
 [Question Library feature](https://support.kobotoolbox.org/question_library.html)
 to **create** and **reuse** survey form content and to the share the same
 content with other users.
@@ -38,13 +38,13 @@ features also enable users to store full collections of saved questions blocks
 and/or form templates.
 
 What’s new and notable is that with Public Collections, you can **share
-templates**, **question blocks**, and **collections** with the **entire KoBo
+templates**, **question blocks**, and **collections** with the **entire Kobo
 community**! Anyone can make their collections public by adding relevant
 metadata (sectors, countries, description) and it becomes immediately available
 to all other users on the same server.
 
 The Public Collections feature helps standardize data collection for thousands
-of KoBo users across the world, enabling more straightforward comparisons of
+of Kobo users across the world, enabling more straightforward comparisons of
 results, which helps to strengthen our data collection and analysis as a
 community.
 
@@ -52,10 +52,10 @@ community.
 
 You can use Public Collections as a starting point for a new form, rather than
 building one from scratch as the Public Collections are fully integrated with
-KoBoToolbox’s [formbuilder](https://support.kobotoolbox.org/formbuilder.html).
+KoboToolbox’s [formbuilder](https://support.kobotoolbox.org/formbuilder.html).
 Once you **develop**, **save**, and **share** sets of questions in your public
 collection, you can easily import them into new data collection projects on the
-KoBoToolbox platform.
+KoboToolbox platform.
 
 {% include image.liquid file="/images/blog/public_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
 
@@ -75,7 +75,7 @@ If you find a collection that’s particularly useful, click **subscribe**, whic
 allows you to use the blocks from that collection in the formbuilder or start
 your survey with a template from the collection.
 
-You’re now ready to power your survey creation using KoBoToolbox’s Public
+You’re now ready to power your survey creation using KoboToolbox’s Public
 Collections.
 
 For detailed instructions on using this feature, check out our support article,

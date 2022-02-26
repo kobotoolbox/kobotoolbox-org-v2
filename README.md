@@ -1,6 +1,6 @@
 # kobotoolbox.org
 
-A simple static Jekyll-powered website for KoBoToolbox.
+A simple static Jekyll-powered website for KoboToolbox.
 
 ## Development
 

@@ -1,26 +1,26 @@
 ---
 title:
-    Joint Initiative Announced to Enhance KoBoToolbox for Data Collection and
+    Joint Initiative Announced to Enhance KoboToolbox for Data Collection and
     Analysis in Displacement Contexts
 date: 29-11-2021
-author: Joint Data Center on Forced Displacement (JDC) and KoBo Inc.
+author: Joint Data Center on Forced Displacement (JDC) and Kobo Inc.
 summary:
-    KoBo Inc. and JDC have partnered to strengthen KoBoToolbox, part of JDC’s
+    Kobo Inc. and JDC have partnered to strengthen KoboToolbox, part of JDC’s
     ongoing effort to strengthen data systems and fill data gaps in order to
     improve the lives of people affected by displacement.
 thumbnail: /images/blog/UNHCR_survey_refugees_bangladesh.jpg
 ---
 
-KoBo Inc. and the Joint Data Center on Forced Displacement (JDC), an initiative
+Kobo Inc. and the Joint Data Center on Forced Displacement (JDC), an initiative
 established by the World Bank Group (WBG) and UNHCR, the UN Refugee Agency, have
-partnered to strengthen KoBoToolbox. This collaboration is part of JDC’s ongoing
+partnered to strengthen KoboToolbox. This collaboration is part of JDC’s ongoing
 effort to strengthen data systems and fill data gaps, allowing stakeholders to
 make evidence-informed decisions that can improve the lives of people affected
 by displacement.
 
 {% include image.liquid file="/images/blog/UNHCR_survey_refugees_bangladesh.jpg" caption="UNHCR staff surveys refugees in Bangladesh." type="full" %}
 
-> "By supporting KoBoToolbox, the JDC continues to invest in effective solutions
+> "By supporting KoboToolbox, the JDC continues to invest in effective solutions
 > to promote forced displacement-sensitive data methods. Improving the quality
 > of data collected is essential to better understand the socioeconomic
 > situation of those forcibly displaced and hence allow for better
@@ -34,33 +34,33 @@ contributed to worsening these realities. Given this context, quality data and
 analytical work are critical for stakeholders when deciding appropriate policy
 responses and operational approaches.
 
-Through this joint initiative, JDC and KoBo Inc. will work together to help
+Through this joint initiative, JDC and Kobo Inc. will work together to help
 overcome these data issues. Free and easy-to-use data platforms, such as
-KoBoToolbox, have proven essential in humanitarian and displacement settings,
+KoboToolbox, have proven essential in humanitarian and displacement settings,
 providing access to real-time information on the ground for a broad range of
-stakeholders. Therefore, the JDC is investing in the development of KoBo’s
+stakeholders. Therefore, the JDC is investing in the development of Kobo’s
 governance and long-term sustainability as well as enhancing feature development
-and capacity building for KoBoToolbox. This will strengthen KoBo Inc.’s role as
+and capacity building for KoboToolbox. This will strengthen Kobo Inc.’s role as
 an accessible public good for data collection and analysis. Humanitarian actors
 and development practitioners will benefit from an enriched user experience,
 enhanced knowledge management, and improved decision-making abilities.
 
-> “This partnership comes at a critical time for our organization as KoBoToolbox
+> “This partnership comes at a critical time for our organization as KoboToolbox
 > has recently surpassed 300 million survey submissions and our user-base
 > continues to grow every day. Partnering with JDC will ensure that we continue
 > to improve our services to better support the thousands of local and global
-> organizations that rely on KoBoToolbox in their daily work of saving lives and
+> organizations that rely on KoboToolbox in their daily work of saving lives and
 > serving displaced peoples and communities." -- Patrick Vinck, co-founder of
-> KoBo.
+> Kobo.
 
 This initiative will first develop a sustainability plan and oversight protocols
-to ensure the continued development and maintenance of KoBoToolbox in
+to ensure the continued development and maintenance of KoboToolbox in
 collaboration with the World Bank Group, UNHCR, and other key contributors and
 stakeholders. In terms of feature development, the user interface and graphics
 will be improved and upgraded and documentation will be created to outline the
 importance of these changes in the forced displacement data context.
 Additionally, training sessions and technical support materials will be
-developed and knowledge gaps among the KoBoToolbox user community will be
+developed and knowledge gaps among the KoboToolbox user community will be
 identified and addressed.
 
 This initiative recognizes the need for reliable, comparable, and timely data
@@ -68,19 +68,19 @@ for evidence-based responses to improve the lives of refugees and host
 communities, as outlined by UNHCR’s Global Compact on Refugees framework. The
 areas of focus will address issues around improving the quality of socioeconomic
 data by the implementation of innovative tools and methods at the different
-stages of data production, as identified by KoBoToolbox users in both the World
+stages of data production, as identified by KoboToolbox users in both the World
 Bank Group and UNHCR. It is also an essential step towards ensuring long-term
 sustainability of the platform as a free and reliable resource.
 
 ---
 
-**About KoBo Inc.**
+**About Kobo Inc.**
 
-KoBo Inc. works to ensure that humanitarian action and initiatives promoting
+Kobo Inc. works to ensure that humanitarian action and initiatives promoting
 peace, human rights and sustainable development are informed by high quality,
 up-to-date data generated by affected communities using simple, reliable, and
-secure technologies. KoBo Inc. is a non-profit organization, affiliated with the
-Harvard Humanitarian Initiative, which hosts and maintains KoBoToolbox, the
+secure technologies. Kobo Inc. is a non-profit organization, affiliated with the
+Harvard Humanitarian Initiative, which hosts and maintains KoboToolbox, the
 world’s most popular tool for data collection, management, and visualization for
 humanitarian action.
 

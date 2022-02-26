@@ -1,6 +1,6 @@
-name: "KoBoToolbox"
+name: "KoboToolbox"
 shortdescription: "Data Collection Tools for Challenging Environments"
-description: "KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
+description: "KoboToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
 baseurl: "https://www.kobotoolbox.org"
 
 # site configuration
@@ -10,17 +10,20 @@ future: true
 encoding: utf-8
 markdown: kramdown
 kramdown:
-  auto_ids: false
+  auto_ids: true
 timezone: US/Eastern
 port: 2038 # 0 to 65535
 exclude:
+  - .editorconfig
+  - .eslintrc.js
+  - .prettierrc.js
+  - .stylelintrc.js
   - node_modules
   - README.md
   - package.json
   - package-lock.json
+  - "*.sublime-project"
 permalink: /blog/:title
-sass:
-  sass_dir: _scss
 defaults:
   -
     scope:
@@ -32,13 +35,7 @@ defaults:
       path: "_posts"
     values:
       layout: "blog-post"
-# this flag manages the visibility of blog, i.e. it hides blog link from top
-# navigation and blog section from main page
-isBlogEnabled: false
 
 # used for Open Graph (i.e. social sharing)
 default_og_image: "/images/deafault_og_image.png"
 
-# FundraiseUp stuff
-fundraiseup_js_id: "ASAUFVGL"
-fundraiseup_html_id: "XESYHRGF"

@@ -1,25 +1,21 @@
 - first_name: Phuong
   last_name: Pham
   position: co-founder
-  is_vip: true
   vip_order: 1
 
 - first_name: Patrick
   last_name: Vinck
   position: co-founder
-  is_vip: true
   vip_order: 2
 
 - first_name: Tino
   last_name: Kreutzer
   position: chief operating &amp; innovation officer
-  is_vip: true
   vip_order: 3
 
 - first_name: John
   last_name: Milner
   position: lead developer
-  is_vip: true
   vip_order: 4
 
 - first_name: Ignacio

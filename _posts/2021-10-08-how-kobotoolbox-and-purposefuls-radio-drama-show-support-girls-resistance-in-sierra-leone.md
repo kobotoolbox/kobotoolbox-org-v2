@@ -1,13 +1,13 @@
 ---
 title:
-    How KoBoToolbox and Purposeful’s radio drama show support girls’ resistance
+    How KoboToolbox and Purposeful’s radio drama show support girls’ resistance
     in Sierra Leone
 date: 08-10-2021
-author: staff at Purposeful and KoBo Inc.
+author: staff at Purposeful and Kobo Inc.
 summary:
     Purposeful, a feminist hub based in Sierra Leone, was able to stay connected
     with over 15,000 girls throughout the country during COVID-19 by loading the
-    KoBoCollect app onto 700 smartphones and distributing them to over 700
+    KoboCollect app onto 700 smartphones and distributing them to over 700
     mentors for their Girls' Circle program.
 thumbnail: /images/blog/purposeful_01.jpg
 ---
@@ -35,21 +35,21 @@ from girls? The reason their content is so powerful and ground-breaking is
 precisely due to it being girl-led and girl-informed, but now with everyone
 isolated, they had to think outside the box.
 
-Enter KoBoToolbox.
+Enter KoboToolbox.
 
-Staff were already using KoBoToolbox to collect project data. Now, they went
+Staff were already using KoboToolbox to collect project data. Now, they went
 about setting up
-[KoBoCollect](https://support.kobotoolbox.org/kobocollect-android.html), the
-KoBoToolbox Android app, on 700 smartphones that they bought for the Girls’
+[KoboCollect](https://support.kobotoolbox.org/kobocollect-android.html), the
+KoboToolbox Android app, on 700 smartphones that they bought for the Girls’
 Circle mentors. They knew time was limited and were able to rapidly test their
-survey forms on the KoBoCollect app with a small group of mentors before
+survey forms on the KoboCollect app with a small group of mentors before
 distributing the phones across the country. This was the first time using a
 smartphone for many of the mentors and staff at Purposeful ensured everyone
-received remote training on using smartphones and KoBoCollect.
+received remote training on using smartphones and KoboCollect.
 
-> "We were already using KoBo with partners to collect basic project data and it
+> "We were already using Kobo with partners to collect basic project data and it
 > proved intuitive to use, had offline functionality, and came with no cost - so
-> the decision to use KoBo with mentors was an easy one." -
+> the decision to use Kobo with mentors was an easy one." -
 > [Purposeful Org](https://we-are-purposeful.medium.com/the-importance-of-girls-voices-during-emergencies-here-s-how-we-listened-dc5babf5ac91)
 
 The results?
@@ -58,7 +58,7 @@ At the height of the pandemic, Purposeful was receiving hundreds of survey
 submissions from over 400 mentors on a weekly basis. Over 15,000 girls are a
 part of the Girls’ Circle program and they were able to regularly and reliably
 share their feedback on the program, its content, and what they want to see next
-with their mentors through KoBoToolbox. Mentors were also able to share girls’
+with their mentors through KoboToolbox. Mentors were also able to share girls’
 stories outside of the program - stories of resisting early forced marriage,
 gender-based violence and, in some cases, even female genital mutilation. Others
 shared stories of hope, friendship, solidarity, and inspiration.
@@ -73,7 +73,7 @@ overall and shows how critical data collection is during emergencies and
 pandemics. More importantly, it proves that adaptation and ingenuity can lead to
 even stronger data collection during times of crisis.
 
-To this day, Purposeful continues to use KoBoCollect to collect data and
+To this day, Purposeful continues to use KoboCollect to collect data and
 feedback from mentors every week, ensuring that the program remains girl-led and
 relevant. As they enter another wave of COVID-19, they now have the foundation
 and experience to continue to reach girls during a time they need it most.

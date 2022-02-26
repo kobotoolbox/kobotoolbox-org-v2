@@ -1,7 +1,7 @@
 ---
 title: Building Better Longitudinal Surveys with Dynamic Data Attachments
 date: 10-12-2021
-author: KoBo Inc.
+author: Kobo Inc.
 summary:
     Learn how you can setup robust longitudinal surveys, retaining all of your
     initial data from the original survey while having the necessary data
@@ -15,7 +15,7 @@ types of longitudinal surveys and they are highly important for data collection.
 There are many reasons why a researcher may need to set up a longer term survey,
 requiring different data to be collected over a period of time.
 
-We are proud to announce that KoBoToolbox now allows you to link and
+We are proud to announce that KoboToolbox now allows you to link and
 automatically include data collected across projects. By dynamically linking
 survey projects, you can retain all of your initial data from the original
 survey, or “parent project”, and then have the necessary data automatically
@@ -36,7 +36,7 @@ ask the same questions again.
 
 Another important use case is **phone surveys**. As COVID-19 has restricted more
 face-to-face interviews, users have been conducting more interviews remotely
-using KoBoToolbox. Setting up a form to register phone survey participants as
+using KoboToolbox. Setting up a form to register phone survey participants as
 well as a second form to then collect data from each participant was possible
 before but now you can dynamically link two projects, meaning you can confirm
 personal details from the initial intake form before starting the interview.
@@ -50,9 +50,9 @@ details will be updated in the child project(s) minutes later. All survey
 projects will be completely up-to-date and your original data will still be
 maintained and unaffected by future surveys.
 
-### Setting Up Dynamic Data Attachments with KoBoToolbox
+### Setting Up Dynamic Data Attachments with KoboToolbox
 
-Dynamic data attachments have been set up with KoBoToolbox to allow you a high
+Dynamic data attachments have been set up with KoboToolbox to allow you a high
 amount of flexibility. Key features include:
 
 -   Being able to use the **same data across projects**. The data stored in the
@@ -70,7 +70,7 @@ amount of flexibility. Key features include:
     creating and managing longitudinal survey projects.
 
 Dynamic data attachments have been enabled for Enketo web forms as well as the
-KoBoCollect Android app. It’s a straightforward process that starts with
+KoboCollect Android app. It’s a straightforward process that starts with
 enabling data sharing in the parent project.
 
 When using XLSForms, the parent project form does not require edits, however,

@@ -1,5 +1,5 @@
 ---
-title: The Syrian Refugee Crisis in Lebanon and how KoBoToolbox is aiding humanitarian efforts
+title: The Syrian Refugee Crisis in Lebanon and how KoboToolbox is aiding humanitarian efforts
 date: 26-03-2021
 author: Joshua Beretta
 summary: Despite shifting global attention toward the COVID-19 pandemic
@@ -35,7 +35,7 @@ UNHCR, the United Nations Children's Fund (UNICEF) and the World Food Programme
 Assessment of Syrian Refugees. The report aims to reveal a cross-section of the
 refugee population in annual snapshots — allowing for invaluable insights into
 the lives of thousands of families over time as the crisis continues. VASyR uses
-the [KoBoToolbox suite of tools](https://kobotoolbox.org) for all its data
+the [KoboToolbox suite of tools](https://kobotoolbox.org) for all its data
 collection efforts across Lebanon.
 
 The 2020  report's [most recent
@@ -86,14 +86,14 @@ tools, after which the report can be compiled.
 With few teams on the ground, limited time and harsh conditions, efficient and
 robust means of collecting and managing data are critical.
 
-> "The operation decided to use KoBoToolbox mainly since it is a free open-source
+> "The operation decided to use KoboToolbox mainly since it is a free open-source
 tool for data collection, works offline, easy to create forms and users on the
 server, and is used by most of the humanitarian actors. Hence, data collectors
 require minimum training to configure and use the forms. In addition to that,
 forms are easily integrated into other systems for monitoring and for creating
 dashboards." —  Raffi Kouzoudjian, UNHCR
 
-The UNHCR has been working with KoBoToolbox since 2016 to ensure that their
+The UNHCR has been working with KoboToolbox since 2016 to ensure that their
 humanitarian efforts on the ground are more streamlined and impactful.
 
 Learn more about the UNHCR's ongoing efforts in Lebanon and Syria's neighbours

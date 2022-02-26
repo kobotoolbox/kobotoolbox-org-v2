@@ -1,0 +1,19 @@
+@use "utils";
+
+// We use Lora for headings, and Inter for everything else.
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap");
+
+// Families
+$family-default: "Inter", sans-serif;
+$family-headings: "Lora", serif;
+$family-numbers: "Helvetica Neue", "Helvetica", sans-serif;
+
+// Sizes
+$size-1: utils.rem(12px);
+$size-2: 1rem;
+$size-3: utils.rem(19px);
+$size-4: utils.rem(24px);
+$size-5: utils.rem(30px);
+$size-5: utils.rem(32px);
+$size-6: utils.rem(36px);
+$size-7: utils.rem(46px);

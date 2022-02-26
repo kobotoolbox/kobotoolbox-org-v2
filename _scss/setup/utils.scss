@@ -1,0 +1,38 @@
+@use "sass:math";
+@use "variables";
+
+@function strip-unit($value) {
+  @return math.div($value, $value * 0 + 1);
+}
+
+@function rem($px_value) {
+  @return #{math.div(strip-unit($px_value), strip-unit(variables.$root_font_size))}rem;
+}
+
+@mixin fluid-type($min_vw, $max_vw, $min_font_size, $max_font_size) {
+  $u1: math.unit($min_vw);
+  $u2: math.unit($max_vw);
+  $u3: math.unit($min_font_size);
+  $u4: math.unit($max_font_size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min_font_size;
+
+      @media screen and (min-width: $min_vw) {
+        font-size: calc(#{$min_font_size} + #{strip-unit($max_font_size - $min_font_size)} * ((100vw - #{$min_vw}) / #{strip-unit($max_vw - $min_vw)}));
+      }
+
+      @media screen and (min-width: $max_vw) {
+        font-size: $max_font_size;
+      }
+    }
+  }
+}
+
+@mixin center-row-flex() {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
