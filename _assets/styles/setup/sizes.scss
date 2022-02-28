@@ -1,0 +1,14 @@
+@use "utils";
+
+// A list of all different sizes we use. Already rem-ized.
+
+$r10: utils.rem(10px);
+$r12: utils.rem(12px);
+$r15: utils.rem(15px);
+$r19: utils.rem(19px);
+$r24: utils.rem(24px);
+$r30: utils.rem(30px);
+$r32: utils.rem(32px);
+$r36: utils.rem(36px);
+$r46: utils.rem(46px);
+$r70: utils.rem(70px);

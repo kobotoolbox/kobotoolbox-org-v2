@@ -1,0 +1,5 @@
+{
+  "outputStyle": "expanded",
+  "sourceMap": true,
+  "includePaths": ["node_modules/kobo-common/src/styles"]
+}

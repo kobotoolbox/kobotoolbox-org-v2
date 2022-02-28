@@ -1,4 +1,4 @@
-@use "utils";
+@use "sizes";
 
 // We use Lora for headings, and Inter for everything else.
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap");
@@ -8,12 +8,12 @@ $family-default: "Inter", sans-serif;
 $family-headings: "Lora", serif;
 $family-numbers: "Helvetica Neue", "Helvetica", sans-serif;
 
-// Sizes
-$size-1: utils.rem(12px);
-$size-2: 1rem;
-$size-3: utils.rem(19px);
-$size-4: utils.rem(24px);
-$size-5: utils.rem(30px);
-$size-5: utils.rem(32px);
-$size-6: utils.rem(36px);
-$size-7: utils.rem(46px);
+// Limited font sizes palette.
+$size-1: sizes.$r12;
+$size-2: sizes.$r15;
+$size-3: sizes.$r19;
+$size-4: sizes.$r24;
+$size-5: sizes.$r30;
+$size-5: sizes.$r32;
+$size-6: sizes.$r36;
+$size-7: sizes.$r46;

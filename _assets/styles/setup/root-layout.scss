@@ -1,8 +1,9 @@
 @use "utils";
 @use "colors";
+@use "sizes";
 @use "variables";
 
-$header-height: 70px;
+$header-height: sizes.$r70;
 
 // Base division is simple three top-down sections: header, main, and footer.
 
@@ -11,14 +12,25 @@ $header-height: 70px;
   height: 100%;
 }
 
+// Sticky header.
 .root__header {
   @include utils.center-row_flex;
 
-  height: utils.rem($header-height);
+  height: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: colors.$kobo-white;
+
+  &.root__header--has-shadow {
+    border-bottom: sizes.$r10;
+  }
 }
 
 .root__main {
-  min-height: calc(100% - #{utils.rem($header-height)});
+  min-height: calc(100% - #{$header-height});
+  padding-top: $header-height; // For sticky header.
 }
 
 .root__footer {

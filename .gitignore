@@ -2,6 +2,9 @@
 _site
 .jekyll-metadata
 
+# Assets for Jekyll site (built by GH actions)
+assets
+
 # NPM
 node_modules
 npm-debug.log
@@ -12,3 +15,6 @@ Thumbs.db
 
 # Misc
 *sublime-*
+
+# Bundler
+.parcel-cache
