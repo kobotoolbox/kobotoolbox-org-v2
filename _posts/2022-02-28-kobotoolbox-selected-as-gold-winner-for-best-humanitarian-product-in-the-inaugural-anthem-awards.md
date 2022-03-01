@@ -9,16 +9,19 @@ summary:
     mission-driven work worldwide, has awarded this honor to KoboToolbox’s data
     collection platform for revolutionizing the way data is collected across the
     world.
-thumbnail: /images/blog/CDB_blog_01.jpg
+thumbnail: /images/blog/anthem-awards.png
 ---
 
 Our hard work to make data collection more accessible and inclusive has been
 awarded by the Anthem Awards as one of the best products in the humanitarian
 sector. [KoboToolbox](https://www.kobotoolbox.org/) is officially a **Gold
 Winner** of the **Best Humanitarian Product, Innovation or Service** category in
-the 2022 awards.
+the
+[2022 awards](https://www.anthemawards.com/winners/list/#humanitarian-action-services/product-innovation-or-service-categories-not-for-profit/1976/25391).
 
-{% include image.liquid file="/images/blog/CDB_blog_01.jpg" caption="CDRRF Data Collection Volunteer administering the Livelihood Baseline Assessment Survey in Toledo District, Belize using KoboToolbox. © Caribbean Development Bank" type="full" %}
+<video controls>
+  <source src="/images/blog/anthem.mp4" type="video/mp4">
+</video>
 
 We are incredibly proud to be among the inaugural class of Anthem winners, an
 inspiring selection of individuals and organizations demonstrating world class
@@ -85,6 +88,5 @@ program supporting emerging individuals and organizations working to advance the
 causes recognized in the inaugural Anthem Awards.
 
 To support KoboToolbox’s efforts, please spread the word and consider donating
-through our donation page on
-[https://www.kobotoolbox.org/donate/](https://www.kobotoolbox.org/donate/).
-Together we can make data collection accessible and inclusive to all.
+through our [donation page](https://www.kobotoolbox.org/donate/). Together we
+can make data collection accessible and inclusive to all.
