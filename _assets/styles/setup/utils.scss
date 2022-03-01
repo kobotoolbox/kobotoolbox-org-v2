@@ -1,12 +1,15 @@
-@use "sass:math";
-@use "variables";
+@use 'sass:math';
+@use 'variables';
 
 @function strip-unit($value) {
   @return math.div($value, $value * 0 + 1);
 }
 
 @function rem($px_value) {
-  @return #{math.div(strip-unit($px_value), strip-unit(variables.$root_font_size))}rem;
+  @return #{math.div(
+    strip-unit($px_value),
+    strip-unit(variables.$root_font_size)
+  )}rem;
 }
 
 @mixin fluid-type($min_vw, $max_vw, $min_font_size, $max_font_size) {
@@ -20,7 +23,11 @@
       font-size: $min_font_size;
 
       @media screen and (min-width: $min_vw) {
-        font-size: calc(#{$min_font_size} + #{strip-unit($max_font_size - $min_font_size)} * ((100vw - #{$min_vw}) / #{strip-unit($max_vw - $min_vw)}));
+        font-size:
+          calc(
+            #{$min_font_size} + #{strip-unit($max_font_size - $min_font_size)} *
+            ((100vw - #{$min_vw}) / #{strip-unit($max_vw - $min_vw)})
+          );
       }
 
       @media screen and (min-width: $max_vw) {

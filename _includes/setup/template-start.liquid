@@ -71,12 +71,11 @@
     {% comment %}
     style and icons
     {% endcomment %}
-    <link href="{{ site.baseurl }}/css/normalize.css" rel="stylesheet" media="all"/>
-    <link href="{{ site.baseurl }}/css/kobo.css?{{ versionCache }}" rel="stylesheet" media="all"/>
+    <link href="{{ site.baseurl }}/assets/styles/kobo.css?{{ versionCache }}" rel="stylesheet" media="all"/>
     <link rel="icon" href="{{ site.baseurl }}/favicon.png?{{ versionCache }}"/>
 </head>
 
 {% comment %}
 Root container for everything, has `root--foo` classname if needed.
 {% endcomment %}
-<body class="root{% if page.page_id %} root--{{ page.pageid }}{% endif %}">
+<body class="root{% if page.pageid %} root--{{ page.pageid }}{% endif %}">

@@ -1,7 +1,8 @@
-@use "utils";
-@use "colors";
-@use "sizes";
-@use "variables";
+@use 'utils';
+@use 'colors';
+@use 'sizes';
+@use 'variables';
+@use 'sass:color';
 
 $header-height: sizes.$r70;
 
@@ -23,8 +24,24 @@ $header-height: sizes.$r70;
   width: 100%;
   background-color: colors.$kobo-white;
 
-  &.root__header--has-shadow {
-    border-bottom: sizes.$r10;
+  &::after {
+    content: '';
+    height: sizes.$r10;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+    transition-delay: 0.25s;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+.root.root--is-scrolled {
+  .root__header::after {
+    background-color: color.change(colors.$kobo-gray-65, $alpha: 0.1);
   }
 }
 

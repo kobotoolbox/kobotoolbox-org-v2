@@ -1,12 +1,12 @@
-@use "sizes";
+@use 'sizes';
 
 // We use Lora for headings, and Inter for everything else.
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap');
 
 // Families
-$family-default: "Inter", sans-serif;
-$family-headings: "Lora", serif;
-$family-numbers: "Helvetica Neue", "Helvetica", sans-serif;
+$family-default: 'Inter', sans-serif;
+$family-headings: 'Lora', serif;
+$family-numbers: 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // Limited font sizes palette.
 $size-1: sizes.$r12;

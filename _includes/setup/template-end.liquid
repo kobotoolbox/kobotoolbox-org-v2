@@ -1,3 +1,6 @@
+{% assign versionCache = site.time|date: "%Y-%m-%d_%H-%M-%S" %}
+    <script async src="{{ site.baseurl }}/assets/scripts/kobo.js?{{ versionCache }}"></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26003863-1"></script>
     <script>
