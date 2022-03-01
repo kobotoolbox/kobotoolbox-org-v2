@@ -27,8 +27,8 @@ We are incredibly proud to be among the inaugural class of Anthem winners, an
 inspiring selection of individuals and organizations demonstrating world class
 talent, insight, leadership, and execution. As our platform looks to empower
 communities to tell their stories and express their needs, it is an honor to be
-recognized as a best in class example of work leading the way in the impact
-industry.
+recognized as an example of work leading the way in the humanitarian innovation
+sector.
 
 We would like to extend our heartfelt congratulations to all of our co-awardees,
 including the
