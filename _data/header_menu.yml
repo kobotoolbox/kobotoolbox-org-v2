@@ -1,0 +1,14 @@
+- label: "Features"
+  path: "/features/"
+
+- label: "About us"
+  path: "/about-us/"
+
+- label: "Blog"
+  path: "/blog/"
+
+- label: "Help"
+  path: "/help/"
+
+- label: "Get involved"
+  path: "/get-involved/"

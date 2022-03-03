@@ -1,0 +1,130 @@
+@use 'colors';
+@use 'sass:color';
+@use '_assets/styles/setup/sizes';
+
+/**
+ * Button component
+ *
+ * Modifiers:
+ * - size-m
+ * - size-l
+ * - color-blue
+ * - color-red
+ * - color-storm
+ * - type-bare
+ * - type-frame
+ * - type-full
+ */
+
+// m
+$button-height-m: sizes.$r38;
+$button-font-m: sizes.$r13;
+
+// l
+$button-height-l: sizes.$r52;
+$button-font-l: sizes.$r16;
+
+// misc
+$button-border-width: sizes.$r1;
+
+// Sets colors for `bare` type button.
+@mixin button-bare($mainColor) {
+  color: $mainColor;
+
+  // We use the same style for hover and pending states.
+  &:hover {
+    background-color: colors.$kobo-gray-92;
+    // color: darken($mainColor, 5);
+    color: color.adjust($mainColor, $lightness: -5%);
+  }
+}
+
+// Sets colors for `frame` type button.
+@mixin button-frame($mainColor) {
+  color: $mainColor;
+  border-color: $mainColor;
+
+  // We use the same style for hover and pending states.
+  &:hover {
+    color: colors.$kobo-white;
+    background-color: $mainColor;
+  }
+}
+
+// Sets colors for `full` type button.
+@mixin button-full($mainColor) {
+  color: colors.$kobo-white;
+  background-color: $mainColor;
+  border-color: $mainColor;
+
+  // We use the same style for hover and pending states.
+  &:hover {
+    background-color: darken($mainColor, 5);
+    border-color: darken($mainColor, 5);
+  }
+}
+
+// Sets the different sizes for given size of a button.
+@mixin button-size($height, $font) {
+  min-height: $height * 0.6;
+  min-width: $height; // Ensure we get at minimum a square.
+  line-height: $height * 0.6 - 2 * $button-border-width; // Subtracting the border.
+  font-size: $font;
+
+  // Note: paddings and margins are based on the `$height` (the 'size') variable
+  // to scale with button sizes.
+  // Note 2: the top/bottom paddings influence `min-height` and `line-height`.
+  padding: $height * 0.2 $height * 0.4;
+}
+
+.button {
+  cursor: pointer;
+  color: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  display: block;
+  border-width: $button-border-width;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: sizes.$r6;
+  background-color: transparent;
+}
+
+.button:active {
+  // Make it appear pressed down.
+  transform: translateY(sizes.$r1);
+}
+
+.button[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.button.button--color-blue {
+  &.button--type-bare {@include button-bare(colors.$kobo-blue);}
+  &.button--type-frame {@include button-frame(colors.$kobo-blue);}
+  &.button--type-full {@include button-full(colors.$kobo-blue);}
+}
+
+.button.button--color-red {
+  &.button--type-bare {@include button-bare(colors.$kobo-red);}
+  &.button--type-frame {@include button-frame(colors.$kobo-red);}
+  &.button--type-full {@include button-full(colors.$kobo-red);}
+}
+
+.button.button--color-storm {
+  &.button--type-bare {@include button-bare(colors.$kobo-storm);}
+  &.button--type-frame {@include button-frame(colors.$kobo-storm);}
+  &.button--type-full {@include button-full(colors.$kobo-storm);}
+}
+
+.button.button--size-m {
+  @include button-size($button-height-m, $button-font-m);
+}
+
+.button.button--size-l {
+  @include button-size($button-height-l, $button-font-l);
+}

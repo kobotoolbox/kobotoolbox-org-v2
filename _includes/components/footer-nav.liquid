@@ -1,0 +1,35 @@
+<nav class="footer-nav">
+  <ul class="footer-nav__menu">
+    <label>Organization</label>
+
+    {% for item in site.data.footer_menu_1 %}
+    <li>
+      <a href="{{ site.baseurl }}{{ item.path }}">{{ item.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="footer-nav__menu">
+    <label>Get involved</label>
+
+    {% for item in site.data.footer_menu_2 %}
+    <li>
+      <a href="{{ site.baseurl }}{{ item.path }}">{{ item.label }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <section class="footer-nav__newsletter">
+    {% include components/newsletter-form.liquid %}
+  </section>
+
+  <section class="footer-nav__social">
+    social icons
+
+    <a class="footer-nav__logo" href="{{ site.baseurl }}/">
+      <img
+        src="{{ site.baseurl}}/assets/images/kobotoolbox_logo_mono_white.svg"
+      />
+    </a>
+  </section>
+</nav>

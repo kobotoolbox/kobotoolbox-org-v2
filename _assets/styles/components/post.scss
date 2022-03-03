@@ -1,0 +1,27 @@
+@use 'colors';
+
+.post {
+  a {
+    text-decoration: underline;
+    color: colors.$kobo-dark-blue;
+
+    &:hover {
+      color: colors.$kobo-teal;
+    }
+  }
+}
+
+.post__title {}
+
+.post__date {}
+
+.post__author {}
+
+.post__content {}
+
+.post__related {}
+
+.post__related-link {
+  &.post__related-link--previous {}
+  &.post__related-link--next {}
+}

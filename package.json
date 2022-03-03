@@ -5,13 +5,14 @@
   "repository": "https://github.com/kobotoolbox/kobotoolbox.org.git",
   "bugs": "https://github.com/kobotoolbox/kobotoolbox.org/issues",
   "scripts": {
-    "jekyll-build": "jekyll build",
-    "jekyll-serve": "jekyll serve --watch --baseurl ''",
+    "postinstall": "node ./_scripts/copy-images.js",
+    "jekyll-build": "bundle exec jekyll build",
+    "jekyll-serve": "bundle exec jekyll serve --watch --baseurl ''",
     "assets-watch": "parcel watch _assets/styles/kobo.scss _assets/scripts/kobo.ts --dist-dir assets",
     "assets-build": "parcel build _assets/styles/kobo.scss _assets/scripts/kobo.ts --dist-dir assets"
   },
   "dependencies": {
-    "kobo-common": "https://github.com/kobotoolbox/kobo-common.git#semver:1.7.0"
+    "kobo-common": "https://github.com/kobotoolbox/kobo-common.git#semver:1.9.0"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",

@@ -1,0 +1,34 @@
+{% include setup/template-start.liquid %}
+
+{% include setup/page-header.liquid %}
+
+<main class="root__main" role="main">
+  <div class="root__row">
+    <div class="root__row-content">
+      <article class="post">
+        <h2 class="post__title">{{ page.title }}</h2>
+        <time datetime="{{ page.date }}" class="post__date">{{ page.date | date_to_string }}</time>
+        {% if page.author %}
+          <h5 class="post__author">By {{ page.author }}</h5>
+        {% endif %}
+
+        <section class="post__content">
+          {{ content }}
+        </section>
+
+        <nav class="post__related">
+          {% if page.previous %}
+            <a class="post__related-link post__related-link--previous" href="{{ site.baseurl }}{{ page.previous.url }}">&larr;&nbsp;{{ page.previous.title }}</a>
+          {% endif %}
+          {% if page.next %}
+            <a class="post__related-link post__related-link--next" href="{{ site.baseurl }}{{ page.next.url }}">{{ page.next.title }}&nbsp;&rarr;</a>
+          {% endif %}
+        </nav>
+      </article>
+    </div>
+  </div>
+</main>
+
+{% include setup/page-footer.liquid %}
+
+{% include setup/template-end.liquid %}

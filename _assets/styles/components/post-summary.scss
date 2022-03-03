@@ -1,0 +1,24 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+
+.post-summary {
+
+}
+
+.post-summary__date {}
+
+.post-summary__title {
+  color: colors.$kobo-dark-blue;
+
+  a:hover {
+    text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
+  }
+}
+
+.post-summary__summary {}
+
+.post-summary__thumbnail {}
+
+.post-summary__author {
+
+}

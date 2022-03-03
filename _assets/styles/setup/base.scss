@@ -1,7 +1,7 @@
-@use 'utils';
-@use 'fonts';
-@use 'variables';
 @use 'colors';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/variables';
 
 .test {
   display: grid;
@@ -36,4 +36,18 @@ html {
   font-family: fonts.$family_default;
   background-color: colors.$kobo_white;
   color: colors.$kobo_gray_24;
+}
+
+a {
+  color: currentcolor;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: fonts.$family-headings;
 }

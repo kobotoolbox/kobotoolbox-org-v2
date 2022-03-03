@@ -1,0 +1,14 @@
+- label: "Meet the team"
+  path: "/meet-the-team/"
+
+- label: "Partnerships"
+  path: "/partnerships/"
+
+- label: "Terms of reference"
+  path: "/terms/"
+
+- label: "Privacy"
+  path: "/privacy/"
+
+- label: "Contact"
+  path: "/contact/"

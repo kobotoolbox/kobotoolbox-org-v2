@@ -1,0 +1,80 @@
+@use 'colors';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+
+.header-nav {
+  @include utils.center-row-flex;
+
+  width: 100%;
+}
+
+.header-nav__logo {
+  display: block;
+
+  img {
+    width: utils.rem(180px);
+    transform: scale(1);
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover img {
+    transform: scale(1.025);
+  }
+}
+
+.header-nav__menu {
+  @include utils.center-row-flex;
+
+  flex: 1;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0 sizes.$r10;
+  padding: 0;
+}
+
+.header-nav__menu-item {
+  padding: 0 sizes.$r10;
+  margin: 0 sizes.$r10;
+  color: colors.$kobo-gray-24;
+  font-size: sizes.$r12;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: utils.rem(variables.$header-height);
+  line-height: utils.rem(variables.$header-height);
+  display: block;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: sizes.$r30;
+    height: sizes.$r8;
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - #{sizes.$r30 * 0.5});
+    background-color: transparent;
+    transform: scaleY(0);
+    transform-origin: 50% 100%;
+    transition: transform 0.25s ease-out, background-color 0.25s ease-out;
+    transition-delay: 0.1s;
+  }
+
+  &.header-nav__menu-item--active::after {
+    background-color: colors.$kobo-teal;
+    transform: scaleY(1);
+  }
+
+  &:not(.header-nav__menu-item--active):hover::after {
+    background-color: colors.$kobo-teal;
+    transform: scaleY(1);
+  }
+}
+
+.header-nav__buttons {
+  @include utils.center-row-flex;
+
+  list-style: none;
+  margin: 0 sizes.$r10;
+  padding: 0;
+}

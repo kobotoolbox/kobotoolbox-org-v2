@@ -1,0 +1,59 @@
+@use 'colors';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+
+.footer-nav {
+  @include utils.center-row-flex;
+
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: sizes.$r80 0;
+  width: 100%;
+}
+
+.footer-nav__menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  label {
+    font-weight: 400;
+    font-size: sizes.$r14;
+    color: colors.$kobo-light-blue;
+    text-transform: uppercase;
+  }
+
+  li a {
+    font-weight: 600;
+    font-size: sizes.$r16;
+    color: colors.$kobo-white;
+    margin-top: sizes.$r19;
+    display: block;
+
+    &:hover {
+      text-decoration-color: colors.$kobo-teal;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: sizes.$r2;
+    }
+  }
+}
+
+.footer-nav__newsletter {}
+
+.footer-nav__social {}
+
+.footer-nav__logo {
+  display: block;
+
+  img {
+    width: utils.rem(180px);
+    transform: scale(1);
+    transition: transform 0.25s ease-out;
+  }
+
+  &:hover img {
+    transform: scale(1.025);
+  }
+}

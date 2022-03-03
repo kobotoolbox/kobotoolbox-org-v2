@@ -1,0 +1,22 @@
+<nav class="header-nav">
+  <a class="header-nav__logo" href="{{ site.baseurl }}/">
+    <img src="{{ site.baseurl}}/assets/images/kobotoolbox_logo_default_for-light-bg.svg"/>
+  </a>
+
+  <ul class="header-nav__menu">
+    {% for item in site.data.header_menu %}
+    <li>
+      <a
+        class="header-nav__menu-item {% if page.dir == item.path %}header-nav__menu-item--active{% endif%}"
+        href="{{ site.baseurl }}{{ item.path }}"
+        >{{ item.label }}</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class="header-nav__buttons">
+    <li><a class="button button--size-m button--type-frame button--color-blue" href="{{ site.baseurl}}/sign-in">Sign in</a></li>
+    <li><a class="button button--size-m button--type-full button--color-blue" href="{{ site.baseurl}}/donate">Donate</a></li>
+  </ul>
+</nav>

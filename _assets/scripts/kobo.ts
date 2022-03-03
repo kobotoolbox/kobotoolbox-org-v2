@@ -4,5 +4,9 @@ function initializeWebsite() {
   const scrollObs = new ScrollObserver();
 }
 
-window.addEventListener('DOMContentLoaded', initializeWebsite.bind(this));
+// Previously this was hooked up to `DOMContentLoaded`, but `hubspot` is
+// causing it to stop working,
+(() => {
+  initializeWebsite();
+})();
 
