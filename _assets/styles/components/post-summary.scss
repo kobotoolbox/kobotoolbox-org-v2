@@ -4,7 +4,7 @@
 .post-summary {
   display: flex;
   flex-direction: row;
-  padding: sizes.$r52 0;
+  padding: sizes.$r50 0;
 }
 
 .post-summary + .post-summary {
@@ -12,7 +12,7 @@
 }
 
 .post-summary__left {
-  padding-right: sizes.$r52;
+  padding-right: sizes.$r50;
 }
 
 .post-summary__right {
@@ -63,7 +63,7 @@
 
 .post-summary__summary {
   flex: 1;
-  font-size: sizes.$r16;
+  font-size: sizes.$r15;
   line-height: 1.6;
   margin: sizes.$r24 0;
 }
@@ -79,7 +79,7 @@
 .post-summary__date {}
 
 .post-summary__author {
-  font-size: sizes.$r18;
+  font-size: sizes.$r19;
   font-weight: 700;
 
   &::before {
@@ -88,6 +88,6 @@
     height: sizes.$r10;
     background-color: colors.$kobo-blue;
     vertical-align: sizes.$r1;
-    margin: 0 sizes.$r18;
+    margin: 0 sizes.$r19;
   }
 }

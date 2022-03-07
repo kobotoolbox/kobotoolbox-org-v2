@@ -6,7 +6,7 @@
 }
 
 @function rem($px_value) {
-  @return math.div(strip-unit($px_value), strip-unit(variables.$root_font_size)) *
+  @return math.div(strip-unit($px_value), strip-unit(variables.$root-font-size)) *
     1rem;
 }
 
