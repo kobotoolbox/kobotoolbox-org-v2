@@ -6,7 +6,7 @@
 .banner-text {
   h1 {
     display: block;
-    width: 100%;
+    width: 50%;
     font-size: sizes.$r46;
     font-weight: 600;
     line-height: 1.4;
@@ -17,7 +17,7 @@
   h2 {
     font-family: fonts.$family-default;
     display: block;
-    width: 100%;
+    width: 50%;
     font-size: sizes.$r13;
     font-weight: 600;
     line-height: 1.4;
@@ -28,5 +28,6 @@
   p {
     font-size: sizes.$r15;
     line-height: 1.6;
+    width: 50%;
   }
 }
