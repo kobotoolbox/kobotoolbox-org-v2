@@ -8,7 +8,7 @@ summary:
     200 aid workers on using the KoboCollect app to gather data for emergency
     response and disaster risk management, which is used to empower communities
     to become partners in building their own resilience.
-thumbnail: /images/blog/CDB_blog_01.jpg
+thumbnail: CDB_blog_01.jpg
 ---
 
 Latin America and the Caribbean are two of the most disaster-prone regions in

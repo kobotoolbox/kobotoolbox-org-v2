@@ -9,7 +9,7 @@ summary:
     with over 15,000 girls throughout the country during COVID-19 by loading the
     KoboCollect app onto 700 smartphones and distributing them to over 700
     mentors for their Girls' Circle program.
-thumbnail: /images/blog/purposeful_01.jpg
+thumbnail: purposeful_01.jpg
 ---
 
 Throughout Sierra Leone, girls face many barriers to accessing education and

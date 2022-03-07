@@ -21,7 +21,7 @@
   left: 0;
   width: 100%;
   background-color: colors.$kobo-white;
-  z-index: 10;
+  z-index: variables.$z-header;
 
   // The shadow below sticky header. Hidden initially.
   &::after {
@@ -62,14 +62,44 @@
 
 .root__row {
   width: 100%;
+
+  &.root__row--light-blue {
+    background-color: colors.$kobo-light-blue;
+  }
+
+  &.root__row--mid-blue {
+    background-color: colors.$kobo-mid-blue;
+  }
+
+  &.root__row--light-teal {
+    background-color: colors.$kobo-light-teal;
+  }
+
+  &.root__row--teal {
+    color: colors.$kobo-white;
+    background-color: colors.$kobo-teal;
+  }
+
+  &.root__row--storm {
+    background-color: colors.$kobo-light-storm;
+  }
+
+  &.root__row--gray {
+    background-color: colors.$kobo-gray-98;
+  }
+
+  &.root__row--white {
+    background-color: colors.$kobo-white;
+  }
 }
 
 .root__row-content {
   margin: 0 auto;
   width: 100%;
   max-width: utils.rem(variables.$content-width);
+
+  &.root__row-content--wide {
+    max-width: utils.rem(variables.$wide-content-width);
+  }
 }
 
-.root__row-content--wide {
-  max-width: utils.rem(variables.$wide-content-width);
-}

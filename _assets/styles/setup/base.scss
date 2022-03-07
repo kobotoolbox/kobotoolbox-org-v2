@@ -3,13 +3,6 @@
 @use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/variables';
 
-.test {
-  display: grid;
-  transition: all 0.5s;
-  user-select: none;
-  background: linear-gradient(to bottom, white, black);
-}
-
 html {
   // Sorry for complexity here, but we want the fluid size to become
   // $root_font_size at 1440px viewport width. That is why we are introducing
@@ -38,6 +31,10 @@ html {
   color: colors.$kobo_gray_24;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 a {
   color: currentcolor;
   text-decoration: none;
@@ -50,4 +47,5 @@ h4,
 h5,
 h6 {
   font-family: fonts.$family-headings;
+  margin: 0;
 }

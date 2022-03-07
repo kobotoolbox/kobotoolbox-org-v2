@@ -1,7 +1,7 @@
 ---
 title: Documenting Attacks on Health Care in Syria
 summary: PHR has systematically documented these war crimes since the start of the Syrian conflict
-thumbnail: /images/blog/PHRmap.jpg
+thumbnail: PHRmap.jpg
 ---
 
 ![PHR Syria Map](/images/blog/PHRmap.jpg)

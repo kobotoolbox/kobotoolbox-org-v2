@@ -1,0 +1,48 @@
+@use 'colors';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/fonts';
+
+.feature-row {
+  // TODO
+}
+
+.feature-row__content {
+  @include utils.center-row-flex;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: utils.rem(variables.$full-content-width);
+
+  h1 {
+    font-family: fonts.$family-default;
+    font-weight: 700;
+    font-size: sizes.$r36;
+    line-height: 1.4;
+    margin: 0;
+  }
+
+  p {
+    font-size: sizes.$r16;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+
+.feature-row__left-side {
+  width: 40%;
+  padding-left: (variables.$full-content-width - variables.$content-width) * 0.5;
+  padding-right: sizes.$r30;
+}
+
+.feature-row__right-side {
+  width: 60%;
+}
+
+.feature-row__icon {}
+
+.feature-row__image {
+  display: block;
+  max-width: 100%;
+}

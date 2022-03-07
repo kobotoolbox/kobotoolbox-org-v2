@@ -6,7 +6,7 @@ summary: Despite shifting global attention toward the COVID-19 pandemic
     throughout 2020 and 2021, the war devastating Syria and its people drags on. The
     lives of millions of Syrians fleeing for safety continues to be precarious and
     their futures uncertain.
-thumbnail: /images/blog/unhcr_image_01.jpg
+thumbnail: unhcr_image_01.jpg
 ---
 
 **Despite shifting global attention toward the COVID-19 pandemic throughout 2020

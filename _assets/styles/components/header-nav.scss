@@ -45,6 +45,7 @@
   line-height: utils.rem(variables.$header-height);
   display: block;
   position: relative;
+  white-space: nowrap;
 
   &::after {
     content: '';

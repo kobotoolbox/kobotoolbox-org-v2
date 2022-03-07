@@ -6,28 +6,28 @@ layout: null
 
   <!-- home page -->
   <url>
-    <loc>{{ site.baseurl }}</loc>
+    <loc>{{site.baseurl}}</loc>
   </url>
 
   <!-- blog -->
   <url>
-    <loc>{{ site.baseurl }}/blog</loc>
+    <loc>{{site.baseurl}}/blog</loc>
   </url>
 
   <!-- terms -->
   <url>
-    <loc>{{ site.baseurl }}/terms</loc>
+    <loc>{{site.baseurl}}/terms</loc>
   </url>
 
   <!-- privacy -->
   <url>
-    <loc>{{ site.baseurl }}/privacy</loc>
+    <loc>{{site.baseurl}}/privacy</loc>
   </url>
 
   <!-- all posts -->
   {% for post in site.posts %}
   <url>
-    <loc>{{ site.baseurl }}/blog{{ post.url }}</loc>
+    <loc>{{site.baseurl}}/blog{{post.url}}</loc>
   </url>
   {% endfor %}
 

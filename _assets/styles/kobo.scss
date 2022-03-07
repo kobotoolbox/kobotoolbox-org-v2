@@ -7,9 +7,16 @@
 @import 'setup/root-layout';
 
 // 2. components
+@import 'components/banner-text';
 @import 'components/button';
+@import 'components/feature-row';
 @import 'components/footer-nav';
 @import 'components/header-nav';
 @import 'components/image';
+@import 'components/picture-banner';
 @import 'components/post-summary';
 @import 'components/post';
+@import 'components/small-banner';
+
+// 3. sections
+@import 'sections/home-banner';

@@ -1,20 +1,25 @@
 {% comment %} @prop post {% endcomment%}
 <article class="post-summary">
-  <a class="post-summary__thumbnail" href="{{ site.baseurl }}{{ include.post.url }}">
-    <img src="{{ include.post.thumbnail }}"/>
+  <a class="post-summary__thumbnail" href="{{site.baseurl}}{{include.post.url}}">
+    {% if include.post.thumbnail and include.post.thumbnail != "" and include.post.thumbnail != nil %}
+      <img src="{{site.baseurl}}/assets/images/blog/{{include.post.thumbnail}}"/>
+    {% else %}
+      <!-- TODO use svg logo to build a default image? -->
+      <img src="{{site.baseurl}}/assets/images/blog-post-default.png"/>
+    {% endif %}
   </a>
 
   <h2 class="post-summary__title">
-    <a href="{{ site.baseurl }}{{ include.post.url }}">
-      {{ include.post.title }}
+    <a href="{{site.baseurl}}{{include.post.url}}">
+      {{include.post.title}}
     </a>
   </h2>
 
-  <p class="post-summary__summary">{{ include.post.summary }}</p>
+  <p class="post-summary__summary">{{include.post.summary}}</p>
 
-  <time class="post-summary__date" datetime="{{ include.post.date }}">
-    {{ include.post.date | date_to_string }}
+  <time class="post-summary__date" datetime="{{include.post.date}}">
+    {{include.post.date | date_to_string}}
   </time>
 
-  <span class="post-summary__author">{{ include.post.author }}</span>
+  <span class="post-summary__author">{{include.post.author}}</span>
 </article>

@@ -1,0 +1,9 @@
+{% comment %}
+Background for picture-banner component that takes 100% given space.
+
+@prop image_url - path relative to assets/images/
+{% endcomment %}
+<div 
+  class="picture-banner__background" 
+  style="background-image: url('{{site.baseurl}}/assets/images/{{include.image_url}}');"
+></div>
