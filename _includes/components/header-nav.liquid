@@ -16,7 +16,7 @@
   </ul>
 
   <ul class="header-nav__buttons">
-    <li><a class="button button--size-m button--type-frame button--color-blue" href="{{site.baseurl}}/sign-in">Sign in</a></li>
-    <li><a class="button button--size-m button--type-full button--color-blue" href="{{site.baseurl}}/donate">Donate</a></li>
+    <li>{% include components/button.liquid size="m" type="frame" color="blue" label="Sign in" url="/sign-in" %}</li>
+    <li>{% include components/button.liquid size="m" type="full" color="blue" label="Donate" url="/donate" %}</li>
   </ul>
 </nav>

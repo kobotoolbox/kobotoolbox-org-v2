@@ -1,10 +1,14 @@
 {% comment %}
 This is the banner section for home page.
 {% endcomment %}
-<div class="root__row picture-banner" id="home-banner">
-  {% include components/picture-banner-background.liquid image_url="test/mad-max-beyond-thunderdome.jpg" %}
-  <div class="root__row-content banner-text">
+<div class="root__row picture-banner home-banner">
+  {% include components/picture-banner-background.liquid image_url="sections/home-kobo-2687.jpg" %}
+  <div class="root__row-content picture-banner__text banner-text">
     <h1>Enabling<br/>humanitarians<br/>understanding those<br/>who need it most.</h1>
     <h2>The free & open source data collection standard</h2>
+    <ul class="home-banner__buttons">
+      <li>{% include components/button.liquid size="l" type="full" color="blue" label="Help us keep it free" url="/donate" %}</li>
+      <li>{% include components/button.liquid size="l" type="frame" color="blue" label="Create an account" url="/sign-in" %}</li>
+    </ul>
   </div>
 </div>

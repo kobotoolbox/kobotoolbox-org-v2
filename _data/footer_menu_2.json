@@ -1,0 +1,18 @@
+[
+   {
+      "label": "Donate",
+      "path": "/donate/"
+   },
+   {
+      "label": "Volunteer",
+      "path": "/volunteer/"
+   },
+   {
+      "label": "Partner",
+      "path": "/partner/"
+   },
+   {
+      "label": "Jobs",
+      "path": "/jobs/"
+   }
+]

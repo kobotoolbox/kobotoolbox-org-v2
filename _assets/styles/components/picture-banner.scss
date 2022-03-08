@@ -1,4 +1,5 @@
 @use 'colors';
+@use 'sass:color';
 @use '_assets/styles/setup/utils';
 
 $gradient-width: utils.rem(720px);
@@ -6,6 +7,7 @@ $gradient-width: utils.rem(720px);
 .picture-banner {
   overflow: hidden;
   position: relative;
+  background-color: colors.$kobo-white;
 }
 
 // NOTE: requires a non-static positioned parent.
@@ -15,10 +17,16 @@ $gradient-width: utils.rem(720px);
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  background-size: cover;
+  z-index: 1;
+
+  // Image is only on the right side and underneath the gradient, there is no
+  // image on the left side of the gradient.
+  // `background-image` is defined inline in `picture-banner-background.liquid`.
+  background-size: calc(50% + #{$gradient-width * 0.5});
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: right top;
+  background-color: color.change(colors.$kobo-dark-blue, $alpha: 0.5);
+  background-blend-mode: screen;
 
   // Rectangle on the left side of the gradient one.
   &::before {
@@ -41,4 +49,9 @@ $gradient-width: utils.rem(720px);
     height: 100%;
     background-image: linear-gradient(72.57deg, #{colors.$kobo-white} 30.94%, transparent 77.57%);
   }
+}
+
+.picture-banner__text {
+  position: relative;
+  z-index: 2;
 }

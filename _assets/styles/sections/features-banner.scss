@@ -1,8 +1,6 @@
-@use 'colors';
-@use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
-@use '_assets/styles/setup/variables';
 
-#features-banner {
-  // TODO
+.features-banner .picture-banner__background {
+  // Override the position of the image
+  // background-position: 125% -#{sizes.$r24};
 }

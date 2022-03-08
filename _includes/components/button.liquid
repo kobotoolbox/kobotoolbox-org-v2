@@ -1,0 +1,10 @@
+{% comment %}
+A button with link.
+
+@prop size - m or l
+@prop type - bare, frame or full
+@prop color - blue, red or storm
+@prop label
+@prop url
+{% endcomment %}
+<a class="button button--size-{{include.size}} button--type-{{include.type}} button--color-{{include.color}}" href="{{include.url}}">{{include.label}}</a>

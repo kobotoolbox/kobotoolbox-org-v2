@@ -1,8 +1,28 @@
-@use 'colors';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
-@use '_assets/styles/setup/variables';
 
-#home-banner {
-  // TODO
+.home-banner .picture-banner__background {
+  // Override the position of the image
+  background-position: 125% 6%;
+}
+
+.home-banner .picture-banner__text {
+  margin-top: sizes.$r50;
+  margin-bottom: sizes.$r70;
+}
+
+.home-banner .banner-text h1 {
+  margin-bottom: sizes.$r70;
+}
+
+.home-banner__buttons {
+  @include utils.center-row-flex;
+
+  list-style: none;
+  margin: sizes.$r24 0 0 0;
+  padding: 0;
+
+  > li + li {
+    margin-left: sizes.$r10;
+  }
 }

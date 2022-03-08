@@ -1,0 +1,6 @@
+@use '_assets/styles/setup/sizes';
+
+.blog-banner .picture-banner__background {
+  // Override the position of the image
+  background-position: 108% 1%;
+}

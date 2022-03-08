@@ -78,6 +78,10 @@
   @include utils.center-row-flex;
 
   list-style: none;
-  margin: 0 sizes.$r10;
+  margin: 0 0 0 sizes.$r10;
   padding: 0;
+
+  > li + li {
+    margin-left: sizes.$r10;
+  }
 }
