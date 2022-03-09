@@ -1,0 +1,84 @@
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.faqs {
+  h1 {
+    font-size: sizes.$r36;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: sizes.$r70 0;
+  }
+}
+
+.faqs__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.faqs__item {
+  border-top: sizes.$r1 solid colors.$kobo-gray-85;
+  padding: sizes.$r19 0 sizes.$r15;
+}
+
+.faqs__question {
+  @include utils.center-row-flex;
+
+  width: 100%;
+  font-size: sizes.$r24;
+  font-weight: 600;
+  font-family: fonts.$family-headings;
+  color: colors.$kobo-dark-blue;
+  padding-bottom: sizes.$r15;
+
+  &:hover {
+    text-decoration-color: colors.$kobo-teal;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: sizes.$r4;
+  }
+
+  label {
+    flex: 1;
+    cursor: inherit;
+  }
+
+  svg {
+    fill: colors.$kobo-storm;
+  }
+}
+
+.faqs__answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: grid-template-rows 0.25s ease-in;
+}
+
+.faqs__answer-content {
+  align-self: start;
+  min-height: 0;
+  transition: visibility 0.25s ease-in;
+  visibility: hidden;
+
+  p {
+    margin: 0 0 sizes.$r15;
+  }
+}
+
+.faqs__item.faqs__item--opened {
+  .faqs__question svg {
+    transform: rotate(180deg);
+  }
+
+  .faqs__answer {
+    grid-template-rows: 1fr;
+  }
+
+  .faqs__answer-content {
+    visibility: visible;
+  }
+}

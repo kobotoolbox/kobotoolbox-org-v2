@@ -1,0 +1,19 @@
+<div class="root__row root__row--gray faqs">
+  <div class="root__row-content">
+    <h1>FAQs</h1>
+
+    <ul class="faqs__list" data-faqs>
+      {% for item in site.data.faqs %}
+        <li class="faqs__item" data-faqs-item>
+          <a data-faqs-trigger href="#" class="faqs__question">
+            <label>{{item.question}}</label>
+            {% include svgs/triangle.svg %}
+          </a>
+          <article class="faqs__answer">
+            <div class="faqs__answer-content"><p>{{item.answer}}</p></div>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
