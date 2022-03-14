@@ -5,21 +5,17 @@ page_id: "home"
 
 {% include sections/home-banner.liquid %}
 
-<div class="root__row root__row--light-blue">
-  <div class="root__row-content">
-    Changing the world, one survey at a time
-  </div>
-</div>
+{% include sections/featured-posts.liquid %}
 
-<div class="root__row">
-  <div class="root__row-content">
-    Open-source data collection
-  </div>
-</div>
+{% include sections/features-list.liquid %}
 
-<div class="root__row">
+<div class="root__row root__row--white">
   <div class="root__row-content">
-    Get started
+    <section class="get-started">
+      <h2>Get started</h2>
+
+      {% include components/quick-links.liquid links=site.data.quick-links-home %}
+    </section>
   </div>
 </div>
 

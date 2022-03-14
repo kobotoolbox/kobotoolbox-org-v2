@@ -5,33 +5,13 @@ page_id: "features"
 
 {% include sections/features-banner.liquid %}
 
-{% include components/feature-row.liquid
-  title="Design fully customizable forms"
-  description="TODO"
-  row_color="light-blue"
-  image_url="test/mad-max-beyond-thunderdome.jpg"
-%}
-
-{% include components/feature-row.liquid
-  title="Collect data anywhere, online or offline"
-  description="TODO"
-  row_color="gray"
-%}
-
-{% include components/feature-row.liquid
-  title="Review, analyze and download your data"
-  description="TODO"
-  row_color="light-teal"
-%}
-
-{% include components/feature-row.liquid
-  title="Collaborate and manage projects and teams"
-  description="TODO"
-  row_color="storm"
-%}
-
-{% include components/feature-row.liquid
-  title="Integrate with external tools and applications"
-  description="TODO"
-  row_color="light-blue"
-%}
+{% for feature in site.data.features %}
+  {% include components/feature-row.liquid
+    id=feature.id
+    title=feature.title
+    description=feature.description
+    row_color=feature.row_color
+    image_url=feature.image
+    icon_url=feature.icon
+  %}
+{% endfor %}

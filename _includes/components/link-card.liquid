@@ -1,0 +1,36 @@
+{% comment %} 
+A small post card with links to full post.
+
+@param title
+@param description
+@param image
+@param link_title
+@param link_url
+{% endcomment%}
+<article class="link-card">
+  <a
+    class="link-card__thumbnail"
+    href="{{include.link_url}}"
+  >
+    {% include components/thumbnail.liquid image_url=include.image %}
+  </a>
+
+  <h3 class="link-card__title">
+    <a href="{{site.baseurl}}{{include.link_url}}">
+      {{include.title}}
+    </a>
+  </h3>
+
+  <p class="link-card__description">
+    {{include.description}}
+  </p>
+
+  {% capture link_title_full %}{{include.link_title}} &rarr;{% endcapture %}
+  {% include components/button.liquid
+    size="m"
+    type="bare"
+    color="blue"
+    label=link_title_full
+    url=include.link_url
+  %}
+</article>

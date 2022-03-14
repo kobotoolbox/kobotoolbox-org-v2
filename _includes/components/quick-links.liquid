@@ -1,0 +1,16 @@
+{% comment %}
+@param links - list of quick links objects
+{% endcomment %}
+<ul class="quick-links">
+  {% for link in include.links %}
+    <li>
+      {% include components/link-card.liquid
+        title=link.title
+        description=link.description
+        image=link.image
+        link_title=link.link_title
+        link_url=link.link_url
+      %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,110 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+.featured-posts__row {
+  // This makes half of the area blue, with hard edge changing into white.
+  background-image: linear-gradient(180deg, colors.$kobo-light-blue 0 45%, transparent 45% 100%);
+  background-color: colors.$kobo-white;
+}
+
+.featured-posts {
+  @include utils.center-row-flex;
+
+  width: 100%;
+  max-width: utils.rem(variables.$wide-content-width);
+  margin: 0 auto;
+  padding: sizes.$r50 0 sizes.$r30;
+}
+
+.featured-posts__slider-wrapper {
+  width: 100%;
+  max-width: utils.rem(variables.$content-width);
+  margin: 0 auto;
+}
+
+.featured-posts__slider {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.featured-posts__slider-item {
+  height: auto;
+
+  .post-card {
+    height: 100%;
+  }
+}
+
+.featured-posts__prev,
+.featured-posts__next {
+  @include utils.button-reset;
+
+  width: 0.5 * (utils.rem(variables.$wide-content-width) - utils.rem(variables.$content-width));
+  height: sizes.$r70;
+  color: colors.$kobo-gray-85;
+
+  &:hover {
+    color: colors.$kobo-teal;
+  }
+
+  svg {
+    fill: currentcolor;
+    height: utils.rem(24px);
+    width: utils.rem(16px);
+  }
+}
+
+.featured-posts .tns-nav {
+  @include utils.center-row-flex;
+
+  justify-content: center;
+  list-style: none;
+  margin-top: sizes.$r30;
+
+  button {
+    @include utils.button-reset;
+
+    display: block;
+    width: sizes.$r10;
+    height: sizes.$r10;
+    border-radius: 50%;
+    background-color: colors.$kobo-gray-92;
+    cursor: pointer;
+    margin: sizes.$r8;
+
+    &.tns-nav-active {
+      background-color: colors.$kobo-blue;
+    }
+  }
+}
+
+// We disable tiny-slider on smaller screens, thus we need to handle the layout ourselves.
+@media screen and (max-width: #{variables.$wide-content-width}) {
+  .featured-posts__row {
+    background: colors.$kobo-light-blue;
+  }
+
+  .featured-posts__slider-wrapper .featured-posts__slider-item {
+    padding: sizes.$r10;
+  }
+
+  .featured-posts__slider {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .featured-posts__prev,
+  .featured-posts__next {
+    display: none;
+  }
+}
+
+// HACK FIX: tiny-slider shouldn't add this spacing for last item.
+#tns1 > .tns-item:last-child {
+  padding-right: 0 !important;
+}

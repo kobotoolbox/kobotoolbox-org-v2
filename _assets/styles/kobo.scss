@@ -1,5 +1,7 @@
 // 0. We don't import variables into global context.
 
+@import '../../node_modules/tiny-slider/dist/tiny-slider.css';
+
 // 1. setup styles
 @import 'setup/normalize';
 @import 'setup/fonts';
@@ -9,17 +11,25 @@
 // 2. components
 @import 'components/banner-text';
 @import 'components/button';
+@import 'components/feature-card';
 @import 'components/feature-row';
 @import 'components/footer-nav';
 @import 'components/header-nav';
 @import 'components/image';
+@import 'components/link-card';
 @import 'components/picture-banner';
+@import 'components/post-card';
 @import 'components/post-summary';
 @import 'components/post';
+@import 'components/quick-links';
 @import 'components/small-banner';
+@import 'components/thumbnail';
+@import 'components/word-typer';
 
 // 3. sections
 @import 'sections/blog-banner';
 @import 'sections/faqs';
+@import 'sections/featured-posts';
 @import 'sections/features-banner';
+@import 'sections/features-list';
 @import 'sections/home-banner';

@@ -1,0 +1,33 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/fonts';
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  width: sizes.$r330;
+}
+
+.link-card__thumbnail {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: sizes.$r200;
+  border-radius: sizes.$r6;
+  overflow: hidden;
+}
+
+.link-card__title {
+  font-size: sizes.$r19;
+  color: colors.$kobo-gray-24;
+  margin: sizes.$r30 0;
+  flex: 1;
+
+  a:hover {
+    text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
+  }
+}
+
+.link-card__description {
+
+}

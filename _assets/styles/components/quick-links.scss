@@ -1,0 +1,18 @@
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+
+.quick-links {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    flex: 1;
+    margin: sizes.$r24;
+  }
+}

@@ -1,0 +1,33 @@
+{% assign featured_posts = site.posts | where:"is_featured",true %}
+
+{% comment %}
+We hide whole section if there are no featured posts.
+{% endcomment %}
+{% if featured_posts.size >= 1 %}
+<div class="root__row featured-posts__row">
+  <div class="root__row-content root__row-content--full">
+    <section class="featured-posts">
+      <button class="featured-posts__prev" data-featured-posts-prev>
+        {% include svgs/triangle-left.svg %}
+      </button>
+
+      <div class="featured-posts__slider-wrapper">
+        {% comment %}
+          NOTE: this element will be replaced by tiny-slider
+        {% endcomment %}
+        <div class="featured-posts__slider" data-featured-posts-slider>
+          {% for post in featured_posts %}
+            <div class="featured-posts__slider-item">
+              {% include components/post-card.liquid post=post %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <button class="featured-posts__next" data-featured-posts-next>
+        {% include svgs/triangle-right.svg %}
+      </button>
+    </section>
+  </div>
+</div>
+{% endif %}

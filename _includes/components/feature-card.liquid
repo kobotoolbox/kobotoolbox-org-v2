@@ -1,0 +1,13 @@
+{% comment %}
+Displays a link to feature.
+
+@param id
+@param title
+@param icon_url - path to svg illustration
+{% endcomment %}
+<a class="feature-card" href="{{site.baseurl}}/features#{{feature.id}}">
+  {% if include.icon_url and include.icon_url != "" and include.icon_url != nil %}
+    <img class="feature-card__icon" src="{{site.baseurl}}/assets/images/{{include.icon_url}}"/>
+  {% endif %}
+  <label>{{include.title}}</label>
+</a>

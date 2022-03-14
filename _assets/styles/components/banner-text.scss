@@ -1,15 +1,14 @@
 @use 'colors';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/variables';
 
 // Add this to a banner to make the text inside use these rules.
 .banner-text {
   h1 {
     display: block;
-    width: 50%;
     font-size: sizes.$r46;
     font-weight: 600;
-    line-height: 1.4;
     color: colors.$kobo-gray-24;
     margin: sizes.$r30 0;
   }
@@ -17,17 +16,27 @@
   h2 {
     font-family: fonts.$family-default;
     display: block;
-    width: 50%;
     font-size: sizes.$r13;
     font-weight: 600;
-    line-height: 1.4;
     color: colors.$kobo-storm;
     text-transform: uppercase;
   }
+}
 
-  p {
-    font-size: sizes.$r15;
-    line-height: 1.6;
+@media screen and (max-width: #{variables.$content-width}) {
+  .banner-text h1 div {
+    display: inline;
+  }
+
+  .banner-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: #{variables.$content-width + 1}) {
+  .banner-text h1,
+  .banner-text h2,
+  .banner-text p {
     width: 50%;
   }
 }

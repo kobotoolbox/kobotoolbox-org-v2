@@ -9,6 +9,7 @@ summary:
     response and disaster risk management, which is used to empower communities
     to become partners in building their own resilience.
 thumbnail: CDB_blog_01.jpg
+is_featured: true
 ---
 
 Latin America and the Caribbean are two of the most disaster-prone regions in

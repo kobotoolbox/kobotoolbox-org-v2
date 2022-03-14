@@ -13,7 +13,8 @@
     "assets-build": "parcel build _assets/styles/kobo.scss _assets/scripts/kobo.ts --dist-dir assets"
   },
   "dependencies": {
-    "kobo-common": "https://github.com/kobotoolbox/kobo-common.git#semver:1.15.0"
+    "kobo-common": "https://github.com/kobotoolbox/kobo-common.git#semver:1.15.0",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",

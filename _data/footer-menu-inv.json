@@ -1,0 +1,18 @@
+[
+   {
+      "label": "Donate",
+      "path": "/get-involved#donate"
+   },
+   {
+      "label": "Participate",
+      "path": "/get-involved#participate"
+   },
+   {
+      "label": "Volunteer",
+      "path": "/get-involved#volunteer"
+   },
+   {
+      "label": "Join our team",
+      "path": "/get-involved#join-our-team"
+   }
+]

@@ -1,0 +1,52 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/fonts';
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  width: sizes.$r330;
+  border-radius: sizes.$r6;
+  overflow: hidden;
+  border: sizes.$r1 solid colors.$kobo-gray-85;
+  background-color: colors.$kobo-white;
+}
+
+.post-card__thumbnail {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: sizes.$r160;
+
+  &:focus-visible {
+    outline: 0;
+
+    .thumbnail .thumbnail__image {
+      box-shadow: inset 0 0 0 sizes.$r4 colors.$kobo-blue;
+    }
+  }
+}
+
+.post-card__title {
+  font-size: sizes.$r19;
+  color: colors.$kobo-gray-24;
+  margin: sizes.$r30;
+  flex: 1;
+
+  a:hover {
+    text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
+  }
+}
+
+.post-card__link {
+  display: block;
+  text-align: right;
+  color: colors.$kobo-storm;
+  margin: 0 sizes.$r30 sizes.$r30;
+  transform: translateX(0);
+  transition: transform 0.1s ease-in;
+
+  &:hover {
+    transform: translateX(sizes.$r6);
+  }
+}

@@ -1,13 +1,14 @@
 {% comment %}
 Displays a big image on the right and tile with description on the left.
 
-@prop title
-@prop description
-@prop row_color - for root__row
-@prop icon_url - path to svg illustration
-@prop image_url - path to big image on the right, relative to assets/images/
+@param id
+@param title
+@param description
+@param row_color - for root__row
+@param icon_url - path to svg illustration
+@param image_url - path to big image on the right, relative to assets/images/
 {% endcomment %}
-<div class="root__row root__row--{{include.row_color}} feature-row">
+<div class="root__row root__row--{{include.row_color}} feature-row" id="{{include.id}}">
   <div class="feature-row__content">
     <div class="feature-row__left-side">
       {% if include.icon_url and include.icon_url != "" and include.icon_url != nil %}

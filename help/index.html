@@ -3,11 +3,12 @@ title: "Help"
 page_id: "help"
 ---
 
-{% include components/small-banner.liquid title="The support you need,<br/>powered by a strong<br/>community of users" %}
+{% include components/small-banner.liquid title="The support you need,;powered by a strong;community of users" %}
+
 
 <div class="root__row root__row--storm">
   <div class="root__row-content">
-    quick links section
+    {% include components/quick-links.liquid links=site.data.quick-links-help %}
   </div>
 </div>
 

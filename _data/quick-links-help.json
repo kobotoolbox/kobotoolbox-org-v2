@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Help site documentation",
+    "description": "Our help site has all the guidance and technical documentation you need to make the most of KoboToolbox. Find the answer to your questions in one of our many articles.",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Visit the help site",
+    "link_url": "https://support.kobotoolbox.org"
+  },
+  {
+    "title": "Join the community",
+    "description": "Are you stuck with a problem you can’t find the answer to? Try our forum and see what the KoboToolbox community can do for you, and how you can help others!",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Visit the forum",
+    "link_url": "https://community.kobotoolbox.org"
+  },
+  {
+    "title": "Learn about XLSForms",
+    "description": "This site will help you author XLSForms. XLSForm is a tool used to simplify the creation of forms. XLSForm will convert forms authored in Excel into XForms that can be used with a number of web or mobile platforms.",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Visit the documentation",
+    "link_url": "https://xlsform.org/"
+  },
+]

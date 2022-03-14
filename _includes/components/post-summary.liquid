@@ -1,14 +1,16 @@
 {% comment %} 
-@prop post 
+A horizontal post summary with description and links to full post.
+
+@param post
 {% endcomment%}
-{% capture thumbnail_url %}{% if include.post.thumbnail and include.post.thumbnail != "" and include.post.thumbnail != nil %}{{site.baseurl}}/assets/images/blog/{{include.post.thumbnail}}{% else %}{{site.baseurl}}/assets/images/blog-post-default.png{% endif %}{% endcapture %}
 <article class="post-summary">
   <div class="post-summary__left">
     <a 
       class="post-summary__thumbnail" 
       href="{{site.baseurl}}{{include.post.url}}"
-      style="background-image: url('{{thumbnail_url}}')"
-    ></a>
+    >
+      {% include components/thumbnail.liquid image_url=include.post.thumbnail %}
+    </a>
   </div>  
 
   <div class="post-summary__right">

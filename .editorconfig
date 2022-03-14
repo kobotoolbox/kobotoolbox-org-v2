@@ -1,6 +1,6 @@
 root = true
 
-[*.{es6,js,jsx,ts,tsx,coffee,scss,css,html,yml}]
+[*.{es6,js,json,jsx,ts,tsx,coffee,scss,css,html,yml,liquid}]
 charset = utf-8
 end_of_line = lf
 indent_size = 2

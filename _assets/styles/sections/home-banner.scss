@@ -1,5 +1,6 @@
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
 
 .home-banner .picture-banner__background {
   // Override the position of the image
@@ -24,5 +25,11 @@
 
   > li + li {
     margin-left: sizes.$r10;
+  }
+}
+
+@media screen and (max-width: #{variables.$wide-content-width}) {
+  .home-banner__buttons {
+    justify-content: center;
   }
 }

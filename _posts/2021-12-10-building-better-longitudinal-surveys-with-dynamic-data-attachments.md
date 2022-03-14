@@ -7,6 +7,7 @@ summary:
     initial data from the original survey while having the necessary data
     automatically gathered into future surveys.
 thumbnail: multiple_surveys.png
+is_featured: true
 ---
 
 Have you ever needed to collect data on repeated observations over a period of

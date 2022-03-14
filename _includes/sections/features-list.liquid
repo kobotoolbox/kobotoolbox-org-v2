@@ -1,0 +1,27 @@
+<div class="root__row root__row--white">
+  <div class="root__row-content">
+    <section class="features-list">
+      <h2>Open-source data collection</h2>
+
+      <ul class="features-list__list">
+        {% for feature in site.data.features %}
+          <li>
+            {% include components/feature-card.liquid
+              id=feature.id
+              title=feature.title
+              icon_url=feature.icon
+            %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% include components/button.liquid
+        size="l"
+        type="bare"
+        color="blue"
+        label="Explore the features &rarr;"
+        url="/features"
+      %}
+    </section>
+  </div>
+</div>

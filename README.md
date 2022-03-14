@@ -32,8 +32,8 @@ The files important for development:
     - `components` - these reflect files in `_includes/components`
     - `sections` - these reflect files in `_includes/sections`
 - `_data`
-  - `footer_menu_1.yml` and `footer_menu_2.yml` - these are responsible for footer links
-  - `header_menu.yml` - responsible for the topmost menu
+  - `footer-menu-1.yml` and `footer-menu-2.yml` - these are responsible for footer links
+  - `header-menu.yml` - responsible for the topmost menu
   - `team.yml` - all team members listed with their positions
 - `_includes`
   - `components` - small DRY components

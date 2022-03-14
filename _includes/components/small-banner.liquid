@@ -1,12 +1,17 @@
 {% comment %}
 A small banner with optional illustration on right side.
 
-@prop title - big text to be displayed
-@prop image_url - path to svg illustration, relative to assets/images/
+@param title - big text to be displayed, a list of lines (one string with `;` as delimeter)
+@param image_url - path to svg illustration, relative to assets/images/
 {% endcomment %}
+{% assign title_lines = include.title | split:';' %}
 <div class="root__row small-banner">
   <div class="root__row-content banner-text">
-    <h1>{{include.title}}</h1>
+    <h1>
+      {% for line in title_lines %}
+        <div>{{line}}</div>
+      {% endfor %}
+    </h1>
     {% if include.image_url and include.image_url != "" and include.image_url != nil %}
       <img src="{{include.image_url}}"/>
     {% endif %}

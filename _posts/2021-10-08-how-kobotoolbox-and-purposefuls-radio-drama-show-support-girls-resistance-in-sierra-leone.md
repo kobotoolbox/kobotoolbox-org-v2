@@ -10,6 +10,7 @@ summary:
     KoboCollect app onto 700 smartphones and distributing them to over 700
     mentors for their Girls' Circle program.
 thumbnail: purposeful_01.jpg
+is_featured: true
 ---
 
 Throughout Sierra Leone, girls face many barriers to accessing education and

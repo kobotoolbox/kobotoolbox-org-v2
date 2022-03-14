@@ -9,6 +9,7 @@ summary:
     ongoing effort to strengthen data systems and fill data gaps in order to
     improve the lives of people affected by displacement.
 thumbnail: UNHCR_survey_refugees_bangladesh.jpg
+is_featured: true
 ---
 
 Kobo Inc. and the Joint Data Center on Forced Displacement (JDC), an initiative

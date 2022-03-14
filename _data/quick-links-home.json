@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Quick start",
+    "description": "Visit our support site and learn the basics of KoboToolbox with this quick start guide. Start building forms and running your own surveys in minutes.",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Visit the support site",
+    "link_url": "https://support.kobotoolbox.org"
+  },
+  {
+    "title": "Join the community",
+    "description": "KoboToolbox is proud to host an active and friendly community of users that will welcome you with open arms. Ask any questions you may have and help others with theirs!",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Visit the forum",
+    "link_url": "https://community.kobotoolbox.org"
+  },
+  {
+    "title": "Become a partner",
+    "description": "Do you use KoboToolbox regularly in your organization? Do you share our vision of inclusive and accessible data collection? Become a partner and support our work.",
+    "image": "test/mad-max-beyond-thunderdome.jpg",
+    "link_title": "Learn more",
+    "link_url": "https://kobotoolbox.org/get-involved#participate"
+  },
+]

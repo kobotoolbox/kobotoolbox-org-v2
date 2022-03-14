@@ -1,5 +1,6 @@
 @use 'colors';
 @use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/variables';
 
@@ -27,6 +28,7 @@ html {
 
   height: 100%;
   font-family: fonts.$family-default;
+  line-height: fonts.$leading-default;
   background-color: colors.$kobo-white;
   color: colors.$kobo-gray-24;
 }
@@ -40,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+:focus-visible {
+  outline: sizes.$r2 solid colors.$kobo-blue;
+}
+
 h1,
 h2,
 h3,
@@ -47,5 +53,6 @@ h4,
 h5,
 h6 {
   font-family: fonts.$family-headings;
-  margin: 0;
+  line-height: fonts.$leading-headings;
+  margin: 1em 0;
 }

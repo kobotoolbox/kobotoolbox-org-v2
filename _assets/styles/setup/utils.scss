@@ -40,3 +40,27 @@
   align-content: center;
   align-items: center;
 }
+
+@mixin button-reset() {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; // needed for tooltips etc.
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &:active {
+    // to make it look pressed-in
+    transform: translateY(rem(1px));
+  }
+}

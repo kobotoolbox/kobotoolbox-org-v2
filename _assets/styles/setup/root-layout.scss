@@ -101,5 +101,16 @@
   &.root__row-content--wide {
     max-width: utils.rem(variables.$wide-content-width);
   }
+
+  &.root__row-content--full {
+    max-width: utils.rem(variables.$full-content-width);
+  }
 }
 
+@media screen and (max-width: #{variables.$content-width}) {
+  // TODO: see if this is good idea, or too harsh
+  .root__row-content {
+    padding-left: sizes.$r15;
+    padding-right: sizes.$r15;
+  }
+}

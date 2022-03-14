@@ -7,6 +7,7 @@ summary: Despite shifting global attention toward the COVID-19 pandemic
     lives of millions of Syrians fleeing for safety continues to be precarious and
     their futures uncertain.
 thumbnail: unhcr_image_01.jpg
+is_featured: true
 ---
 
 **Despite shifting global attention toward the COVID-19 pandemic throughout 2020

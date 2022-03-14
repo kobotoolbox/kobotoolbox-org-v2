@@ -8,6 +8,7 @@ summary:
     Public Collections feature makes it easy to create, store, and share
     questions across surveys, teams, and organizations.
 thumbnail: survey_setup.png
+is_featured: true
 ---
 
 Creating surveys can be time-consuming and intimidating. You start putting your
