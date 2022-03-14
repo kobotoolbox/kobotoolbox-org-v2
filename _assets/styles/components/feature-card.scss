@@ -2,19 +2,21 @@
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
 
-.feature-card label {
-  cursor: inherit;
-  font-weight: 600;
-  font-size: sizes.$r19;
-  color: colors.$kobo-dark-blue;
-  line-height: fonts.$leading-headings;
-}
-
 .feature-card {
   cursor: pointer;
   display: inline-block;
   vertical-align: top;
   text-align: center;
+
+  label {
+    cursor: inherit;
+    font-weight: 600;
+    font-size: sizes.$r19;
+    color: colors.$kobo-dark-blue;
+    line-height: fonts.$leading-headings;
+    margin-top: sizes.$r15;
+    display: block;
+  }
 
   &:hover label {
     text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;

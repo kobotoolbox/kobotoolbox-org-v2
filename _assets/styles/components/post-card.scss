@@ -5,7 +5,6 @@
 .post-card {
   display: flex;
   flex-direction: column;
-  width: sizes.$r330;
   border-radius: sizes.$r6;
   overflow: hidden;
   border: sizes.$r1 solid colors.$kobo-gray-85;
@@ -39,14 +38,6 @@
 }
 
 .post-card__link {
-  display: block;
+  margin: 0 sizes.$r15 sizes.$r15;
   text-align: right;
-  color: colors.$kobo-storm;
-  margin: 0 sizes.$r30 sizes.$r30;
-  transform: translateX(0);
-  transition: transform 0.1s ease-in;
-
-  &:hover {
-    transform: translateX(sizes.$r6);
-  }
 }

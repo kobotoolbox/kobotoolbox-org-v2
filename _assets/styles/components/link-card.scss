@@ -5,7 +5,6 @@
 .link-card {
   display: flex;
   flex-direction: column;
-  width: sizes.$r330;
 }
 
 .link-card__thumbnail {
@@ -18,9 +17,11 @@
 }
 
 .link-card__title {
-  font-size: sizes.$r19;
+  font-family: fonts.$family-default;
+  font-size: sizes.$r30;
+  font-weight: 700;
   color: colors.$kobo-gray-24;
-  margin: sizes.$r30 0;
+  margin: sizes.$r30 0 sizes.$r24;
   flex: 1;
 
   a:hover {
@@ -29,5 +30,10 @@
 }
 
 .link-card__description {
+  margin: 0 0 sizes.$r24;
+}
 
+.link-card__link {
+  margin: 0 0 sizes.$r15;
+  text-align: right;
 }

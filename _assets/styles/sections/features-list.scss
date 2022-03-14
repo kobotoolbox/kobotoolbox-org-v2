@@ -2,6 +2,8 @@
 @use '_assets/styles/setup/sizes';
 
 .features-list {
+  padding-bottom: sizes.$r30;
+
   h2 {
     text-align: center;
     font-weight: 600;
@@ -22,4 +24,9 @@
     flex: 1;
     margin: sizes.$r24;
   }
+}
+
+.features-list__link {
+  text-align: center;
+  margin: sizes.$r24 0 sizes.$r30;
 }

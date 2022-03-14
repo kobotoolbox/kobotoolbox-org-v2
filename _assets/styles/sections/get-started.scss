@@ -1,0 +1,10 @@
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+
+.get-started {
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: sizes.$r36;
+  }
+}

@@ -1,0 +1,37 @@
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+
+.partners {
+  padding: sizes.$r30 0 sizes.$r70;
+  text-align: center;
+
+  h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: sizes.$r36;
+  }
+
+  p {
+    margin: sizes.$r24 0 0;
+  }
+
+  p a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration-thickness: sizes.$r2;
+    }
+  }
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  > li {
+    display: inline-block;
+    vertical-align: top;
+    margin: sizes.$r36 sizes.$r70;
+  }
+}

@@ -1,3 +1,4 @@
+@use 'sass:math';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 
@@ -12,7 +13,12 @@
   list-style: none;
 
   > li {
-    flex: 1;
-    margin: sizes.$r24;
+    width: calc(33.3333% - #{math.div(sizes.$r70 * 2, 3)});
+    margin-bottom: sizes.$r70;
+
+    &:nth-child(3n+1),
+    &:nth-child(3n+2) {
+      margin-right: sizes.$r70;
+    }
   }
 }

@@ -9,20 +9,29 @@
     "postinstall": "npm run copy-images",
     "jekyll-build": "bundle exec jekyll build",
     "jekyll-serve": "bundle exec jekyll serve --watch --baseurl ''",
-    "assets-watch": "parcel watch _assets/styles/kobo.scss _assets/scripts/kobo.ts --dist-dir assets",
-    "assets-build": "parcel build _assets/styles/kobo.scss _assets/scripts/kobo.ts --dist-dir assets"
+    "assets-watch": "parcel watch",
+    "assets-build": "parcel build"
   },
   "dependencies": {
     "kobo-common": "https://github.com/kobotoolbox/kobo-common.git#semver:1.15.0",
     "tiny-slider": "^2.9.4"
   },
+  "targets": {
+    "default": {
+      "source": ["_assets/styles/kobo.scss", "_assets/scripts/kobo.ts"],
+      "distDir": "assets",
+      "sourceMap": {
+        "inlineSources": true
+      }
+    }
+  },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.3.2",
-    "@typescript-eslint/parser": "^5.14.0",
+    "@typescript-eslint/parser": "^5.15.0",
     "autoprefixer": "^10.4.2",
-    "browserslist": "^4.16.7",
+    "browserslist": "^4.20.0",
     "parcel": "^2.3.2",
-    "postcss": "^8.4.7",
+    "postcss": "^8.4.8",
     "typescript": "^4.6.2"
   }
 }

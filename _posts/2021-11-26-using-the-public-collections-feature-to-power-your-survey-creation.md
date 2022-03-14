@@ -7,7 +7,7 @@ summary:
     share questions across surveys, teams, and organizations. KoboToolbox’s
     Public Collections feature makes it easy to create, store, and share
     questions across surveys, teams, and organizations.
-thumbnail: survey_setup.png
+thumbnail: blog/survey_setup.png
 is_featured: true
 ---
 

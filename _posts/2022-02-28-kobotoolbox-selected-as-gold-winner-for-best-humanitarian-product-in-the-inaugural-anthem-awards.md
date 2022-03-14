@@ -9,7 +9,7 @@ summary:
     mission-driven work worldwide, has awarded this honor to KoboToolbox’s data
     collection platform for revolutionizing the way data is collected across the
     world.
-thumbnail: anthem-awards.png
+thumbnail: blog/anthem-awards.png
 ---
 
 Our hard work to make data collection more accessible and inclusive has been

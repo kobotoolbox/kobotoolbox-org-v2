@@ -8,7 +8,7 @@ summary:
     Kobo Inc. and JDC have partnered to strengthen KoboToolbox, part of JDC’s
     ongoing effort to strengthen data systems and fill data gaps in order to
     improve the lives of people affected by displacement.
-thumbnail: UNHCR_survey_refugees_bangladesh.jpg
+thumbnail: blog/UNHCR_survey_refugees_bangladesh.jpg
 is_featured: true
 ---
 

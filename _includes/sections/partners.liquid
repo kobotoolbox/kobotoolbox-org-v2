@@ -1,0 +1,19 @@
+<div class="root__row root__row--teal">
+  <div class="root__row-content">
+    <section class="partners">
+      <h2>Partners</h2>
+
+      <ul class="partners__list">
+        {% for partner in site.data.partners %}
+          <li>
+            <a href="{{partner.url}}" title="{{partner.title}}">
+              <img src="{{site.baseurl}}/images/{{partner.logo}}" alt="{{partner.name}}"/>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p>See the complete list of donours in our <a href="{{site.baseurl}}/about-us">About page</a></p>
+    </section>
+  </div>
+</div>

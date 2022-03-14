@@ -5,7 +5,7 @@ NOTE: covers the whole area of parent element.
 
 @param image_url - path to image, relative to assets/images/
 {% endcomment %}
-{% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.baseurl}}/assets/images/blog/{{include.image_url}}{% else %}{{site.baseurl}}/assets/images/blog-post-default.png{% endif %}{% endcapture %}
+{% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.baseurl}}/assets/images/{{include.image_url}}{% else %}{{site.baseurl}}/assets/images/blog-post-default.png{% endif %}{% endcapture %}
 <div class="thumbnail">
   <div class="thumbnail__image" style="background-image: url('{{thumbnail_url}}')"></div>
 </div>

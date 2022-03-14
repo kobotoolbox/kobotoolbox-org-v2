@@ -6,7 +6,7 @@ summary:
     Learn how you can setup robust longitudinal surveys, retaining all of your
     initial data from the original survey while having the necessary data
     automatically gathered into future surveys.
-thumbnail: multiple_surveys.png
+thumbnail: blog/multiple_surveys.png
 is_featured: true
 ---
 

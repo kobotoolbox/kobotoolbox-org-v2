@@ -15,13 +15,15 @@
         {% endfor %}
       </ul>
 
-      {% include components/button.liquid
-        size="l"
-        type="bare"
-        color="blue"
-        label="Explore the features &rarr;"
-        url="/features"
-      %}
+      <div class="features-list__link">
+        {% include components/button.liquid
+          size="l"
+          type="bare"
+          color="blue"
+          label="Explore the features &rarr;"
+          url="/features"
+        %}
+      </div>
     </section>
   </div>
 </div>

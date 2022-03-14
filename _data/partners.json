@@ -1,0 +1,210 @@
+[
+  {
+    "name": "koboinc",
+    "url": "https://www.kobotoolbox.org/kobo",
+    "logo": "logos/kobo-inc-darkbackground.svg",
+    "title": "",
+    "is_main": true,
+    "is_khc": false
+  },
+  {
+    "name": "bwh",
+    "url": "https://www.brighamandwomens.org",
+    "logo": "logos/bwh-logo.svg",
+    "title": "",
+    "is_main": true,
+    "is_khc": false
+  },
+  {
+    "name": "cisco",
+    "url": "https://cisco.com",
+    "logo": "logos/cisco.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "hhi",
+    "url": "https://hhi.harvard.edu",
+    "logo": "logos/HHI.png",
+    "title": "",
+    "is_main": true,
+    "is_khc": true
+  },
+  {
+    "name": "fidelity",
+    "url": "http://www.fidelityfoundation.org",
+    "logo": "logos/fidelity-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "hilton",
+    "url": "https://hiltonfoundation.org",
+    "logo": "logos/hilton-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "hgc",
+    "url": "https://humanitariangrandchallenge.org",
+    "logo": "logos/hgc_logo.svg",
+    "title": "This Project is supported by the Humanitarian Grand Challenge; a partnership of USAID, DFID UK, and the Ministry of Foreign Affairs of the Netherlands.",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "humanityunited",
+    "url": "https://humanityunited.org",
+    "logo": "logos/humanity-united-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "iom",
+    "url": "http://iom.by",
+    "logo": "logos/IOM-Logo-EN-White.png",
+    "title": "",
+    "is_main": false,
+    "is_khc": true
+  },
+  {
+    "name": "irc",
+    "url": "https://rescue.org",
+    "logo": "logos/IRC-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "jdc",
+    "url": "https://www.jointdatacenter.org",
+    "logo": "logos/jdc-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "m4mgmt",
+    "url": "https://m4mgmt.org",
+    "logo": "logos/m4mgmt-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "macarthur",
+    "url": "https://macfound.org",
+    "logo": "logos/macarthur-stacked-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "msf",
+    "url": "https://msf.org",
+    "logo": "logos/MSF-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "phr",
+    "url": "https://physiciansforhumanrights.org",
+    "logo": "logos/phr-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "savethechildren",
+    "url": "https://savethechildren.net",
+    "logo": "logos/Save_the_Children_logo-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "tides",
+    "url": "http://tides.org",
+    "logo": "logos/tides.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "undp",
+    "url": "https://undp.org",
+    "logo": "logos/undp-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "unhcr",
+    "url": "https://unhcr.org",
+    "logo": "logos/UNHCR-offical-logo-RGB-white.png",
+    "title": "",
+    "is_main": false,
+    "is_khc": true
+  },
+  {
+    "name": "unicef",
+    "url": "https://www.unicef.org/",
+    "logo": "logos/unicef-logo.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": true
+  },
+  {
+    "name": "unocha",
+    "url": "https://unocha.org",
+    "logo": "logos/ocha.png",
+    "title": "",
+    "is_main": false,
+    "is_khc": true
+  },
+  {
+    "name": "usaid",
+    "url": "https://usaid.gov",
+    "logo": "logos/usaid-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "wcs",
+    "url": "https://wcs.org",
+    "logo": "logos/WCS-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "wfp",
+    "url": "https://wfp.org",
+    "logo": "logos/wfp-logo.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "worldbank",
+    "url": "https://www.worldbank.org",
+    "logo": "logos/theworldbank.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  },
+  {
+    "name": "wri",
+    "url": "https://wri.org",
+    "logo": "logos/WRI-white.svg",
+    "title": "",
+    "is_main": false,
+    "is_khc": false
+  }
+]
