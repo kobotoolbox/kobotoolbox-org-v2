@@ -56,3 +56,8 @@ h6 {
   line-height: fonts.$leading-headings;
   margin: 1em 0;
 }
+
+[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+}

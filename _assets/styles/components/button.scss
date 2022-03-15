@@ -17,14 +17,26 @@ $button-font-l: sizes.$r15;
 // misc
 $button-border-width: sizes.$r1;
 
+// Sets colors for `light` type button.
+@mixin button-light($mainColor) {
+  color: $mainColor;
+  background-color: colors.$kobo-gray-96;
+
+  // We use the same style for hover and pending states.
+  &:hover {
+    color: color.adjust($mainColor, $lightness: -5%);
+    background-color: colors.$kobo-gray-92;
+  }
+}
+
 // Sets colors for `bare` type button.
 @mixin button-bare($mainColor) {
   color: $mainColor;
 
   // We use the same style for hover and pending states.
   &:hover {
-    background-color: colors.$kobo-gray-92;
     color: color.adjust($mainColor, $lightness: -5%);
+    background-color: colors.$kobo-gray-92;
   }
 }
 
@@ -95,18 +107,14 @@ $button-border-width: sizes.$r1;
 .button.button--color-blue {
   &.button--type-bare {@include button-bare(colors.$kobo-blue);}
   &.button--type-frame {@include button-frame(colors.$kobo-blue);}
+  &.button--type-light {@include button-light(colors.$kobo-blue);}
   &.button--type-full {@include button-full(colors.$kobo-blue);}
-}
-
-.button.button--color-red {
-  &.button--type-bare {@include button-bare(colors.$kobo-red);}
-  &.button--type-frame {@include button-frame(colors.$kobo-red);}
-  &.button--type-full {@include button-full(colors.$kobo-red);}
 }
 
 .button.button--color-storm {
   &.button--type-bare {@include button-bare(colors.$kobo-storm);}
   &.button--type-frame {@include button-frame(colors.$kobo-storm);}
+  &.button--type-light {@include button-light(colors.$kobo-storm);}
   &.button--type-full {@include button-full(colors.$kobo-storm);}
 }
 

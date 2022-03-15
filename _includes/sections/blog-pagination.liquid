@@ -1,0 +1,78 @@
+{% comment %}
+Display paginator only if there are multiple pages.
+{% endcomment %}
+{% if paginator.total_pages > 1 %}
+<div class="root__row">
+  <div class="root__row-content">
+    <nav class="blog-pagination">
+      <li {% if paginator.previous_page == nil %}disabled{% endif %}>
+        {% assign first_url = "/blog" | relative_url %}
+        {% include components/button.liquid
+          size="l"
+          type="light"
+          color="storm"
+          label="first"
+          url=first_url
+        %}
+      </li>
+
+      <li {% if paginator.previous_page == nil %}disabled{% endif %}>
+        {% assign prev_url = paginator.previous_page_path | relative_url %}
+        {% include components/button.liquid
+          size="l"
+          type="light"
+          color="storm"
+          label="prev"
+          url=prev_url
+        %}
+      </li>
+
+      {% for page in (1..paginator.total_pages) %}
+        {% assign page_button_type = "bare" %}
+        {% assign page_button_color = "storm" %}
+        {% if page == paginator.page %}
+          {% assign page_button_type = "full" %}
+          {% assign page_button_color = "blue" %}
+        {% endif %}
+
+        {% assign page_url = site.paginate_path | relative_url | replace: ':num', page %}
+        {% if page == 1 %}
+          {% assign page_url = "/blog" | relative_url %}
+        {% endif %}
+
+        <li>
+          {% include components/button.liquid
+            size="l"
+            type=page_button_type
+            color=page_button_color
+            label=page
+            url=page_url
+          %}
+        </li>
+      {% endfor %}
+
+      <li {% if paginator.next_page == nil %}disabled{% endif %}>
+        {% assign next_url = paginator.next_page_path | relative_url %}
+        {% include components/button.liquid
+          size="l"
+          type="light"
+          color="storm"
+          label="next"
+          url=next_url
+        %}
+      </li>
+
+      <li {% if paginator.next_page == nil %}disabled{% endif %}>
+        {% assign last_url = site.paginate_path | relative_url | replace: ':num', paginator.total_pages %}
+        {% include components/button.liquid
+          size="l"
+          type="light"
+          color="storm"
+          label="last"
+          url=last_url
+        %}
+      </li>
+    </nav>
+  </div>
+</div>
+{% endif %}

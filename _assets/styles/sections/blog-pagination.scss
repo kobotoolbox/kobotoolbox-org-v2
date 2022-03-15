@@ -1,0 +1,14 @@
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.blog-pagination {
+  @include utils.center-row-flex;
+
+  justify-content: center;
+  list-style: none;
+  margin: sizes.$r70 auto sizes.$r120;
+}
+
+.blog-pagination li {
+  margin: 0 sizes.$r8;
+}

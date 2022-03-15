@@ -1,6 +1,7 @@
 @use 'colors';
 @use 'sass:color';
 @use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/variables';
 
 $gradient-width: utils.rem(720px);
@@ -55,6 +56,7 @@ $gradient-width: utils.rem(720px);
 .picture-banner__text {
   position: relative;
   z-index: 2;
+  margin: sizes.$r70 auto;
 }
 
 @media screen and (max-width: #{variables.$content-width}) {
