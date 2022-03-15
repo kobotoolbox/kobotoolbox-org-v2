@@ -37,7 +37,7 @@ defaults:
 isBlogEnabled: false
 
 # used for Open Graph (i.e. social sharing)
-default_og_image: "/images/default_og_image.png"
+default_og_image: "/images/kobotoolbox_opengraph_image.png"
 
 # FundraiseUp stuff
 fundraiseup_js_id: "ASAUFVGL"
