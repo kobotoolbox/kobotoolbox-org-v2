@@ -19,9 +19,7 @@ Winner** of the **Best Humanitarian Product, Innovation or Service** category in
 the
 [2022 awards](https://www.anthemawards.com/winners/list/#humanitarian-action-services/product-innovation-or-service-categories-not-for-profit/1976/25391).
 
-<video controls>
-  <source src="/images/blog/anthem.mp4" type="video/mp4">
-</video>
+{% include video.liquid file="blog/anthem.mp4" %}
 
 We are incredibly proud to be among the inaugural class of Anthem winners, an
 inspiring selection of individuals and organizations demonstrating world class

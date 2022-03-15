@@ -1,7 +1,8 @@
 // A place for misc and global variables.
 
 $root-font-size: 15px; // The root size for our rems.
-$content-width: 1140px; // Maximum width of the actual (text) content.
+$blog-content-width: 700px; // Maximum width of the long text content (i.e. blog posts text).
+$content-width: 1140px; // Maximum width of the actual content.
 $wide-content-width: 1280px; // The width of wider variant (footer and header).
 $full-content-width: 1440px; // The max width of content we want to support.
 $header-height: 70px;

@@ -29,9 +29,15 @@
   padding: 0;
   list-style: none;
 
-  > li {
+  li {
     display: inline-block;
     vertical-align: top;
     margin: sizes.$r36 sizes.$r70;
+  }
+
+  li a {
+    &:hover {
+      opacity: 0.5;
+    }
   }
 }

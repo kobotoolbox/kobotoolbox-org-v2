@@ -1,0 +1,78 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/utils';
+
+.post {
+  a {
+    text-decoration: underline;
+    color: colors.$kobo-dark-blue;
+
+    &:hover {
+      color: colors.$kobo-teal;
+    }
+  }
+}
+
+.post__header,
+.post__content p {
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  margin: 0 auto;
+}
+
+.post__header {
+  margin-top: sizes.$r70;
+  margin-bottom: sizes.$r36;
+}
+
+.post__header h1 {
+  display: block;
+  font-size: sizes.$r46;
+  font-weight: 700;
+  color: colors.$kobo-gray-24;
+  margin: 0 auto sizes.$r24;
+}
+
+.post__header h2 {
+  font-family: fonts.$family-default;
+  display: block;
+  font-size: sizes.$r15;
+  font-weight: 700;
+  color: colors.$kobo-storm;
+  text-transform: uppercase;
+  margin: 0 auto sizes.$r10;
+}
+
+.post__header time {}
+
+.post__title {}
+
+.post__header-meta {}
+
+.post__header time,
+.post__author,
+.post__author::before {
+  display: inline-block;
+  vertical-align: middle;
+  color: colors.$kobo-gray-40;
+}
+
+.post__author {
+  font-size: sizes.$r19;
+  font-weight: 700;
+
+  &::before {
+    content: '';
+    width: 2px;
+    height: sizes.$r10;
+    background-color: colors.$kobo-blue;
+    vertical-align: sizes.$r1;
+    margin: 0 sizes.$r19;
+  }
+}
+
+.post__social {}
+
+.post__content {}

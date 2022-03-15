@@ -19,7 +19,7 @@ effort to strengthen data systems and fill data gaps, allowing stakeholders to
 make evidence-informed decisions that can improve the lives of people affected
 by displacement.
 
-{% include image.liquid file="/images/blog/UNHCR_survey_refugees_bangladesh.jpg" caption="UNHCR staff surveys refugees in Bangladesh." type="full" %}
+{% include image.liquid file="blog/UNHCR_survey_refugees_bangladesh.jpg" caption="UNHCR staff surveys refugees in Bangladesh." type="full" %}
 
 > "By supporting KoboToolbox, the JDC continues to invest in effective solutions
 > to promote forced displacement-sensitive data methods. Improving the quality

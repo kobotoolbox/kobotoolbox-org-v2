@@ -22,7 +22,7 @@ survey. You wish there was an easier way to have high quality questions,
 organized appropriately, that allow you to collect the information you need in a
 timely manner.
 
-{% include image.liquid file="/images/blog/survey_setup.png" type="full" %}
+{% include image.liquid file="blog/survey_setup.png" type="full" %}
 
 For years, KoboToolbox users have enjoyed the
 [Question Library feature](https://support.kobotoolbox.org/question_library.html)
@@ -58,7 +58,7 @@ Once you **develop**, **save**, and **share** sets of questions in your public
 collection, you can easily import them into new data collection projects on the
 KoboToolbox platform.
 
-{% include image.liquid file="/images/blog/public_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
+{% include image.liquid file="blog/public_collections_formbuilder.png"  caption="Easily import questions into formbuilder directly from your saved library" type="full" %}
 
 Using this feature to **save**, **share**, and **reuse** question blocks is
 particularly useful as they already contain skip logic conditions, making it
@@ -70,7 +70,7 @@ survey topic. Simply drag-and-drop the required questions and question blocks
 into your new form, and then customize them as needed. Edits made in your own
 library will not affect the original library versions.
 
-{% include image.liquid file="/images/blog/public_collections.gif" type="full" %}
+{% include image.liquid file="blog/public_collections.gif" type="full" %}
 
 If you find a collection that’s particularly useful, click **subscribe**, which
 allows you to use the blocks from that collection in the formbuilder or start

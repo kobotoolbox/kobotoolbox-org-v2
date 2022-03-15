@@ -22,7 +22,7 @@ survey projects, you can retain all of your initial data from the original
 survey, or “parent project”, and then have the necessary data automatically
 gathered into future surveys, or “child projects''.
 
-{% include image.liquid file="/images/blog/multiple_surveys.png" type="full" %}
+{% include image.liquid file="blog/multiple_surveys.png" type="full" %}
 
 ### Why Are Dynamic Data Attachments Important?
 
@@ -81,7 +81,7 @@ should be “pulled” from the parent form. Our
 [support article](https://support.kobotoolbox.org/dynamic_data_attachment.html)
 goes into detail on this modification.
 
-{% include image.liquid file="/images/blog/xml_external.png" type="full" %}
+{% include image.liquid file="blog/xml_external.png" type="full" %}
 
 Once the projects are dynamically linked, any linked data will sync in the child
 project(s) only five minutes after it’s updated in the parent project!

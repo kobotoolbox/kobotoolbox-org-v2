@@ -1,0 +1,15 @@
+{% comment %}
+The related posts links section. Uses global variables.
+{% endcomment %}
+<div class="root__row">
+  <div class="root__row-content">
+    <nav class="post-related">
+      {% if page.previous %}
+        {% include components/post-link.liquid post=page.previous %}
+      {% endif %}
+      {% if page.next %}
+        {% include components/post-link.liquid post=page.next %}
+      {% endif %}
+    </nav>
+  </div>
+</div>

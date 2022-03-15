@@ -14,20 +14,14 @@ A horizontal post summary with description and links to full post.
   </div>  
 
   <div class="post-summary__right">
-    <h2 class="post-summary__title">
+    <h2>
       <a href="{{site.baseurl}}{{include.post.url}}">
         {{include.post.title}}
       </a>
     </h2>
 
-    <p class="post-summary__summary">{{include.post.summary}}</p>
+    <p>{{include.post.summary}}</p>
 
-    <footer>
-      <time class="post-summary__date" datetime="{{include.post.date}}">
-        {{include.post.date | date_to_string}}
-      </time><!-- 
-
-      -->{% if include.post.author and include.post.author != "" and include.post.author != nil %}<span class="post-summary__author">By {{include.post.author}}</span>{% endif %}
-    </footer>
+    {% include components/post-meta.liquid post=include.post %}
   </div>
 </article>

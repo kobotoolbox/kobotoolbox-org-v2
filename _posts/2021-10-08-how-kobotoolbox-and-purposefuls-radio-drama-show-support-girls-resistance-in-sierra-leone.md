@@ -21,7 +21,7 @@ rooted in Africa and working all around the world, knew from girls’ experience
 during the Ebola outbreak that they needed to create different ways of reaching
 girls.
 
-{% include image.liquid file="/images/blog/purposeful_01.jpg" caption="© Purposeful" type="full" %}
+{% include image.liquid file="blog/purposeful_01.jpg" caption="© Purposeful" type="full" %}
 
 At the beginning of the pandemic, staff at Purposeful were hard at work on their
 Girls’ Circle program, an initiative that uses girl-only spaces, radio programs,
@@ -64,7 +64,7 @@ stories outside of the program - stories of resisting early forced marriage,
 gender-based violence and, in some cases, even female genital mutilation. Others
 shared stories of hope, friendship, solidarity, and inspiration.
 
-{% include image.liquid file="/images/blog/purposeful_02.jpg" caption="© Purposeful" type="left" %}
+{% include image.liquid file="blog/purposeful_02.jpg" caption="© Purposeful" type="left" %}
 
 While this remarkable effort was not without setbacks and challenges -
 distributing hundreds of phones across the country taught staff at Purposeful

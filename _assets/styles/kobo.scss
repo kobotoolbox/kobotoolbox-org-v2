@@ -19,11 +19,12 @@
 @import 'components/link-card';
 @import 'components/picture-banner';
 @import 'components/post-card';
+@import 'components/post-meta';
 @import 'components/post-summary';
-@import 'components/post';
 @import 'components/quick-links';
 @import 'components/small-banner';
 @import 'components/thumbnail';
+@import 'components/video';
 @import 'components/word-typer';
 
 // 3. sections
@@ -35,3 +36,4 @@
 @import 'sections/get-started';
 @import 'sections/home-banner';
 @import 'sections/partners';
+@import 'sections/post';

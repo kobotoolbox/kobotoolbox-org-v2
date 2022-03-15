@@ -1,0 +1,18 @@
+{% comment %} 
+A post textual link with date.
+
+@param post
+{% endcomment%}
+<article class="post-link">
+  <div class="post-link__icon">&rarr;</div>
+
+  <div class="post-link__content">
+    <h3 class="post-link__title">
+      <a href="{{site.baseurl}}{{include.post.url}}">
+        {{include.post.title}}
+      </a>
+    </h3>
+
+    <time datetime="{{page.date}}" class="post-link__date">{{page.date | date_to_string}}</time>
+  </div>
+</article>

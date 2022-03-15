@@ -1,0 +1,23 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.post-meta {
+  @include utils.center-row-flex;
+
+  color: colors.$kobo-gray-40;
+}
+
+.post-meta__author {
+  font-size: sizes.$r19;
+  font-weight: 700;
+}
+
+.post-meta__divider {
+  display: block;
+  width: sizes.$r2;
+  height: sizes.$r13;
+  background-color: colors.$kobo-blue;
+  vertical-align: sizes.$r1;
+  margin: 0 sizes.$r19;
+}

@@ -4,8 +4,8 @@ A small post card with links to full post.
 @param title
 @param description
 @param image
-@param link_title
-@param link_url
+@param [link_title] - required together with `link_url` to produce button on bottom
+@param [link_url] - required to enable links
 {% endcomment%}
 <article class="link-card">
   <a
@@ -31,7 +31,7 @@ A small post card with links to full post.
     {{include.description}}
   </p>
 
-  {% if include.link_url and include.link_url != "" and include.link_url != nil %}
+  {% if include.link_url and include.link_url != "" and include.link_url != nil and include.link_title and include.link_title != "" and include.link_title != nil%}
    <footer class="link-card__link">
       {% capture link_title_full %}{{include.link_title}} &rarr;{% endcapture %}
       {% include components/button.liquid

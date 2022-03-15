@@ -5,13 +5,20 @@
 
   <ul class="header-nav__menu">
     {% for item in site.data.header-menu %}
-    <li>
-      <a
-        class="header-nav__menu-item {% if page.dir == item.path %}header-nav__menu-item--active{% endif %}"
-        href="{{site.baseurl}}{{item.path}}"
-        >{{item.label}}</a
-      >
-    </li>
+      {% comment %}
+      We need to compare the parentest directory.
+      {% endcomment %}
+      {% assign page_dir_split = page.url | split:"/" %}
+      {% assign page_dir = page_dir_split[1] %}
+      {% assign item_path_split = item.path | split:"/" %}
+      {% assign item_dir = item_path_split[1] %}
+      <li>
+        <a
+          class="header-nav__menu-item {% if page_dir == item_dir %}header-nav__menu-item--active{% endif %}"
+          href="{{site.baseurl}}{{item.path}}"
+          >{{item.label}}</a
+        >
+      </li>
     {% endfor %}
   </ul>
 

@@ -20,7 +20,7 @@ and hurricanes being the most common. As climate change causes increasingly
 severe hurricane seasons and greater devastation, disaster management and
 response preparedness are more essential than ever.
 
-{% include image.liquid file="/images/blog/CDB_blog_01.jpg" caption="CDRRF Data Collection Volunteer administering the Livelihood Baseline Assessment Survey in Toledo District, Belize using KoboToolbox. © Caribbean Development Bank" type="full" %}
+{% include image.liquid file="blog/CDB_blog_01.jpg" caption="CDRRF Data Collection Volunteer administering the Livelihood Baseline Assessment Survey in Toledo District, Belize using KoboToolbox. © Caribbean Development Bank" type="full" %}
 
 In these emergency situations where access to real-time data is critical,
 KoboToolbox makes a difference. The
@@ -41,7 +41,7 @@ finance social and economic programs.
 Learn more about Richardo’s innovative work below _(Note: The following
 conversation has been edited for length and clarity)_.
 
-{% include image.liquid file="/images/blog/CDB_blog_02.jpg" caption="CDRRF Data Collection Volunteer administering Livelihood Baseline Assessment in Chateaubelair, St. Vincent and the Grenadines, using KoboToolbox. © Caribbean Development Bank" type="left" %}
+{% include image.liquid file="blog/CDB_blog_02.jpg" caption="CDRRF Data Collection Volunteer administering Livelihood Baseline Assessment in Chateaubelair, St. Vincent and the Grenadines, using KoboToolbox. © Caribbean Development Bank" type="left" %}
 
 **What is CDB doing to strengthen disaster risk management, risk preparedness,
 and climate change adaptation capacity across communities? How does this relate
@@ -164,7 +164,7 @@ was hosted on June 9, 2021, in collaboration with Caribbean Disaster Emergency
 Management Agency (CDEMA) and was attended by over 200 humanitarian aid workers
 and frontline disaster responders.  
 
-{% include image.liquid file="/images/blog/CDB_blog_03.jpg" caption="Richardo Aiken, chairing the Virtual Kobotoolbox Training Webinar, hosted by CDB and CDEMA. © Caribbean Development Bank" type="left" %}
+{% include image.liquid file="blog/CDB_blog_03.jpg" caption="Richardo Aiken, chairing the Virtual Kobotoolbox Training Webinar, hosted by CDB and CDEMA. © Caribbean Development Bank" type="left" %}
 
 **Given the increasingly active hurricane seasons and worsening natural
 disasters, was this a factor when organizing the latest training session?**

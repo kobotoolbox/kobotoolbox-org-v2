@@ -1,7 +1,5 @@
 @use 'colors';
 
-// TODO update those
-
 .image {
   display: block;
 }
@@ -42,6 +40,7 @@
 
 .image__img {
   display: block;
+  width: 100%;
 }
 
 .image__caption {

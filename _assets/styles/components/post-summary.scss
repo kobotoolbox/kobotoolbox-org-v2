@@ -28,7 +28,8 @@
   border-radius: sizes.$r6;
 }
 
-.post-summary__title {
+.post-summary h2 {
+  margin: 0;
   color: colors.$kobo-dark-blue;
 
   a:hover {
@@ -36,31 +37,7 @@
   }
 }
 
-.post-summary__summary {
+.post-summary p {
   flex: 1;
   margin: sizes.$r24 0;
-}
-
-.post-summary__date,
-.post-summary__author,
-.post-summary__author::before {
-  display: inline-block;
-  vertical-align: middle;
-  color: colors.$kobo-gray-40;
-}
-
-.post-summary__date {}
-
-.post-summary__author {
-  font-size: sizes.$r19;
-  font-weight: 700;
-
-  &::before {
-    content: '';
-    width: 2px;
-    height: sizes.$r10;
-    background-color: colors.$kobo-blue;
-    vertical-align: sizes.$r1;
-    margin: 0 sizes.$r19;
-  }
 }

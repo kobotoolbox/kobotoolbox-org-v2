@@ -1,0 +1,15 @@
+{% comment %} 
+Post date and author in horizontal display.
+
+@param post
+{% endcomment%}
+<div class="post-meta">
+  <time datetime="{{include.post.date}}">
+    {{include.post.date | date_to_string}}
+  </time>
+
+  {% if include.post.author and include.post.author != "" and include.post.author != nil %}
+    <span class="post-meta__divider"></span>
+    <span class="post-meta__author">By {{include.post.author}}</span>
+  {% endif %}
+</div>
