@@ -1,0 +1,32 @@
+@use 'colors';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.sign-up-banner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  padding: sizes.$r70 0;
+  text-align: center;
+}
+
+.sign-up-banner h1 {
+  font-size: sizes.$r46;
+  color: colors.$kobo-dark-blue;
+  margin: 0 auto sizes.$r36;
+}
+
+.sign-up-banner p {
+  color: colors.$kobo-gray-40;
+  margin: sizes.$r24 auto 0;
+}
+
+.sign-up-banner p a {
+  color: colors.$kobo-dark-blue;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration-thickness: sizes.$r2;
+  }
+}

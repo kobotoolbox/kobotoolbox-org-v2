@@ -1,0 +1,44 @@
+---
+title: "Sign up"
+---
+
+{% assign which_server_url = "https://support.kobotoolbox.org/server.html" %}
+{% assign kobo_install_url = "https://github.com/kobotoolbox/kobo-install" %}
+
+<div class="root__row root__row--mid-blue">
+  <div class="root__row-content">
+    <section class="sign-up-banner">
+      <h1>Log in or create an account</h1>
+
+      <p>There are two publicly available instances of KoBoToolbox, one for the general public and a separate one for the humanitarian community, hosted directly by the United Nations Office for the Coordination of Humanitarian Affairs. For more information on the differences between the two servers, please read our <a href="{{which_server_url}}" target="_blank">Which Server Should I Use?</a> support article.</p>
+
+      <p>Note that it is also possible to install KoBoToolbox on your own server (or on a local machine) using Docker. See our <a href="{{kobo_install_url}}" target="_blank">kobo-install repository on GitHub</a> for details.</p>
+    </section>
+  </div>
+</div>
+
+<div class="root__row root__row--mid-blue">
+  <div class="root__row-content">
+    <section class="sign-up-servers">
+      {% assign global_features = "10,000 Submissions per month;5GB Data Storage per month;Unlimited Projects"|split:";" %}
+      {% include components/server-card.liquid
+        id="HHI"
+        title="Global server"
+        description="A server provided by KoboToolbox for researchers, aid workers and everyone else. While this server has some limitations to avoid excessive storage of data, all functionalies are fully available, for free."
+        features=global_features
+        sign_in_url="https://kf.kobotoolbox.org/accounts/login"
+        sign_up_url="https://kf.kobotoolbox.org/accounts/register"
+      %}
+
+      {% assign humanitarian_features = "Unlimited Submissions;Unlimited Data Storage;Unlimited Projects"|split:";" %}
+      {% include components/server-card.liquid
+        id="OCHA"
+        title="Humanitarian server"
+        description="An unlimited server hosted by UN-OCHA for all <em>humanitarian organizations</em>. If you belong to a humanitarian organization, please sign in with your organization’s email"
+        features=humanitarian_features
+        sign_in_url="https://kobo.humanitarianresponse.info/accounts/login"
+        sign_up_url="https://kobo.humanitarianresponse.info/accounts/register"
+      %}
+    </section>
+  </div>
+</div>

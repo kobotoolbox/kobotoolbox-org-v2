@@ -1,0 +1,12 @@
+@use 'colors';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.sign-up-servers {
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  width: 100%;
+  padding: 0 0 sizes.$r70;
+}

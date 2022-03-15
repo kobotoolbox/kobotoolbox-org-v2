@@ -1,0 +1,39 @@
+{% comment %} 
+A server card for sign up/sign in with some description.
+
+@param {string} id
+@param {string} title
+@param {string} description
+@param {string[]} features
+@param {string} sign_in_url
+@param {string} sign_up_url
+{% endcomment%}
+<article class="server-card">
+  <h2>{{include.title}}</h2>
+
+  <p>{{include.description}}</p>
+
+  <ul>
+    {% for feature in include.features %}
+      <li>{{feature}}</li>
+    {% endfor %}
+  </ul>
+
+  <footer>
+    {% include components/button.liquid
+      size="l"
+      type="full"
+      color="blue"
+      label="Sign in"
+      url=include.sign_in_url
+    %}
+
+    {% include components/button.liquid
+      size="l"
+      type="frame"
+      color="blue"
+      label="Create an account"
+      url=include.sign_up_url
+    %}
+  </footer>
+</article>

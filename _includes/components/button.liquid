@@ -1,10 +1,10 @@
 {% comment %}
 A button with link.
 
-@param size - m or l
-@param type - bare, frame, light or full
-@param color - blue or storm
-@param label
-@param url
+@param {m|l} size
+@param {bare|frame|light|full} type
+@param {blue|storm} color
+@param {string} label
+@param {string} url
 {% endcomment %}
 <a class="button button--size-{{include.size}} button--type-{{include.type}} button--color-{{include.color}}" href="{{include.url}}">{{include.label}}</a>
