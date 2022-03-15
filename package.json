@@ -5,8 +5,8 @@
   "repository": "https://github.com/kobotoolbox/kobotoolbox.org.git",
   "bugs": "https://github.com/kobotoolbox/kobotoolbox.org/issues",
   "scripts": {
-    "copy-images": "node ./_scripts/copy-images.js",
-    "postinstall": "npm run copy-images",
+    "copy-files": "node ./_scripts/copy-files.js",
+    "postinstall": "npm run copy-files",
     "jekyll-build": "bundle exec jekyll build",
     "jekyll-serve": "bundle exec jekyll serve --watch --baseurl ''",
     "assets-watch": "parcel watch",
@@ -20,9 +20,7 @@
     "default": {
       "source": ["_assets/styles/kobo.scss", "_assets/scripts/kobo.ts"],
       "distDir": "assets",
-      "sourceMap": {
-        "inlineSources": true
-      }
+      "sourceMap": false
     }
   },
   "devDependencies": {
