@@ -6,7 +6,7 @@ A small banner with optional illustration on right side.
 {% endcomment %}
 {% assign title_lines = include.title | split:';' %}
 <div class="root__row small-banner">
-  <div class="root__row-content banner-text">
+  <div class="root__row-content banner-text small-banner__text">
     <h1>
       {% for line in title_lines %}
         <div>{{line}}</div>

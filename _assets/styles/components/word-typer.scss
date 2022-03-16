@@ -1,6 +1,7 @@
 @use 'colors';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/variables';
 
 @keyframes cursor {
   from {border-right-color: transparent;}
@@ -8,7 +9,7 @@
   to {border-right-color: transparent;}
 }
 
-*[data-word-typer] {
+[data-word-typer] {
   font-family: fonts.$family-default;
   color: colors.$kobo-dark-blue;
   background-color: colors.$kobo-light-blue;

@@ -5,6 +5,10 @@
 @use '_assets/styles/setup/utils';
 
 .post {
+  @include utils.clearfix;
+
+  padding: sizes.$r70 0;
+
   a {
     text-decoration: underline;
     color: colors.$kobo-dark-blue;
@@ -16,14 +20,19 @@
 }
 
 .post__header,
-.post__content p {
+.post__social,
+.post__content > *:not(.video):not(.image) {
   width: 100%;
   max-width: utils.rem(variables.$blog-content-width);
   margin: 0 auto;
 }
 
+.post__content > *:not(.video):not(.image):not(:last-child) {
+  // Leading size of paragraph
+  margin-bottom: fonts.$leading-default-rem;
+}
+
 .post__header {
-  margin-top: sizes.$r70;
   margin-bottom: sizes.$r36;
 }
 

@@ -2,9 +2,11 @@
 
 @import '../../node_modules/tiny-slider/dist/tiny-slider.css';
 
+// We use Lora for headings, and Inter for everything else.
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap');
+
 // 1. setup styles
 @import 'setup/normalize';
-@import 'setup/fonts';
 @import 'setup/base';
 @import 'setup/root-layout';
 
@@ -29,6 +31,7 @@
 @import 'components/word-typer';
 
 // 3. sections
+@import 'sections/about-us-cta';
 @import 'sections/blog-banner';
 @import 'sections/blog-pagination';
 @import 'sections/faqs';
@@ -38,6 +41,7 @@
 @import 'sections/get-started';
 @import 'sections/home-banner';
 @import 'sections/partners';
+@import 'sections/post-help';
 @import 'sections/post';
 @import 'sections/sign-up-banner';
 @import 'sections/sign-up-servers';

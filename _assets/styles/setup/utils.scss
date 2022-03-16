@@ -1,12 +1,13 @@
 @use 'sass:math';
-@use '_assets/styles/setup/variables';
+
+$root-font-size: 15px; // The root size for our rems.
 
 @function strip-unit($value) {
   @return math.div($value, $value * 0 + 1);
 }
 
 @function rem($px_value) {
-  @return math.div(strip-unit($px_value), strip-unit(variables.$root-font-size)) *
+  @return math.div(strip-unit($px_value), strip-unit($root-font-size)) *
     1rem;
 }
 
@@ -62,5 +63,13 @@
   &:active {
     // to make it look pressed-in
     transform: translateY(rem(1px));
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    clear: both;
+    display: table;
   }
 }

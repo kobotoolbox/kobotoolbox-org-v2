@@ -1,11 +1,12 @@
 @use 'colors';
-@use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
-@use '_assets/styles/setup/variables';
 
 .small-banner {
-  min-height: utils.rem(400px);
   background-color: colors.$kobo-white;
+
+  .small-banner__text h1 {
+    margin: sizes.$r70 0;
+  }
 
   img {
     // TODO

@@ -5,7 +5,7 @@ thumbnail: blog/PHRmap.jpg
 is_featured: true
 ---
 
-![PHR Syria Map](/images/blog/PHRmap.jpg)
+{% include image.liquid file="blog/PHRmap.jpg" type="full" %}
 
 #### About the Organization
 

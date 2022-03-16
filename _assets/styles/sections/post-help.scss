@@ -1,0 +1,12 @@
+@use 'colors';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.post-help {
+  @include utils.clearfix;
+
+  .kobo-fundraiseup {
+    float: right;
+  }
+}

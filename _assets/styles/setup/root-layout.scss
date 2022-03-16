@@ -15,7 +15,7 @@
 .root__header {
   @include utils.center-row_flex;
 
-  height: utils.rem(variables.$header-height);
+  height: variables.$header-height;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,8 +46,8 @@
 }
 
 .root__main {
-  min-height: calc(100% - #{utils.rem(variables.$header-height)});
-  padding-top: utils.rem(variables.$header-height); // For sticky header.
+  min-height: calc(100% - #{variables.$header-height});
+  padding-top: variables.$header-height; // For sticky header.
 }
 
 .root__footer {
@@ -110,7 +110,7 @@
 @media screen and (max-width: #{variables.$content-width}) {
   // TODO: see if this is good idea, or too harsh
   .root__row-content {
-    padding-left: sizes.$r15;
-    padding-right: sizes.$r15;
+    padding-left: variables.$screen-edge-padding;
+    padding-right: variables.$screen-edge-padding;
   }
 }

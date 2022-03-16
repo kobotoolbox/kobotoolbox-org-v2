@@ -1,28 +1,52 @@
 @use 'colors';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/variables';
 
 .image {
   display: block;
+  text-align: center;
+  margin: fonts.$leading-default-rem auto;
+}
+
+.image img {
+  display: block;
+  margin: 0 auto;
+  max-width: utils.rem(variables.$content-width);
+  max-height: sizes.$r500;
 }
 
 .image.image--left {
   float: left;
-  margin: 1rem 1rem 1rem 0;
+  margin: 0 fonts.$leading-default-rem fonts.$leading-default-rem 0;
+
+  img {
+    margin-right: 0;
+  }
 }
 
 .image.image--right {
   float: right;
-  margin: 1rem 0 1rem 1rem;
+  margin: 0 0 fonts.$leading-default-rem fonts.$leading-default-rem;
+
+  img {
+    margin-left: 0;
+  }
 }
 
 .image.image--left,
 .image.image--right {
-  width: 30%;
-  min-width: 250px;
+  width: 40%;
+  min-width: sizes.$r200;
+
+  .image img {
+    max-width: 100%;
+  }
 }
 
 .image.image--full {
   width: 100%;
-  margin: 1rem auto;
 }
 
 // NOTE: url is optional, so we style active link separately below
@@ -35,16 +59,9 @@
 }
 
 .image__link[href]:hover {
-  box-shadow: 0 0 1px 1px colors.$kobo_blue;
+  box-shadow: 0 0 sizes.$r1 sizes.$r1 colors.$kobo_blue;
 }
 
-.image__img {
-  display: block;
-  width: 100%;
-}
-
-.image__caption {
-  font-style: italic;
-  border-bottom: 1px solid colors.$kobo_gray_85;
-  padding: 0.33rem 0;
+.image figcaption {
+  padding: sizes.$r10 0 0;
 }

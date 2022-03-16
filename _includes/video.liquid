@@ -14,7 +14,7 @@ This is a video component/utility. Things to be passed:
     {% elsif include.type == "full" %}
         video--full
     {% else %}
-        video-full
+        video--full
     {% endif %}'
 >
   <video controls>
@@ -22,6 +22,6 @@ This is a video component/utility. Things to be passed:
   </video>
 
   {% if include.caption %}
-  <figcaption class="video__caption">{{include.caption}}</figcaption>
+  <figcaption>{{include.caption}}</figcaption>
   {% endif %}
 </figure>

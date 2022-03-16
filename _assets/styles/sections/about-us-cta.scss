@@ -1,0 +1,76 @@
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+.about-us-cta {
+}
+
+.about-us-cta__content {
+  // For button
+  text-align: right;
+}
+
+.about-us-cta__content h2,
+.about-us-cta__content p {
+  text-align: left;
+}
+
+.about-us-cta__content p {
+  margin: 0 auto sizes.$r50;
+}
+
+.about-us-cta__content h2 {
+  font-weight: 600;
+  font-size: sizes.$r30;
+  margin: 0 auto sizes.$r24;
+}
+
+.about-us-cta__left,
+.about-us-cta__right {
+}
+
+@media screen and (min-width: #{variables.$content-width + 1}) {
+  .about-us-cta {
+    // This makes half of the area blue, with hard edge changing into teal.
+    background-image: linear-gradient(90deg, colors.$kobo-mid-blue 0 50%, colors.$kobo-light-teal 50% 100%);
+  }
+
+  .about-us-cta__content {
+    @include utils.center-row-flex;
+  }
+
+  .about-us-cta__left,
+  .about-us-cta__right {
+    flex: 1;
+  }
+
+  .about-us-cta__left {
+    padding: sizes.$r70 sizes.$r100 sizes.$r70 0;
+  }
+
+  .about-us-cta__right {
+    padding: sizes.$r70 0 sizes.$r70 sizes.$r100;
+  }
+}
+
+@media screen and (max-width: #{variables.$content-width}) {
+  .about-us-cta .root__row-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .about-us-cta__left,
+  .about-us-cta__right {
+    padding: sizes.$r50 variables.$screen-edge-padding;
+  }
+
+  .about-us-cta__left {
+    background-color: colors.$kobo-mid-blue;
+  }
+
+  .about-us-cta__right {
+    background-color: colors.$kobo-light-teal;
+  }
+}

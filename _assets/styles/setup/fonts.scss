@@ -1,7 +1,5 @@
+@use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
-
-// We use Lora for headings, and Inter for everything else.
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lora:wght@600&display=swap');
 
 // Families
 $family-default: 'Inter', sans-serif;
@@ -10,4 +8,5 @@ $family-numbers: 'Helvetica Neue', 'Helvetica', sans-serif;
 
 // Line height
 $leading-default: 1.6;
+$leading-default-rem: utils.rem(utils.$root-font-size * $leading-default);
 $leading-headings: 1.4;

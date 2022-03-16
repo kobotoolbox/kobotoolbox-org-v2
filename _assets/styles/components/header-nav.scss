@@ -41,8 +41,8 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  height: utils.rem(variables.$header-height);
-  line-height: utils.rem(variables.$header-height);
+  height: variables.$header-height;
+  line-height: variables.$header-height;
   display: block;
   position: relative;
   white-space: nowrap;

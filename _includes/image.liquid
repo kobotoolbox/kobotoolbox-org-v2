@@ -15,7 +15,7 @@ This is an image component/utility. Things to be passed:
     {% elsif include.type == "full" %}
         image--full
     {% else %}
-        image-full
+        image--full
     {% endif %}'
 >
   <a
@@ -26,7 +26,6 @@ This is an image component/utility. Things to be passed:
     {% endif %}
   >
     <img
-      class="image__img"
       src="{{full_image_path}}"
       alt="{{include.file}}"
       {% if include.caption %}
@@ -35,6 +34,6 @@ This is an image component/utility. Things to be passed:
     >
   </a>
   {% if include.caption %}
-  <figcaption class="image__caption">{{include.caption}}</figcaption>
+  <figcaption>{{include.caption}}</figcaption>
   {% endif %}
 </figure>

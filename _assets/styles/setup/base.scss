@@ -2,7 +2,6 @@
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
-@use '_assets/styles/setup/variables';
 
 html {
   // Sorry for complexity here, but we want the fluid size to become
@@ -12,8 +11,8 @@ html {
     @include utils.fluid-type(
       360px,
       1440px,
-      variables.$root-font-size - 3px,
-      variables.$root-font-size
+      utils.$root-font-size - 3px,
+      utils.$root-font-size
     );
   }
 
@@ -21,8 +20,8 @@ html {
     @include utils.fluid-type(
       1440px,
       1920px,
-      variables.$root-font-size,
-      variables.$root-font-size + 3px
+      utils.$root-font-size,
+      utils.$root-font-size + 3px
     );
   }
 
@@ -60,4 +59,8 @@ h6 {
 [disabled] {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.text-highlighted {
+  background: colors.$kobo-mid-blue;
 }
