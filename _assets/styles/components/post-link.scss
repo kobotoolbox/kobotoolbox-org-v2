@@ -1,0 +1,48 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/fonts';
+
+.post-link {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: sizes.$r19 0;
+}
+
+.post-link + .post-link {
+  border-top: sizes.$r1 solid colors.$kobo-alt-blue;
+}
+
+.post-link__content {
+  flex: 1;
+}
+
+.post-link__icon {
+  margin-right: sizes.$r15;
+}
+
+.post-link__icon,
+.post-link__content time {
+  color: colors.$kobo-blue;
+}
+
+.post-link__icon,
+.post-link__content a {
+  font-size: sizes.$r19;
+}
+
+.post-link__content a {
+  display: block;
+  color: colors.$kobo-dark-blue;
+  margin: 0 0 sizes.$r10;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration-thickness: sizes.$r2;
+  }
+}
+
+.post-link__content time {
+  display: block;
+  font-size: sizes.$r13;
+}

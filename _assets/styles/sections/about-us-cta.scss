@@ -31,7 +31,7 @@
 .about-us-cta__right {
 }
 
-@media screen and (min-width: #{variables.$content-width + 1}) {
+@media screen and (min-width: #{variables.$content-width + 1px}) {
   .about-us-cta {
     // This makes half of the area blue, with hard edge changing into teal.
     background-image: linear-gradient(90deg, colors.$kobo-mid-blue 0 50%, colors.$kobo-light-teal 50% 100%);

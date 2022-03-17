@@ -2,11 +2,36 @@
 @use '_assets/styles/setup/variables';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/fonts';
 
 .post-help {
   @include utils.clearfix;
 
-  .kobo-fundraiseup {
+  padding: sizes.$r70 0;
+}
+
+.post-help h2 {
+  font-weight: 600;
+  font-size: sizes.$r36;
+  margin: 0 auto sizes.$r36;
+}
+
+.post-help h2,
+.post-help p {
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-help p {
+  margin-bottom: fonts.$leading-default-rem;
+}
+
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .post-help .kobo-fundraiseup {
     float: right;
+    margin-left: sizes.$r36;
+    width: 50%;
   }
 }

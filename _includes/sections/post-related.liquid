@@ -4,9 +4,12 @@ The related posts links section. Uses global variables.
 <div class="root__row root__row--mid-blue">
   <div class="root__row-content">
     <nav class="post-related">
+      <h2>Other stories</h2>
+
       {% if page.previous %}
         {% include components/post-link.liquid post=page.previous %}
       {% endif %}
+
       {% if page.next %}
         {% include components/post-link.liquid post=page.next %}
       {% endif %}

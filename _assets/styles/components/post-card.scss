@@ -26,7 +26,7 @@
   }
 }
 
-.post-card__title {
+.post-card h3 {
   font-size: sizes.$r19;
   color: colors.$kobo-gray-24;
   margin: sizes.$r30;
@@ -37,7 +37,7 @@
   }
 }
 
-.post-card__link {
+.post-card footer {
   margin: 0 sizes.$r15 sizes.$r15;
   text-align: right;
 }

@@ -33,7 +33,7 @@
   }
 }
 
-@media screen and (min-width: #{variables.$content-width + 1}) {
+@media screen and (min-width: #{variables.$content-width + 1px}) {
   .banner-text h1,
   .banner-text h2,
   .banner-text p {

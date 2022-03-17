@@ -8,15 +8,6 @@
   @include utils.clearfix;
 
   padding: sizes.$r70 0;
-
-  a {
-    text-decoration: underline;
-    color: colors.$kobo-dark-blue;
-
-    &:hover {
-      color: colors.$kobo-teal;
-    }
-  }
 }
 
 .post__header,
@@ -84,4 +75,18 @@
 
 .post__social {}
 
-.post__content {}
+.post__content a {
+  text-decoration: underline;
+  color: colors.$kobo-dark-blue;
+
+  &:hover {
+    color: colors.$kobo-teal;
+  }
+}
+
+.post__content blockquote {
+  border-left: sizes.$r8 solid colors.$kobo-blue;
+  padding-left: sizes.$r24;
+  color: colors.$kobo-dark-blue;
+  font-family: fonts.$family-headings;
+}

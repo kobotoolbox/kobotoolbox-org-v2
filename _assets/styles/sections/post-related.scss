@@ -1,0 +1,17 @@
+@use 'colors';
+@use '_assets/styles/setup/variables';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.post-related {
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  margin: 0 auto;
+  padding: sizes.$r50 0;
+}
+
+.post-related h2 {
+  font-weight: 600;
+  font-size: sizes.$r36;
+  margin: 0 auto sizes.$r30;
+}
