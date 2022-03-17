@@ -1,22 +1,22 @@
 [
    {
       "label": "Meet the team",
-      "path": "/meet-the-team/"
+      "path": "/about-us/meet-the-team"
    },
    {
       "label": "Partnerships",
-      "path": "/partnerships/"
+      "path": "/partnerships"
    },
    {
       "label": "Terms of reference",
-      "path": "/terms/"
+      "path": "/terms"
    },
    {
       "label": "Privacy",
-      "path": "/privacy/"
+      "path": "/privacy"
    },
    {
       "label": "Contact",
-      "path": "/contact/"
+      "path": "/contact"
    }
 ]

@@ -1,0 +1,38 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+.join-community {
+  padding: sizes.$r70 0;
+}
+
+.join-community__column h2 {
+  margin: 0 0 sizes.$r30;
+}
+
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .join-community {
+    @include utils.center-row-flex;
+  }
+
+  .join-community__column {
+    &.join-community__column--image {
+      flex: 2;
+    }
+
+    &.join-community__column--title {
+      flex: 2;
+      text-align: right;
+      margin-right: sizes.$r50;
+
+      h2 {
+        margin-right: sizes.$r15;
+      }
+    }
+
+    &.join-community__column--description {
+      flex: 3;
+    }
+  }
+}

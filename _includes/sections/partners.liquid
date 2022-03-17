@@ -6,8 +6,8 @@
       <ul class="partners__list">
         {% for partner in site.data.partners %}
           <li>
-            <a href="{{partner.url}}" title="{{partner.title}}">
-              <img src="{{site.baseurl}}/images/{{partner.logo}}" alt="{{partner.name}}"/>
+            <a href="{{partner.website_url}}" title="{{partner.name}}">
+              <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
             </a>
           </li>
         {% endfor %}

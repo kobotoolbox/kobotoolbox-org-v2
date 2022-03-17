@@ -1,6 +1,35 @@
+@use 'colors';
 @use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
 
 .features-banner .picture-banner__background {
   // Override the position of the image
   // background-position: 125% -#{sizes.$r24};
+}
+
+.features-banner__logos {
+  @include utils.center-row-flex;
+
+  list-style: none;
+  margin: sizes.$r24 0 0;
+  padding: 0;
+  color: colors.$kobo-storm;
+
+  li + li {
+    margin-left: sizes.$r46;
+  }
+
+  li a {
+    display: block;
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  svg {
+    max-width: sizes.$r160;
+    max-height: sizes.$r40;
+  }
 }

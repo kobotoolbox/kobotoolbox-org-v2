@@ -1,0 +1,33 @@
+@use 'sass:color';
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+.donate {
+  padding: sizes.$r70 0 0;
+}
+
+.donate h1 {
+  font-size: sizes.$r46;
+  color: colors.$kobo-dark-blue;
+  margin: 0 auto sizes.$r36;
+  text-align: center;
+}
+
+.donate p {
+  text-align: center;
+  color: colors.$kobo-gray-40;
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  margin: 0 auto sizes.$r46;
+}
+
+.donate .kobo-fundraiseup {
+  text-align: center;
+  padding: sizes.$r70;
+  border-radius: sizes.$r13 sizes.$r13 0 0;
+  background-color: colors.$kobo-white;
+  box-shadow: 0 0 sizes.$r24 color.change(colors.$kobo-dark-blue, $alpha: 0.2);
+}

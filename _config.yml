@@ -45,5 +45,5 @@ defaults:
       layout: "blog-post"
 
 # used for Open Graph (i.e. social sharing)
-default_og_image: "/images/kobotoolbox_opengraph_image.png"
+default_og_image: "/assets/images/site/kobotoolbox_opengraph_image.png"
 

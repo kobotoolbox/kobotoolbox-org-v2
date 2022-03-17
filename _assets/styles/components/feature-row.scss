@@ -5,12 +5,12 @@
 @use '_assets/styles/setup/fonts';
 
 .feature-row {
-  // TODO
 }
 
 .feature-row__content {
-  @include utils.center-row-flex;
-
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   margin: 0 auto;
   width: 100%;
   max-width: utils.rem(variables.$full-content-width);
@@ -19,7 +19,7 @@
     font-family: fonts.$family-default;
     font-weight: 700;
     font-size: sizes.$r36;
-    margin: 0;
+    margin: sizes.$r30 0;
   }
 
   p {
@@ -31,13 +31,22 @@
   width: 40%;
   padding-left: (variables.$full-content-width - variables.$content-width) * 0.5;
   padding-right: sizes.$r30;
+  padding-top: sizes.$r70;
+  padding-bottom: sizes.$r100;
 }
 
 .feature-row__right-side {
   width: 60%;
+
+  &:not(.feature-row__right-side--no-paddings) {
+    padding: sizes.$r50 0;
+  }
 }
 
-.feature-row__icon {}
+.feature-row__icon {
+  max-width: sizes.$r120;
+  max-height: sizes.$r120;
+}
 
 .feature-row__image {
   display: block;

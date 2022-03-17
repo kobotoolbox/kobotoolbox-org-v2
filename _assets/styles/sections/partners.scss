@@ -1,3 +1,4 @@
+@use 'colors';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 
@@ -36,8 +37,16 @@
   }
 
   li a {
+    display: block;
+    transition: transform 0.25s ease-out;
+
     &:hover {
-      opacity: 0.5;
+      transform: scale(1.05);
     }
+  }
+
+  svg {
+    max-width: sizes.$r200;
+    max-height: sizes.$r70;
   }
 }

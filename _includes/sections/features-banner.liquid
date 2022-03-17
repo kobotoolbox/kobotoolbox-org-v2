@@ -1,6 +1,9 @@
 {% comment %}
 This is the banner section for features page.
+
+The `org_logos` are a list of `id`s from `partners.json`.
 {% endcomment %}
+{% assign org_logos = "unhcr,undp,wfp,savethechildren" | split:"," %}
 <div class="root__row picture-banner features-banner">
   {% include components/picture-banner-background.liquid image_url="test/mad-max-beyond-thunderdome.jpg" %}
   <div class="root__row-content picture-banner__text banner-text">
@@ -9,6 +12,21 @@ This is the banner section for features page.
       <div>in every context,</div>
       <div>for everyone.</div>
     </h1>
+
     <h2>Trusted by organizations making a difference around the world</h2>
+
+    <ul class="features-banner__logos">
+      {% for org_id in org_logos %}
+        {% for partner in site.data.partners %}
+          {% if partner.id == org_id %}
+            <li>
+              <a href="{{partner.website_url}}" title="{{partner.name}}">
+                <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
   </div>
 </div>

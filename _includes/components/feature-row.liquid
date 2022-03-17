@@ -1,18 +1,20 @@
 {% comment %}
 Displays a big image on the right and tile with description on the left.
 
-@param id
-@param title
-@param description
-@param row_color - for root__row
-@param icon_url - path to svg illustration
-@param image_url - path to big image on the right, relative to assets/images/
+@param {string} id
+@param {string} title
+@param {string} description
+@param {string} row_color - for root__row
+@param {string} [icon_url] - path to svg illustration, relative to assets/images/
+@param {boolean} [is_image_full_height] - disables padding on right side
+@param {string} [image_url] - path to big image on the right, relative to assets/images/
+@param {boolean} [show_fundraiseup] - special one-shot case to display fundraiseup plugin instead of image.
 {% endcomment %}
 <div class="root__row root__row--{{include.row_color}} feature-row" id="{{include.id}}">
   <div class="feature-row__content">
     <div class="feature-row__left-side">
       {% if include.icon_url and include.icon_url != "" and include.icon_url != nil %}
-        <img class="feature-row__icon" src="{{include.icon_url}}"/>
+        <img class="feature-row__icon" src="{{site.baseurl}}/assets/images/{{include.icon_url}}"/>
       {% endif %}
 
       <h1>{{include.title}}</h1>
@@ -20,8 +22,13 @@ Displays a big image on the right and tile with description on the left.
       <p>{{include.description}}</p>
     </div>
 
-    <div class="feature-row__right-side">
-      {% if include.image_url and include.image_url != "" and include.image_url != nil %}
+    <div class="feature-row__right-side {% if include.is_image_full_height %}feature-row__right-side--no-paddings{% endif %}">
+      {% if include.show_fundraiseup %}
+        {% comment %}
+        This is ugly-ish, but I need this donation plugin here, and unfortunately Jekyll/liquid don't give me much options.
+        {% endcomment %}
+        {% include components/fundraiseup.liquid %}
+      {% elsif include.image_url and include.image_url != "" and include.image_url != nil %}
         <img class="feature-row__image" src="{{site.baseurl}}/assets/images/{{include.image_url}}"/>
       {% endif %}
     </div>

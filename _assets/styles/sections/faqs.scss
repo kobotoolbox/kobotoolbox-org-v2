@@ -4,13 +4,15 @@
 @use '_assets/styles/setup/utils';
 
 .faqs {
-  h1 {
-    font-size: sizes.$r36;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    padding: sizes.$r70 0;
-  }
+  padding: sizes.$r70 0;
+}
+
+.faqs h1 {
+  font-size: sizes.$r36;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 sizes.$r70;
+  padding: 0;
 }
 
 .faqs__list {

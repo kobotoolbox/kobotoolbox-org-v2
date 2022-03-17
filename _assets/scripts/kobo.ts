@@ -2,6 +2,7 @@ import ScrollObserver from './scroll-observer';
 import Faqs from './faqs';
 import WordTyper from './word-typer';
 import './featured-posts';
+import './load-file';
 
 function runWordTypers() {
   const typerElements = document.querySelectorAll('*[data-word-typer');
