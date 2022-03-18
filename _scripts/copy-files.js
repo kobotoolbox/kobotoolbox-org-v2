@@ -6,6 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const destFilesDir = './assets/files/';
 const destImagesDir = './assets/images/';
 const destVideosDir = './assets/videos/';
 
@@ -14,6 +15,14 @@ const destVideosDir = './assets/videos/';
  * if it doesn't exist yet.
  */
 function cleanup() {
+  // Wipe and create files directory
+  if (fs.existsSync(destFilesDir)) {
+    fs.rmSync(destFilesDir, {force: true, recursive: true});
+  }
+  if (!fs.existsSync(destFilesDir)) {
+    fs.mkdirSync(destFilesDir, {recursive: true});
+  }
+
   // Wipe and create images directory
   if (fs.existsSync(destImagesDir)) {
     fs.rmSync(destImagesDir, {force: true, recursive: true});
@@ -46,14 +55,19 @@ function copyFolderSync(from, to) {
   });
 }
 
-function copyAssetsVideos() {
-  console.info('Copying videos from assets…');
-  copyFolderSync('./_assets/videos/', destVideosDir);
+function copyAssetsFiles() {
+  console.info('Copying files from assets…');
+  copyFolderSync('./_assets/files/', destFilesDir);
 }
 
 function copyAssetsImages() {
   console.info('Copying images from assets…');
   copyFolderSync('./_assets/images/', destImagesDir);
+}
+
+function copyAssetsVideos() {
+  console.info('Copying videos from assets…');
+  copyFolderSync('./_assets/videos/', destVideosDir);
 }
 
 function copyCommonImages() {
@@ -78,6 +92,7 @@ function copyCommonImages() {
 
 // FYI: this order is important:
 cleanup();
-copyAssetsVideos();
+copyAssetsFiles();
 copyAssetsImages();
+copyAssetsVideos();
 copyCommonImages();
