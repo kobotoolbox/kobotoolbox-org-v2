@@ -4,9 +4,8 @@
 @use '_assets/styles/setup/utils';
 
 .sign-up-banner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: utils.rem(variables.$blog-content-width);
+  @include utils.limit-content-width;
+
   padding: sizes.$r70 0;
   text-align: center;
 }

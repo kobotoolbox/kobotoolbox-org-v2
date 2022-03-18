@@ -1,3 +1,4 @@
+@use 'colors';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/utils';
@@ -8,21 +9,27 @@
  * together with video and image components.
  */
 
-@mixin limit-content-width() {
-  width: 100%;
-  max-width: utils.rem(variables.$blog-content-width);
-  margin: 0 auto;
-}
-
 .long-text-content > *:not(.video):not(.image):not(h1) {
-  @include limit-content-width;
+  @include utils.limit-content-width;
 }
 
 .long-text-content > h1 {
-  @include limit-content-width;
+  @include utils.limit-content-width;
 
   font-size: sizes.$r46;
   margin: sizes.$r70 auto sizes.$r36;
+}
+
+.long-text-content > h2 {
+  font-size: sizes.$r36;
+}
+
+.long-text-content > h3 {
+  font-size: sizes.$r24;
+}
+
+.long-text-content > h4 {
+  font-size: sizes.$r19;
 }
 
 .long-text-content > *:not(.video):not(.image):not(h1):not(:last-child) {
@@ -32,4 +39,20 @@
 
 .long-text-content > *:not(.video):not(.image):not(h1):last-child {
   margin-bottom: sizes.$r70;
+}
+
+.long-text-content a {
+  text-decoration: underline;
+  color: colors.$kobo-dark-blue;
+
+  &:hover {
+    color: colors.$kobo-teal;
+  }
+}
+
+.long-text-content blockquote {
+  border-left: sizes.$r8 solid colors.$kobo-blue;
+  padding-left: sizes.$r24;
+  color: colors.$kobo-dark-blue;
+  font-family: fonts.$family-headings;
 }

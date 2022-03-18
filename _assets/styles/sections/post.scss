@@ -3,7 +3,6 @@
 @use '_assets/styles/setup/variables';
 @use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/utils';
-@use '_assets/styles/components/long-text-content';
 
 .post {
   @include utils.clearfix;
@@ -13,7 +12,7 @@
 
 .post__header,
 .post__social {
-  @include long-text-content.limit-content-width;
+  @include utils.limit-content-width;
 }
 
 .post__header {
@@ -61,20 +60,4 @@
 
 .post__social li + li {
   margin-left: sizes.$r24;
-}
-
-.post__content a {
-  text-decoration: underline;
-  color: colors.$kobo-dark-blue;
-
-  &:hover {
-    color: colors.$kobo-teal;
-  }
-}
-
-.post__content blockquote {
-  border-left: sizes.$r8 solid colors.$kobo-blue;
-  padding-left: sizes.$r24;
-  color: colors.$kobo-dark-blue;
-  font-family: fonts.$family-headings;
 }

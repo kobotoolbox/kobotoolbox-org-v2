@@ -27,7 +27,7 @@ Displays a big image on the right and tile with description on the left.
         {% comment %}
         This is ugly-ish, but I need this donation plugin here, and unfortunately Jekyll/liquid don't give me much options.
         {% endcomment %}
-        {% include components/fundraiseup.liquid %}
+        {% include components/donation-form.liquid in_box=true %}
       {% elsif include.image_url and include.image_url != "" and include.image_url != nil %}
         <img class="feature-row__image" src="{{site.url}}/assets/images/{{include.image_url}}"/>
       {% endif %}

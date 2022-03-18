@@ -11,25 +11,21 @@
 }
 
 .post-help h2 {
+  @include utils.limit-content-width;
+
   font-weight: 600;
   font-size: sizes.$r36;
-  margin: 0 auto sizes.$r36;
-}
-
-.post-help h2,
-.post-help p {
-  width: 100%;
-  max-width: utils.rem(variables.$blog-content-width);
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: sizes.$r36;
 }
 
 .post-help p {
+  @include utils.limit-content-width;
+
   margin-bottom: fonts.$leading-default-rem;
 }
 
 @media screen and (min-width: #{variables.$wide-content-width + 1px}) {
-  .post-help .kobo-fundraiseup {
+  .post-help__donate {
     float: right;
     margin-left: sizes.$r36;
     width: 50%;

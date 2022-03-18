@@ -6,7 +6,9 @@ The post call to action section.
     <section class="post-help">
       <h2>Make work like this possible</h2>
 
-      {% include components/fundraiseup.liquid %}
+      <div class="post-help__donate">
+        {% include components/donation-form.liquid in_box=true %}
+      </div>
 
       <p>This is an example of the work we do and the impact we enable. We believe free and open-source data collection can change the lives of millions for better, and we work hard to make that possible.</p>
 

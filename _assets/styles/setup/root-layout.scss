@@ -66,6 +66,7 @@
 
 .root__row {
   width: 100%;
+  overflow: auto; // To keep color despite content margins
 
   &.root__row--light-blue {
     background-color: colors.$kobo-light-blue;

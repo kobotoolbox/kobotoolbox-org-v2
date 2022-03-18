@@ -1,9 +1,10 @@
 {% assign featured_posts = site.posts | where:"is_featured",true %}
+{% assign featured_posts_count = featured_posts | size %}
 
 {% comment %}
 We hide whole section if there are no featured posts.
 {% endcomment %}
-{% if featured_posts.size >= 1 %}
+{% if featured_posts_count > 0 %}
 <div class="root__row featured-posts__row">
   <div class="root__row-content root__row-content--full">
     <section class="featured-posts">

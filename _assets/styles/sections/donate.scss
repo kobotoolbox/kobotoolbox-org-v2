@@ -17,15 +17,19 @@
 }
 
 .donate p {
+  @include utils.limit-content-width;
+
   text-align: center;
   color: colors.$kobo-gray-40;
-  width: 100%;
-  max-width: utils.rem(variables.$blog-content-width);
-  margin: 0 auto sizes.$r46;
+  margin-bottom: sizes.$r46;
 }
 
-.donate .kobo-fundraiseup {
-  text-align: center;
+.donate__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
   padding: sizes.$r70;
   border-radius: sizes.$r13 sizes.$r13 0 0;
   background-color: colors.$kobo-white;

@@ -1,0 +1,12 @@
+@use 'colors';
+@use 'sass:color';
+@use '_assets/styles/setup/sizes';
+
+.donation-form.donation-form--in-box {
+  padding: sizes.$r24;
+  border-radius: sizes.$r13;
+  background-color: colors.$kobo-white;
+  box-shadow: 0 0 sizes.$r24 color.change(colors.$kobo-dark-blue, $alpha: 0.2);
+  display: inline-block;
+  vertical-align: top;
+}

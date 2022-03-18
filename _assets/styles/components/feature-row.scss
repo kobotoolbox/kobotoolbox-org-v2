@@ -25,6 +25,19 @@
   p {
     margin: 0;
   }
+
+  p + p {
+    margin-top: fonts.$leading-default-rem;
+  }
+
+  a {
+    text-decoration: underline;
+    color: colors.$kobo-dark-blue;
+
+    &:hover {
+      color: colors.$kobo-teal;
+    }
+  }
 }
 
 .feature-row__left-side {

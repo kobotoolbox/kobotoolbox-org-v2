@@ -1,0 +1,18 @@
+{% comment %} 
+A job textual link.
+
+@param job
+{% endcomment%}
+<article class="job-link">
+  <div class="job-link__icon">&rarr;</div>
+
+  <div class="job-link__content">
+    <a href="{{site.url}}{{include.job.url}}">
+      {{include.job.title}}
+    </a>
+
+    {% if include.job.is_remote %}
+      <span>(remote)</span>
+    {% endif %}
+  </div>
+</article>

@@ -1,0 +1,26 @@
+---
+title: 'Join our team'
+---
+
+{% assign active_jobs = site.jobs | where:"is_active",true %}
+{% assign active_jobs_count = active_jobs | size %}
+
+<div class="root__row root__row--light-teal">
+  <div class="root__row-content">
+    <section class="long-text-content">
+      <h1>Openings</h1>
+
+      {% if active_jobs_count > 0 %}
+        <p>At this time, we are looking for:</p>
+
+        <div>
+          {% for job in active_jobs %}
+            {% include components/job-link.liquid job=job %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>At this time, we are not looking for anyone. But this situation changes quickly, so please visit us again.</p>
+      {% endif %}
+    </section>
+  </div>
+</div>

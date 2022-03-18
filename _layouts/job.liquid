@@ -1,0 +1,27 @@
+{% include setup/template-start.liquid %}
+
+{% include setup/page-header.liquid %}
+
+<main class="root__main" role="main">
+  {% if page.is_active == false %}
+    <div class="root__row root__row--mid-blue">
+      <div class="root__row-content">
+        <p class="job-closed-message">This position is now closed. Thank you for your interest in <a href="http://www.kobotoolbox.org/">KoboToolbox</a>!</p>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="root__row root__row--light-teal">
+    <div class="root__row-content">
+      <article class="long-text-content" {% if page.is_active == false %}disabled{% endif %}>
+        <h1>{{page.title}}</h1>
+
+        {{content}}
+      </article>
+    </div>
+  </div>
+</main>
+
+{% include setup/page-footer.liquid %}
+
+{% include setup/template-end.liquid %}

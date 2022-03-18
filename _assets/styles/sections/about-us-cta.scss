@@ -4,9 +4,6 @@
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/variables';
 
-.about-us-cta {
-}
-
 .about-us-cta__content {
   // For button
   text-align: right;
@@ -25,10 +22,6 @@
   font-weight: 600;
   font-size: sizes.$r30;
   margin: 0 auto sizes.$r24;
-}
-
-.about-us-cta__left,
-.about-us-cta__right {
 }
 
 @media screen and (min-width: #{variables.$content-width + 1px}) {

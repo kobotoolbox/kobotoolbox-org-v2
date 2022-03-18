@@ -4,9 +4,8 @@
 @use '_assets/styles/setup/utils';
 
 .post-related {
-  width: 100%;
-  max-width: utils.rem(variables.$blog-content-width);
-  margin: 0 auto;
+  @include utils.limit-content-width;
+
   padding: sizes.$r50 0;
 }
 

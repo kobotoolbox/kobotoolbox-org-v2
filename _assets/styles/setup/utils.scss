@@ -1,5 +1,6 @@
 @use 'sass:math';
 
+$blog-content-width: 700px;
 $root-font-size: 15px; // The root size for our rems.
 
 @function strip-unit($value) {
@@ -72,4 +73,10 @@ $root-font-size: 15px; // The root size for our rems.
     clear: both;
     display: table;
   }
+}
+
+@mixin limit-content-width() {
+  width: 100%;
+  max-width: rem($blog-content-width);
+  margin: 0 auto;
 }
