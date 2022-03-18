@@ -14,7 +14,7 @@ Displays a big image on the right and tile with description on the left.
   <div class="feature-row__content">
     <div class="feature-row__left-side">
       {% if include.icon_url and include.icon_url != "" and include.icon_url != nil %}
-        <img class="feature-row__icon" src="{{site.baseurl}}/assets/images/{{include.icon_url}}"/>
+        <img class="feature-row__icon" src="{{site.url}}/assets/images/{{include.icon_url}}"/>
       {% endif %}
 
       <h1>{{include.title}}</h1>
@@ -29,7 +29,7 @@ Displays a big image on the right and tile with description on the left.
         {% endcomment %}
         {% include components/fundraiseup.liquid %}
       {% elsif include.image_url and include.image_url != "" and include.image_url != nil %}
-        <img class="feature-row__image" src="{{site.baseurl}}/assets/images/{{include.image_url}}"/>
+        <img class="feature-row__image" src="{{site.url}}/assets/images/{{include.image_url}}"/>
       {% endif %}
     </div>
   </div>

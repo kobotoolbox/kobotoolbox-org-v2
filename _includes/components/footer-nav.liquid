@@ -4,7 +4,7 @@
 
     {% for item in site.data.footer-menu-org %}
     <li>
-      <a href="{{site.baseurl}}{{item.path}}">{{item.label}}</a>
+      <a href="{{site.url}}{{item.path}}">{{item.label}}</a>
     </li>
     {% endfor %}
   </ul>
@@ -14,21 +14,37 @@
 
     {% for item in site.data.footer-menu-inv %}
     <li>
-      <a href="{{site.baseurl}}{{item.path}}">{{item.label}}</a>
+      <a href="{{site.url}}{{item.path}}">{{item.label}}</a>
     </li>
     {% endfor %}
   </ul>
 
   <section class="footer-nav__newsletter">
+    <h3>
+      <div>Stay up</div>
+      <div>to date.</div>
+    </h3>
+
+    <p>Join our nesletter to be the first one to know about new releases and participate in our user research and testing.</p>
+
     {% include components/newsletter-form.liquid %}
   </section>
 
   <section class="footer-nav__social">
-    social icons
+    <nav>
+      {% for social_account in site.data.social-accounts %}
+        <li>
+          <a href="{{social.account_url}}">
+            <img src="{{site.url}}/assets/images/{{social.icon_url}}">
+          </a>
+        </li>
+      {% endfor %}
+    </nav>
 
-    <a class="footer-nav__logo" href="{{site.baseurl}}/">
+
+    <a class="footer-nav__logo" href="{{site.url}}/">
       <img
-        src="{{site.baseurl}}/assets/images/common/kobotoolbox_logo_mono_white.svg"
+        src="{{site.url}}/assets/images/common/kobotoolbox_logo_mono_white.svg"
       />
     </a>
   </section>

@@ -1,0 +1,43 @@
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+.about-us-nav {
+  list-style: none;
+}
+
+.about-us-nav__item {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: colors.$kobo-storm;
+
+  &:hover,
+  &.about-us-nav__item--active {
+    text-decoration: underline;
+    text-decoration-thickness: sizes.$r2;
+  }
+}
+
+// Big screens have a top-down menu.
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .about-us-nav li + li {
+    margin-top: sizes.$r24;
+  }
+}
+
+// Small screens have a linear menu.
+@media screen and (max-width: #{variables.$wide-content-width}) {
+  .about-us-nav {
+    @include utils.center-row-flex;
+
+    justify-content: center;
+    padding-top: sizes.$r30;
+    flex-wrap: wrap;
+  }
+
+  .about-us-nav li {
+    margin: sizes.$r10;
+  }
+}

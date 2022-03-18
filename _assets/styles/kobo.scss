@@ -19,6 +19,7 @@
 @import 'components/header-nav';
 @import 'components/image';
 @import 'components/link-card';
+@import 'components/long-text-content';
 @import 'components/picture-banner';
 @import 'components/post-card';
 @import 'components/post-link';
@@ -33,6 +34,8 @@
 
 // 3. sections
 @import 'sections/about-us-cta';
+@import 'sections/about-us-nav';
+@import 'sections/about-us-subpage';
 @import 'sections/blog-banner';
 @import 'sections/blog-pagination';
 @import 'sections/donate';

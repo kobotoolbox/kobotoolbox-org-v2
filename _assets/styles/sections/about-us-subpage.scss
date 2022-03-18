@@ -1,0 +1,35 @@
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+$aside-width: sizes.$r160;
+$aside-padding: sizes.$r50;
+
+// We want it to be placed in same line as the text under heading
+$aside-top: sizes.$r70 + sizes.$r36 + (sizes.$r46 * fonts.$leading-headings);
+
+// Floating menu layout on bigger screens.
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .about-us-subpage {
+    position: relative;
+    padding-bottom: sizes.$r30;
+  }
+
+  // To hide the aside navigation by the edge of the footer.
+  .about-us-subpage::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: sizes.$r70;
+    background: linear-gradient(0deg, colors.$kobo-white 20%, transparent 100%);
+  }
+
+  .about-us-subpage > aside {
+    position: fixed;
+    top: variables.$header-height + $aside-top;
+  }
+}

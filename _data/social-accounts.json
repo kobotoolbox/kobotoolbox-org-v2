@@ -1,0 +1,30 @@
+[
+  {
+    "id": "facebook",
+    "share_url_template": "https://www.facebook.com/sharer/sharer.php?u=REPLACE_ME",
+    "account_url": "https://www.facebook.com/kobotoolbox",
+    "icon_url": null
+  },
+  {
+    "id": "twitter",
+    "share_url_template": "http://www.twitter.com/share?url=REPLACE_ME",
+    "account_url": "https://twitter.com/kobotoolbox",
+    "icon_url": null
+  },
+  {
+    "id": "linkedin",
+    "share_url_template": "https://www.linkedin.com/sharing/share-offsite/?url=REPLACE_ME",
+    "account_url": "https://www.linkedin.com/company/kobotoolbox",
+    "icon_url": null
+  },
+  {
+    "id": "github",
+    "account_url": "https://github.com/kobotoolbox",
+    "icon_url": null
+  },
+  {
+    "id": "youtube",
+    "account_url": "https://www.youtube.com/user/KoBoToolbox",
+    "icon_url": null
+  }
+]

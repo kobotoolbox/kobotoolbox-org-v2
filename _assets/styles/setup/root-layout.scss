@@ -55,6 +55,10 @@
 
   color: colors.$kobo-white;
   background-color: colors.$kobo-gray-40;
+
+  // we need this to be over the content for the floating menus (in about-us-subpage)
+  position: relative;
+  z-index: variables.$z-footer;
 }
 
 // Building blocks of each section - we allow full size anything within

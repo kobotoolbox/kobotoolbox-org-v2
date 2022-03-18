@@ -1,0 +1,20 @@
+{% include setup/template-start.liquid %}
+
+{% include setup/page-header.liquid %}
+
+<main class="root__main" role="main">
+  <div class="root__row root__row--white">
+    <div class="root__row-content">
+      <section class="about-us-subpage">
+        <aside>
+          {% include sections/about-us-nav.liquid %}
+        </aside>
+        <article class="long-text-content">{{content}}</article>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% include setup/page-footer.liquid %}
+
+{% include setup/template-end.liquid %}

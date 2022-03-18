@@ -1,6 +1,6 @@
 <nav class="header-nav">
-  <a class="header-nav__logo" href="{{site.baseurl}}/">
-    <img src="{{site.baseurl}}/assets/images/common/kobotoolbox_logo_default_for-light-bg.svg"/>
+  <a class="header-nav__logo" href="{{site.url}}/">
+    <img src="{{site.url}}/assets/images/common/kobotoolbox_logo_default_for-light-bg.svg"/>
   </a>
 
   <ul class="header-nav__menu">
@@ -15,7 +15,7 @@
       <li>
         <a
           class="header-nav__menu-item {% if page_dir == item_dir %}header-nav__menu-item--active{% endif %}"
-          href="{{site.baseurl}}{{item.path}}"
+          href="{{site.url}}{{item.path}}"
           >{{item.label}}</a
         >
       </li>

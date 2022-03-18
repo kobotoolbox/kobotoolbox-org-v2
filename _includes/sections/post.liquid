@@ -12,11 +12,19 @@ The post tile and content. Uses global variables.
         {% include components/post-meta.liquid post=page %}
       </header>
 
-      <section class="post__social">
-        TODO twitter facebook linkedin share buttons
-      </section>
+      <nav class="post__social">
+        {% for social_account in site.data.social-accounts %}
+          {% if social_account.share_url_template %}
+            <li>
+              <a href="{{social_account.share_url_template | replace:'REPLACE_ME',page.url}}" target="_blank">
+                <img src="{{site.url}}/assets/images/{{social.icon_url}}" alt="{{social_account.id}}">
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </nav>
 
-      <section class="post__content">
+      <section class="post__content long-text-content">
         {{content}}
       </section>
     </article>

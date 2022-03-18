@@ -1,5 +1,4 @@
 # Jekyll configuration
-safe: true
 quiet: false
 future: true
 encoding: utf-8
@@ -26,9 +25,10 @@ exclude:
 name: "KoboToolbox"
 shortdescription: "Data Collection Tools for Challenging Environments"
 description: "KoboToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
-baseurl: "https://www.kobotoolbox.org"
+url: "https://www.kobotoolbox.org"
 plugins:
   - jekyll-paginate
+  - jekyll-sitemap
 paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /blog/:title
@@ -46,4 +46,3 @@ defaults:
 
 # used for Open Graph (i.e. social sharing)
 default_og_image: "/assets/images/site/kobotoolbox_opengraph_image.png"
-

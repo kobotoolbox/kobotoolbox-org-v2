@@ -1,6 +1,7 @@
 # Jekyll site is built by gh-pages
 _site
 .jekyll-metadata
+.jekyll-cache
 
 # Assets for Jekyll site (built by GH actions)
 assets

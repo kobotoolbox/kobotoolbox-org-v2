@@ -1,4 +1,5 @@
 @use 'colors';
+@use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/variables';
@@ -16,6 +17,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  flex: 3;
 
   label {
     font-weight: 400;
@@ -40,12 +42,40 @@
   }
 }
 
-.footer-nav__newsletter {}
+.footer-nav__newsletter {
+  flex: 5;
+}
 
-.footer-nav__social {}
+.footer-nav__newsletter h3 {
+  font-size: sizes.$r36;
+  font-weight: 700;
+  font-family: fonts.$family-default;
+  margin: -#{sizes.$r10} 0 sizes.$r13;
+}
+
+.footer-nav__newsletter p {
+  margin: 0 0 sizes.$r24;
+}
+
+.footer-nav__social {
+  flex: 3;
+  text-align: right;
+}
+
+.footer-nav__social nav {
+  @include utils.center-row-flex;
+
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.footer-nav__social nav li a {
+  margin: 0 sizes.$r15 sizes.$r15;
+}
 
 .footer-nav__logo {
   display: block;
+  margin-top: sizes.$r15;
 
   img {
     width: utils.rem(180px);

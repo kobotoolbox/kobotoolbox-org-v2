@@ -21,7 +21,7 @@ The `org_logos` are a list of `id`s from `partners.json`.
           {% if partner.id == org_id %}
             <li>
               <a href="{{partner.website_url}}" title="{{partner.name}}">
-                <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
+                <load-file replaceWith src="{{site.url}}/assets/images/{{partner.image_url}}"></load-file>
               </a>
             </li>
           {% endif %}

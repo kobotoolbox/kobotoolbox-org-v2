@@ -4,41 +4,41 @@
     "description": "KoboToolbox started as a small project. Today, it is a fully independent NGO with professionals around the world. Learn more about us!",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/the-organization"
+    "link_url": "/about-us/the-organization/"
   },
   {
     "title": "Our impact",
     "description": "We are more than the technology we provide. We are the positive change we enable through the many organizations we support. See how we are making a difference.",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/our-impact"
+    "link_url": "/about-us/our-impact/"
   },
   {
     "title": "Our work",
     "description": "Our team of researchers, developers, designers and support specialists provides many services and participates in projects to further our cause. See what we have done.",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/our-work"
+    "link_url": "/about-us/our-work/"
   },
   {
     "title": "Financials",
     "description": "Wondering how we manage to keep KoboToolbox free despie of the significant costs associated? Learn here how we do it, and how we plan to continue growing.",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/financials"
+    "link_url": "/about-us/financials/"
   },
   {
     "title": "Events",
     "description": "Stay up to date about the latest events organized by KoboToolbox. From trainings to releases, everything in our calendar can be found here.",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/events"
+    "link_url": "/about-us/events/"
   },
   {
     "title": "Meet the team",
     "description": "Did you ever wondered who are the faces behind KoboToolbox? Wonder no more! Meet our team of passionate researchers, developers, designers & support specialists!",
     "image": "test/mad-max-beyond-thunderdome.jpg",
     "link_title": null,
-    "link_url": "/about-us/meet-the-team"
+    "link_url": "/about-us/meet-the-team/"
   }
 ]

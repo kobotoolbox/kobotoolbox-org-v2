@@ -1,0 +1,35 @@
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/variables';
+
+/**
+ * This component is to be used with long text (e.g. blog post, privacy policy)
+ * together with video and image components.
+ */
+
+@mixin limit-content-width() {
+  width: 100%;
+  max-width: utils.rem(variables.$blog-content-width);
+  margin: 0 auto;
+}
+
+.long-text-content > *:not(.video):not(.image):not(h1) {
+  @include limit-content-width;
+}
+
+.long-text-content > h1 {
+  @include limit-content-width;
+
+  font-size: sizes.$r46;
+  margin: sizes.$r70 auto sizes.$r36;
+}
+
+.long-text-content > *:not(.video):not(.image):not(h1):not(:last-child) {
+  // Leading size of paragraph
+  margin-bottom: fonts.$leading-default-rem;
+}
+
+.long-text-content > *:not(.video):not(.image):not(h1):last-child {
+  margin-bottom: sizes.$r70;
+}
