@@ -74,6 +74,7 @@ function copyCommonImages() {
   const images = [
     'kobotoolbox_logo_default_for-light-bg.svg',
     'kobotoolbox_logo_mono_white.svg',
+    'kobotoolbox_opengraph_image.png',
   ];
 
   console.info('Copying images from kobo-common…');

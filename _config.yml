@@ -13,7 +13,8 @@ paginate_path: "/blog/page:num/"
 permalink: /blog/:title
 
 # used for Open Graph (i.e. social sharing)
-default_og_image: "/assets/images/site/kobotoolbox_opengraph_image.png"
+default_og_image: "/assets/images/common/kobotoolbox_opengraph_image.png"
+default_thumbnail: "/assets/images/site/blog_post_default.png"
 
 defaults:
   -
