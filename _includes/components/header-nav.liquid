@@ -3,6 +3,14 @@
     <img src="{{site.url}}/assets/images/common/kobotoolbox_logo_default_for-light-bg.svg"/>
   </a>
 
+  {% comment %}
+  A pair of elements responsible for handling css-only mobile menu.
+  {% endcomment %}
+  <input type="checkbox" id="mobile-nav-trigger">
+  <label class="header-nav__mobile-nav-trigger" for="mobile-nav-trigger">
+    {% for i in (1..4) %}<i></i>{% endfor %}
+  </label>
+
   <ul class="header-nav__menu">
     {% for item in site.data.header-menu %}
       {% comment %}

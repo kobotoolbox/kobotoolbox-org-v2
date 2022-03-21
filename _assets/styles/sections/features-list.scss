@@ -1,5 +1,6 @@
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
 
 .features-list {
   padding-bottom: sizes.$r30;
@@ -12,16 +13,11 @@
 }
 
 .features-list__list {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  align-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 
   > li {
-    flex: 1;
     margin: sizes.$r24;
   }
 }
@@ -29,4 +25,30 @@
 .features-list__link {
   text-align: center;
   margin: sizes.$r24 0 sizes.$r30;
+}
+
+@media screen and (max-width: #{variables.$wide-content-width}) {
+  .features-list__list {
+    text-align: center;
+
+    > li {
+      max-width: sizes.$r200;
+      width: 100%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .features-list__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+
+    > li {
+      flex: 1;
+    }
+  }
 }

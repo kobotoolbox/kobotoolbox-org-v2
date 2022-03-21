@@ -62,7 +62,7 @@ $gradient-width: utils.rem(720px);
 @media screen and (max-width: #{variables.$content-width}) {
   .picture-banner__background {
     background-size: cover;
-    background-position: center top;
+    background-position: center top !important;
     opacity: 0.5;
   }
 }

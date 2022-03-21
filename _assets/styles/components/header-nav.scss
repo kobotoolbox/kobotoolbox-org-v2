@@ -1,7 +1,10 @@
+@use 'sass:color';
 @use 'colors';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/variables';
+
+$mobile-menu-width: sizes.$r300;
 
 .header-nav {
   @include utils.center-row-flex;
@@ -24,12 +27,8 @@
 }
 
 .header-nav__menu {
-  @include utils.center-row-flex;
-
-  flex: 1;
-  justify-content: flex-end;
   list-style: none;
-  margin: 0 sizes.$r10;
+  margin: 0;
   padding: 0;
 }
 
@@ -41,37 +40,6 @@
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  height: variables.$header-height;
-  line-height: variables.$header-height;
-  display: block;
-  position: relative;
-  white-space: nowrap;
-
-  &::after {
-    content: '';
-    width: sizes.$r30;
-    height: sizes.$r8;
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - #{sizes.$r30 * 0.5});
-    background-color: transparent;
-    transform: scaleY(0);
-    transform-origin: 50% 100%;
-    transition-property: transform, background-color;
-    transition-duration: 0.25s;
-    transition-timing-function: ease-out;
-    transition-delay: 0.1s;
-  }
-
-  &.header-nav__menu-item--active::after {
-    background-color: colors.$kobo-teal;
-    transform: scaleY(1);
-  }
-
-  &:not(.header-nav__menu-item--active):hover::after {
-    background-color: colors.$kobo-teal;
-    transform: scaleY(1);
-  }
 }
 
 .header-nav__buttons {
@@ -83,5 +51,175 @@
 
   > li + li {
     margin-left: sizes.$r10;
+  }
+}
+
+input#mobile-nav-trigger {
+  visibility: hidden;
+  position: fixed;
+  pointer-events: none;
+}
+
+// Hide all mobile menu elements.
+@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+  .header-nav__mobile-nav-trigger {
+    display: none;
+  }
+
+  .header-nav__menu {
+    @include utils.center-row-flex;
+
+    flex: 1;
+    justify-content: flex-end;
+    margin: 0 sizes.$r10;
+  }
+
+  .header-nav__menu-item {
+    height: variables.$header-height;
+    line-height: variables.$header-height;
+    display: block;
+    position: relative;
+    white-space: nowrap;
+
+    &::after {
+      content: '';
+      width: sizes.$r30;
+      height: sizes.$r8;
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - #{sizes.$r30 * 0.5});
+      background-color: transparent;
+      transform: scaleY(0);
+      transform-origin: 50% 100%;
+      transition-property: transform, background-color;
+      transition-duration: 0.25s;
+      transition-timing-function: ease-out;
+      transition-delay: 0.1s;
+    }
+
+    &.header-nav__menu-item--active::after {
+      background-color: colors.$kobo-teal;
+      transform: scaleY(1);
+    }
+
+    &:not(.header-nav__menu-item--active):hover::after {
+      background-color: colors.$kobo-teal;
+      transform: scaleY(1);
+    }
+  }
+}
+
+// Mobile menu styles
+@media screen and (max-width: #{variables.$wide-content-width}) {
+  .header-nav__buttons {
+    flex: 1;
+    justify-content: center;
+    margin-left: sizes.$r15;
+    margin-right: sizes.$r15;
+  }
+
+  .header-nav__mobile-nav-trigger {
+    cursor: pointer;
+    border-radius: sizes.$r2;
+    display: block;
+    overflow: hidden;
+    width: sizes.$r24;
+    height: sizes.$r4 * 5; // 3 bars with r4 space between them
+    order: 99; // We need it last.
+    position: relative;
+    transition: border-radius 0.2s linear;
+
+    &:hover {
+      color: colors.$kobo-teal;
+    }
+
+    &:active {
+      color: colors.$kobo-dark-teal;
+    }
+
+    // We use <i>s to make (vegan) burger icon that animates into "x"
+    i {
+      display: block;
+      width: 200%;
+      height: sizes.$r4;
+      background-color: currentcolor;
+      position: absolute;
+      left: -50%;
+      transition: transform 0.2s ease-in-out;
+      transform-origin: center;
+    }
+
+    i:nth-child(1) {top: 0;}
+
+    i:nth-child(2) {top: sizes.$r4 * 2;}
+
+    i:nth-child(3) {top: sizes.$r4 * 2;}
+
+    i:nth-child(4) {top: sizes.$r4 * 4;}
+  }
+
+  input#mobile-nav-trigger:checked ~ .header-nav__mobile-nav-trigger {
+    border-radius: 50%;
+
+    i:nth-child(1) {transform: translateY(#{-2 * sizes.$r4});}
+
+    i:nth-child(2) {transform: rotate(45deg);}
+
+    i:nth-child(3) {transform: rotate(-45deg);}
+
+    i:nth-child(4) {transform: translateY(#{2 * sizes.$r4});}
+  }
+
+  .header-nav__menu-item {
+    display: block;
+    font-size: sizes.$r19;
+    font-weight: 500;
+    padding: sizes.$r4 sizes.$r10;
+    margin: sizes.$r4 0;
+
+    &.header-nav__menu-item--active {
+      text-decoration: underline;
+      text-decoration-thickness: sizes.$r2;
+    }
+
+    &:hover {
+      color: colors.$kobo-teal;
+    }
+  }
+
+  .header-nav__menu {
+    padding: sizes.$r15;
+    background-color: colors.$kobo-white;
+    position: fixed;
+    z-index: variables.$z-mobile-menu;
+    top: variables.$header-height;
+    bottom: 0;
+    right: -1 * $mobile-menu-width;
+    width: 100%;
+    max-width: $mobile-menu-width;
+    transition: right 0.3s ease-in;
+
+    &::before {
+      content: '';
+      position: fixed;
+      top: variables.$header-height;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      background-color: color.change(colors.$kobo-dark-blue, $alpha: 0.2);
+      transition: right 0.3s ease-in, opacity 0.5s ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+      backdrop-filter: blur(sizes.$r10);
+    }
+  }
+
+  input#mobile-nav-trigger:checked ~ .header-nav__menu {
+    right: 0;
+
+    &::before {
+      right: $mobile-menu-width;
+      opacity: 1;
+    }
   }
 }
