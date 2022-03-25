@@ -1,12 +1,31 @@
 ---
 title: "Meet the team"
 layout: "about-us-subpage"
+menu:
+  -
+    label: "Leadership"
+    target_id: "leadership"
+  -
+    label: "Core team"
+    target_id: "core"
+  -
+    label: "Former members"
+    target_id: "former"
 ---
 
-<h1>Meet the team</h1>
+<p>We are a team of passionate researchers, developers, designers and data management specialists working remotely from all corners of the world. We maintain a horizontal, creative and flexible workflow that ensures KoboToolbox continues to be an innovative global good.</p>
 
-<p>Cras euismod, tellus in tincidunt bibendum, lacus mi auctor arcu, a porttitor tortor turpis vitae ipsum. Integer sed lobortis augue, rutrum vehicula elit. Praesent vel ornare felis, vel imperdiet nunc. Suspendisse vitae cursus justo, ac aliquam lacus. Morbi in pharetra turpis, id volutpat leo. In hac habitasse platea dictumst. Etiam accumsan non lectus quis suscipit.</p>
+<h2 id="leadership">Leadership</h2>
 
-<p>Cras dapibus a justo eu pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus varius erat in tincidunt pharetra. Ut sit amet nisl commodo, fermentum eros ac, congue diam. Maecenas arcu est, facilisis vitae luctus ac, pulvinar at turpis. Maecenas est risus, volutpat non efficitur et, maximus vel purus. In ac nibh quis metus dapibus sagittis. Ut ut placerat ligula. Fusce erat mauris, lacinia ac dui sit amet, consequat aliquam nibh. Suspendisse at velit eget est scelerisque auctor. Donec dignissim porta purus, et scelerisque metus maximus a. Nunc at dolor sit amet sem consectetur gravida. Nulla sagittis erat eros, dictum pellentesque massa cursus eget. Integer et vehicula urna, sit amet lobortis massa.</p>
+{% assign leadership_team_members = site.data.team | where:"group","leadership" %}
+{% include components/humans-list.liquid humans=leadership_team_members %}
 
-<p>Suspendisse lorem est, finibus ut scelerisque non, euismod quis nunc. Nulla posuere dictum risus sed finibus. Quisque aliquam venenatis elit, et elementum massa elementum at. Nam nec dolor blandit lacus aliquet volutpat. Donec cursus ut leo nec vestibulum. Donec interdum nisi ut justo pellentesque, nec scelerisque ligula ultrices. Pellentesque feugiat efficitur libero eget volutpat. Ut sollicitudin suscipit ligula, nec venenatis metus consequat et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas venenatis eros eget arcu varius egestas. Morbi metus mi, feugiat quis viverra at, mollis quis orci.</p>
+<h2 id="core">Core team</h2>
+
+{% assign core_team_members = site.data.team | where:"group","core" | sort:"year_started" %}
+
+{% include components/humans-list.liquid humans=core_team_members %}
+
+<h2 id="former">Former members</h2>
+
+{% include sections/former-team-members.liquid %}

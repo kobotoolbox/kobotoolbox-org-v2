@@ -3,7 +3,6 @@
 @use '_assets/styles/setup/fonts';
 
 .feature-card {
-  cursor: pointer;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -18,11 +17,15 @@
     display: block;
   }
 
-  &:hover label {
+  &[href] {
+    cursor: pointer;
+  }
+
+  &[href]:hover label {
     text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
   }
 
-  &:active {
+  &[href]:active {
     // Make it appear pressed down.
     transform: translateY(sizes.$r1);
   }

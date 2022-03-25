@@ -1,0 +1,32 @@
+{% comment %}
+Displays a list of people with thumbnails. Clicking a person opens a modal.
+
+@param {object[]} humans - list of humans (from `team.json`)
+{% endcomment %}
+<ul class="humans-list">
+  {% for human in include.humans %}
+    {% capture human_id %}{{human.first_name}}_{{human.last_name}}{% endcapture %}
+    <li
+      class="humans-list__human"
+      data-modal-instance-opener="{{human_id}}"
+    >
+      <div class="humans-list__thumbnail">
+        {% include components/thumbnail.liquid
+          image_url=human.portrait_serious
+          image_hover_url=human.portrait_playful
+        %}
+      </div>
+
+      <h3 class="humans-list__human-name">
+        <span>{{human.first_name}}</span>
+        <span>{{human.last_name}}</span>
+      </h3>
+
+      <div class="humans-list__human-position">{{human.position}}</div>
+
+      {% include templates/human-modal.liquid human=human human_id=human_id %}
+    </li>
+  {% endfor %}
+</ul>
+
+

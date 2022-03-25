@@ -8,6 +8,7 @@ $blog-content-width: 700px; // Maximum width of the long text content (i.e. blog
 $content-width: 1140px; // Maximum width of the actual content.
 $wide-content-width: 1280px; // The width of wider variant (footer and header).
 $full-content-width: 1440px; // The max width of content we want to support.
+$spacious-content-height: 500px; // The vertical size of the viewport that gives enough room for some of features.
 
 $header-height: utils.rem(70px);
 
@@ -15,6 +16,7 @@ $header-height: utils.rem(70px);
 $screen-edge-padding: sizes.$r24;
 
 // A list of all z-indexes we use.
+$z-modal: 12;
 $z-mobile-menu: 11;
 $z-header: 10;
 $z-footer: 9;

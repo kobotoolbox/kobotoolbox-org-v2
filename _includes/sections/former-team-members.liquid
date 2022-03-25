@@ -1,0 +1,17 @@
+{% assign former_team_members = site.data.team | where:"group","former" | sort:"year_ended" | reverse %}
+
+<ul class="former-team-members">
+  {% for human in former_team_members %}
+    <li>
+      <strong>{{human.first_name}} {{human.last_name}}</strong>
+
+      <span>{{human.position}}</span>
+
+      {% if human.year_started == human.year_ended %}
+        ({{human.year_started}})
+      {% else %}
+        (from {{human.year_started}} to {{human.year_ended}})
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

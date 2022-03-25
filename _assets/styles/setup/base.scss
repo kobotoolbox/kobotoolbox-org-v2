@@ -2,6 +2,7 @@
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/variables';
 
 html {
   // Sorry for complexity here, but we want the fluid size to become
@@ -30,6 +31,7 @@ html {
   line-height: fonts.$leading-default;
   background-color: colors.$kobo-white;
   color: colors.$kobo-gray-24;
+  scroll-behavior: smooth;
 }
 
 * {

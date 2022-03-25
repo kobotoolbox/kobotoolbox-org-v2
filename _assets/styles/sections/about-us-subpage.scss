@@ -7,8 +7,12 @@
 $aside-width: sizes.$r160;
 $aside-padding: sizes.$r50;
 
-// We want it to be placed in same line as the text under heading
+// We want it to be placed in same line as the text under heading (around 170px);
 $aside-top: sizes.$r70 + sizes.$r36 + (sizes.$r46 * fonts.$leading-headings);
+
+.about-us-subpage > article {
+  overflow: auto;
+}
 
 // Floating menu layout on bigger screens.
 @media screen and (min-width: #{variables.$wide-content-width + 1px}) {
@@ -30,6 +34,22 @@ $aside-top: sizes.$r70 + sizes.$r36 + (sizes.$r46 * fonts.$leading-headings);
 
   .about-us-subpage > aside {
     position: fixed;
+    top: 0;
+  }
+}
+
+// On screens that are high enough, we move the navigation to where
+// the first paragraph is.
+@media screen and (min-height: #{variables.$spacious-content-height + 1px}) {
+  .about-us-subpage > aside {
     top: variables.$header-height + $aside-top;
+  }
+}
+
+// On screens that are short, we keep the navigation in the vertical middle.
+@media screen and (max-height: #{variables.$spacious-content-height}) {
+  .about-us-subpage > aside {
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

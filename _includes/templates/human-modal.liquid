@@ -1,0 +1,20 @@
+{% comment %}
+Modal content for human.
+
+@param {string} human_id - safer to create it in single place
+@param {object} human
+{% endcomment %}
+<template data-modal-instance-content="{{include.human_id}}">
+  <article class="human-modal">
+    <h3 class="human-modal__name">
+      <span>{{include.human.first_name}}</span>
+      <span>{{include.human.last_name}}</span>
+    </h3>
+
+    <label class="human-modal__position">{{include.human.position}}</label>
+
+    <div class="human-modal__location">{{include.human.location}}</div>
+
+    <p class="human-modal__bio">{{include.human.bio}}</p>
+  </article>
+</template>

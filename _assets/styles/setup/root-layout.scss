@@ -11,6 +11,15 @@
   height: 100%;
 }
 
+// Because we use sticky navigation on top, anchor links with id's causes
+// the content to scroll into view under the navigation. This is a hackfix.
+*[id]::before {
+  content: '';
+  display: block;
+  padding-top: variables.$header-height + variables.$screen-edge-padding;
+  margin-top: -1 * (variables.$header-height + variables.$screen-edge-padding);
+}
+
 // Sticky header.
 .root__header {
   @include utils.center-row_flex;

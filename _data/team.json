@@ -1,86 +1,230 @@
 [
-   {
-      "first_name": "Phuong",
-      "last_name": "Pham",
-      "position": "co-founder",
-      "vip_order": 1
-   },
-   {
-      "first_name": "Patrick",
-      "last_name": "Vinck",
-      "position": "co-founder",
-      "vip_order": 2
-   },
-   {
-      "first_name": "Tino",
-      "last_name": "Kreutzer",
-      "position": "chief operating &amp; innovation officer",
-      "vip_order": 3
-   },
-   {
-      "first_name": "John",
-      "last_name": "Milner",
-      "position": "lead developer",
-      "vip_order": 4
-   },
-   {
-      "first_name": "Ignacio",
-      "last_name": "Giménez-Rebollo",
-      "position": "design lead"
-   },
-   {
-      "first_name": "Olivier",
-      "last_name": "Leger",
-      "position": "back-end lead"
-   },
-   {
-      "first_name": "Leszek",
-      "last_name": "Pietrzak",
-      "position": "front-end lead"
-   },
-   {
-      "first_name": "Anji",
-      "last_name": "Tong",
-      "position": "developer"
-   },
-   {
-      "first_name": "Joshua",
-      "last_name": "Beretta",
-      "position": "developer"
-   },
-   {
-      "first_name": "Jacqueline",
-      "last_name": "Morrissette",
-      "position": "developer"
-   },
-   {
-      "first_name": "Kalyan",
-      "last_name": "Lama",
-      "position": "user support lead"
-   },
-   {
-      "first_name": "Stephane",
-      "last_name": "Aloo",
-      "position": "support specialist"
-   },
-   {
-      "first_name": "Alex",
-      "last_name": "Dorey",
-      "position": "systems architect"
-   },
-   {
-      "first_name": "Mae-Lin",
-      "last_name": "DeLange",
-      "position": "communications associate"
-   },
-   {
-      "first_name": "Hadeel",
-      "last_name": "Tawfik",
-      "position": "user engagement specialist"
-   },
-   {
-      "first_name": "Alexander",
-      "last_name": "Mtembenuzeni",
-      "position": "knowledge transfer specialist"
-   }
+  {
+    "first_name": "Phuong",
+    "last_name": "Pham",
+    "position": "Co-founder",
+    "location": "Warsaw, Poland",
+    "year_started": 2005,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "leadership"
+  },
+  {
+    "first_name": "Patrick",
+    "last_name": "Vinck",
+    "position": "Co-founder",
+    "location": "Warsaw, Poland",
+    "year_started": 2005,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "leadership"
+  },
+  {
+    "first_name": "Tino",
+    "last_name": "Kreutzer",
+    "position": "Chief operating &amp; innovation officer",
+    "location": "Montreal, Quebec, Canada",
+    "year_started": 2013,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "Tino Kreutzer is an internationally recognized expert in the fields of humanitarian response and information management. He has more than 12 years’ experience working in the response to humanitarian crises, natural disasters, and global public health emergencies, including in Central African Republic, DR Congo, Uganda, Côte d’Ivoire, Guinea, Liberia, Palestine, Nepal, and Sierra Leone. Tino is currently a Ph.D. candidate at York University (Canada) working on deploying next generation technologies for humanitarian response planning and population needs assessments.",
+    "group": "leadership"
+  },
+  {
+    "first_name": "John",
+    "last_name": "Milner",
+    "position": "Lead developer",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Ignacio",
+    "last_name": "Giménez-Rebollo",
+    "position": "Design lead",
+    "location": "Toronto, Ontario, Canada",
+    "year_started": 2021,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Olivier",
+    "last_name": "Leger",
+    "position": "Back-end lead",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Leszek",
+    "last_name": "Pietrzak",
+    "position": "Front-end lead",
+    "location": "Warsaw, Poland",
+    "year_started": 2018,
+    "year_ended": null,
+    "portrait_serious": "team/leszek_serious.jpg",
+    "portrait_playful": "team/leszek_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Anji",
+    "last_name": "Tong",
+    "position": "Developer",
+    "location": "Ontario, Canada",
+    "year_started": 2019,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Joshua",
+    "last_name": "Beretta",
+    "position": "Developer",
+    "location": "Canada",
+    "year_started": 2020,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Jacqueline",
+    "last_name": "Morrissette",
+    "position": "Developer",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Kalyan",
+    "last_name": "Lama",
+    "position": "User support lead",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Stephane",
+    "last_name": "Aloo",
+    "position": "Support specialist",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Alex",
+    "last_name": "Dorey",
+    "position": "Systems architect",
+    "location": "Warsaw, Poland",
+    "year_started": 1901,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Mae-Lin",
+    "last_name": "DeLange",
+    "position": "Communications associate",
+    "location": "Canada",
+    "year_started": 2021,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Hadeel",
+    "last_name": "Tawfik",
+    "position": "User engagement specialist",
+    "location": "West Midlands, England, United Kingdom",
+    "year_started": 2021,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Alexander",
+    "last_name": "Mtembenuzeni",
+    "position": "Knowledge transfer specialist",
+    "location": "Malawi",
+    "year_started": 2021,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Zoe",
+    "last_name": "Reinecke",
+    "position": "Education intern",
+    "location": "Greater Boston, USA",
+    "year_started": 2022,
+    "year_ended": null,
+    "portrait_serious": "team/human_serious.jpg",
+    "portrait_playful": "team/human_playful.jpg",
+    "bio": "This human being is human. It looks human, does human things and is basically an animal from animal kingdom. The longevity of given human is roughly 100 years, as observed on planet Earth - this is the only planet so far that humans occupy.",
+    "group": "core"
+  },
+  {
+    "first_name": "Caitlin",
+    "last_name": "Reid",
+    "position": "Communications lead",
+    "location": "Toronto, Ontario, Canada",
+    "year_started": 2021,
+    "year_ended": 2022,
+    "portrait_serious": null,
+    "portrait_playful": null,
+    "bio": null,
+    "group": "former"
+  },
+  {
+    "first_name": "Penar",
+    "last_name": "Musaraj",
+    "position": "Front-end lead",
+    "location": "Montreal, Quebec, Canada",
+    "year_started": 2015,
+    "year_ended": 2018,
+    "portrait_serious": null,
+    "portrait_playful": null,
+    "bio": null,
+    "group": "former"
+  }
 ]

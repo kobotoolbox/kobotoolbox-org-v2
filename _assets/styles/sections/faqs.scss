@@ -16,9 +16,7 @@
 }
 
 .faqs__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include utils.list-reset;
 }
 
 .faqs__item {
@@ -37,10 +35,11 @@
   padding-bottom: sizes.$r15;
 
   &:hover {
-    text-decoration-color: colors.$kobo-teal;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-thickness: sizes.$r4;
+    color: colors.$kobo-blue;
+  }
+
+  &:active {
+    transform: translateY(sizes.$r1);
   }
 
   label {

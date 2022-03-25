@@ -3,9 +3,17 @@ Displays an image with blue overlay and slight zoom effect on hover.
 
 NOTE: covers the whole area of parent element.
 
-@param image_url - path to image, relative to assets/images/
+@param {string} image_url - path to image, relative to assets/images/
+@param {string} [image_hover_url] - path to image that will be displayed on hover, relative to assets/images/
 {% endcomment %}
 {% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.url}}/assets/images/{{include.image_url}}{% else %}{{site.url}}{{site.default_thumbnail}}{% endif %}{% endcapture %}
+{% capture thumbnail_hover_url %}{% if include.image_hover_url and include.image_hover_url != "" and include.image_hover_url != nil %}{{site.url}}/assets/images/{{include.image_hover_url}}{% else %}{{thumbnail_url}}{% endif %}{% endcapture %}
 <div class="thumbnail">
-  <div class="thumbnail__image" style="background-image: url('{{thumbnail_url}}')"></div>
+  <div class="thumbnail__image"
+    style="background-image: url('{{thumbnail_url}}')"
+    {% if include.image_hover_url %}
+      onmouseover="this.style.backgroundImage='url(\'{{thumbnail_hover_url}}\')'"
+      onmouseout="this.style.backgroundImage='url(\'{{thumbnail_url}}\')'"
+    {% endif %}
+  ></div>
 </div>

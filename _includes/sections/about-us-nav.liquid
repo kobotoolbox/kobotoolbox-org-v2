@@ -1,7 +1,16 @@
+{% comment %}
+Here we display a list of links defined in one of subpages (in frontmatter).
+These links are leading to headers with id's.
+{% endcomment %}
 <nav class="about-us-nav">
-  {% for link in site.data.quick-links-about-us %}
+  {% for link in page.menu %}
     <li>
-      <a class="about-us-nav__item {% if page.url == link.link_url %}about-us-nav__item--active{% endif %}" href="{{link.link_url}}">{{link.title}}</a>
+      <a
+        class="about-us-nav__item"
+        href="{{page.url}}#{{link.target_id}}"
+      >
+        {{link.label}}
+      </a>
     </li>
   {% endfor %}
 </nav>

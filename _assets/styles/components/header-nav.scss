@@ -27,9 +27,7 @@ $mobile-menu-width: sizes.$r300;
 }
 
 .header-nav__menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  @include utils.list-reset;
 }
 
 .header-nav__menu-item {

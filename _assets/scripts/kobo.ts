@@ -1,5 +1,6 @@
 import ScrollObserver from './scroll-observer';
 import Faqs from './faqs';
+import Modal from './modal';
 import WordTyper from './word-typer';
 import './featured-posts';
 import './load-file';
@@ -16,8 +17,9 @@ function runWordTypers() {
 }
 
 function initializeWebsite() {
-  const scrollObs = new ScrollObserver();
-  const faqs = new Faqs();
+  new ScrollObserver();
+  new Faqs();
+  new Modal();
   runWordTypers();
 }
 

@@ -2,6 +2,8 @@
 
 {% include setup/page-header.liquid %}
 
+{% include components/modal.liquid %}
+
 <main class="root__main" role="main">
   <div class="root__row root__row--white">
     <div class="root__row-content">
@@ -9,7 +11,11 @@
         <aside>
           {% include sections/about-us-nav.liquid %}
         </aside>
-        <article class="long-text-content">{{content}}</article>
+        <article class="long-text-content">
+          <h1>{{page.title}}</h1>
+
+          {{content}}
+        </article>
       </section>
     </div>
   </div>

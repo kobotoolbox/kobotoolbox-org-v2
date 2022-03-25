@@ -1,0 +1,16 @@
+{% comment %}
+Modal skeleton.
+
+Each instance is being opened via `data-modal-instance-opener="{id}"` attribute with
+unique id. For each instance you need a predefined
+`<template data-modal-instance-content="{id}"` with all final content inside.
+
+`modal.ts` script handles modal skeleton showing/hiding and replacing the
+skeleton content with given instance content.
+{% endcomment %}
+<div class="modal" data-modal>
+  <div class="modal__box">
+    <button class="modal__closer" data-modal-closer>&times;</button>
+    <div class="modal__content" data-modal-content>Hello, World!</div>
+  </div>
+</div>

@@ -56,3 +56,12 @@
   color: colors.$kobo-dark-blue;
   font-family: fonts.$family-headings;
 }
+
+@media screen and (max-width: #{variables.$blog-content-width}) {
+  .long-text-content > h1,
+  .long-text-content > h2,
+  .long-text-content > h3,
+  .long-text-content > h4 {
+    text-align: center;
+  }
+}
