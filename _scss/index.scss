@@ -8,7 +8,6 @@
 @import "khc";
 @import "kobo";
 @import "sections/about";
-@import "sections/covid";
 @import "sections/dev";
 @import "sections/donate";
 @import "sections/examples";
@@ -63,14 +62,6 @@ a {
     text-decoration: none;
     display: inline-block;
     border-radius: 5px;
-
-    &.button--covid-red {
-      background: $covid-red;
-
-      &:hover {
-        background: darken($covid-red, 15%);
-      }
-    }
 
     &:hover {
       background: darken($blue, 15%);
