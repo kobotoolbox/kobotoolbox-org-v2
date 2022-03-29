@@ -1,0 +1,46 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+
+.human-modal {
+  width: 80vw;
+}
+
+.human-modal__name {
+  font-size: sizes.$r30;
+  color: colors.$kobo-dark-blue;
+  font-weight: 700;
+  margin: 0 0 sizes.$r19;
+}
+
+.human-modal__position,
+.human-modal__location {
+  display: block;
+  font-weight: 600;
+  font-size: sizes.$r19;
+}
+
+.human-modal__position {
+  margin: 0 0 sizes.$r10;
+}
+
+.human-modal__location {
+  margin: 0 0 sizes.$r24;
+}
+
+.human-modal__bio {
+  margin: 0;
+}
+
+@media screen and (min-width: #{variables.$blog-content-width + 1px}) {
+  .human-modal {
+    padding: sizes.$r50 sizes.$r70;
+    max-width: sizes.$r600;
+  }
+}
+
+@media screen and (max-width: #{variables.$blog-content-width}) {
+  .human-modal {
+    padding: sizes.$r24;
+  }
+}

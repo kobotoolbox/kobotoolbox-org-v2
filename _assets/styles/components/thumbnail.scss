@@ -44,7 +44,15 @@
     visibility: hidden;
   }
 
-  &:hover .thumbnail__image {
+  .thumbnail__image-preload {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &:not(.thumbnail--has-hover-image):hover .thumbnail__image {
     transform: scale(1.05);
   }
 }

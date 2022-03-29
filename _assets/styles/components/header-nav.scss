@@ -59,7 +59,7 @@ input#mobile-nav-trigger {
 }
 
 // Hide all mobile menu elements.
-@media screen and (min-width: #{variables.$wide-content-width + 1px}) {
+@media screen and (min-width: #{variables.$content-width + 1px}) {
   .header-nav__mobile-nav-trigger {
     display: none;
   }
@@ -108,7 +108,7 @@ input#mobile-nav-trigger {
 }
 
 // Mobile menu styles
-@media screen and (max-width: #{variables.$wide-content-width}) {
+@media screen and (max-width: #{variables.$content-width}) {
   .header-nav__buttons {
     flex: 1;
     justify-content: center;

@@ -82,6 +82,7 @@
 }
 
 // We disable tiny-slider on smaller screens, thus we need to handle the layout ourselves.
+// Note: this breakpoint should be identical as in `featured-posts.ts`
 @media screen and (max-width: #{variables.$wide-content-width}) {
   .featured-posts__row {
     background: colors.$kobo-light-blue;

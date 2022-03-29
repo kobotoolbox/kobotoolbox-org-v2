@@ -1,5 +1,6 @@
 @use 'colors';
 @use 'sass:color';
+@use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
 @use '_assets/styles/setup/variables';
@@ -13,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: color.change(colors.$kobo-alt-blue, $alpha: 0.35);
+  background-color: color.change(colors.$kobo-storm, $alpha: 0.25);
 
   &.modal--visible {
     visibility: visible;
@@ -28,5 +29,20 @@
   transform: translate(-50%, -50%);
   background-color: colors.$kobo-white;
   border-radius: sizes.$r6;
-  box-shadow: 0 0 sizes.$r24 color.change(colors.$kobo-dark-blue, $alpha: 0.2);
+  box-shadow: 0 0 sizes.$r24 color.change(colors.$kobo-gray-40, $alpha: 0.25);
+}
+
+.modal__closer {
+  @include utils.button-reset;
+
+  position: absolute;
+  top: sizes.$r24;
+  right: sizes.$r24;
+  color: colors.$kobo-storm;
+  font-size: sizes.$r24;
+  padding: sizes.$r6;
+
+  &:hover {
+    font-weight: 700;
+  }
 }

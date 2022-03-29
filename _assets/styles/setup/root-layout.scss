@@ -121,7 +121,7 @@
   }
 }
 
-@media screen and (max-width: #{variables.$content-width}) {
+@media screen and (max-width: #{variables.$wide-content-width}) {
   // TODO: see if this is good idea, or too harsh
   .root__row-content {
     padding-left: variables.$screen-edge-padding;

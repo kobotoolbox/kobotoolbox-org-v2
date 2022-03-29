@@ -8,7 +8,7 @@ NOTE: covers the whole area of parent element.
 {% endcomment %}
 {% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.url}}/assets/images/{{include.image_url}}{% else %}{{site.url}}{{site.default_thumbnail}}{% endif %}{% endcapture %}
 {% capture thumbnail_hover_url %}{% if include.image_hover_url and include.image_hover_url != "" and include.image_hover_url != nil %}{{site.url}}/assets/images/{{include.image_hover_url}}{% else %}{{thumbnail_url}}{% endif %}{% endcapture %}
-<div class="thumbnail">
+<div class="thumbnail {% if include.image_hover_url %}thumbnail--has-hover-image{% endif %}">
   <div class="thumbnail__image"
     style="background-image: url('{{thumbnail_url}}')"
     {% if include.image_hover_url %}
@@ -16,4 +16,7 @@ NOTE: covers the whole area of parent element.
       onmouseout="this.style.backgroundImage='url(\'{{thumbnail_url}}\')'"
     {% endif %}
   ></div>
+  {% if include.image_hover_url %}
+    <img class="thumbnail__image-preload" src="{{thumbnail_hover_url}}">
+  {% endif %}
 </div>
