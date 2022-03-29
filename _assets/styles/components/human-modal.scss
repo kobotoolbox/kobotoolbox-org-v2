@@ -2,10 +2,6 @@
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/variables';
 
-.human-modal {
-  width: 80vw;
-}
-
 .human-modal__name {
   font-size: sizes.$r30;
   color: colors.$kobo-dark-blue;
@@ -35,7 +31,6 @@
 @media screen and (min-width: #{variables.$blog-content-width + 1px}) {
   .human-modal {
     padding: sizes.$r50 sizes.$r70;
-    max-width: sizes.$r600;
   }
 }
 
