@@ -14,11 +14,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Install Node dependencies
+    - name: Install dependencies
       run: npm install
-
-    - name: Install Gem dependencies
-      run: bundle install
 
     - name: Copy some assets
       run: npm run copy-files
