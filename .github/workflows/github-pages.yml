@@ -29,11 +29,7 @@ jobs:
       - name: Build assets
         run: npm run assets-build
 
-      # Use GitHub Deploy Action to build and deploy to Github
-      - uses: jeffreytse/jekyll-deploy-action@v0.3.1
+      - uses: helaili/jekyll-action@v2
         with:
-          provider: 'github'
-          token: ${{ secrets.GITHUB_TOKEN }} # It's your Personal Access Token(PAT)
-          branch: 'gh-pages'
-          # cname: '' # Default is to not use a CNAME
-          pre_build_commands: '' # Installing additional dependencies (Arch Linux)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          target_branch: 'gh-pages'

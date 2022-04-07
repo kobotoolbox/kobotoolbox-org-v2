@@ -19,3 +19,6 @@ Thumbs.db
 
 # Bundler
 .parcel-cache
+
+# We omit this, as commiting it to repository breaks our GH Action that is responsible for building Jekyll
+Gemfile.lock

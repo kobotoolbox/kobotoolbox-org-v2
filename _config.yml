@@ -43,6 +43,7 @@ destination: docs
 # Jekyll configuration
 quiet: false
 future: true
+safe: false
 encoding: utf-8
 markdown: kramdown
 kramdown:
