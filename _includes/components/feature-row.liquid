@@ -10,6 +10,9 @@ Displays a big image on the right and tile with description on the left.
 @param {string} [image_url] - path to big image on the right, relative to assets/images/
 @param {boolean} [show_fundraiseup] - special one-shot case to display fundraiseup plugin instead of image.
 {% endcomment %}
+
+{% capture anchor_with_baseurl %}<a href='{{site.baseurl}}/{% endcapture %}
+
 <div class="root__row root__row--{{include.row_color}} feature-row" id="{{include.id}}">
   <div class="feature-row__content">
     <div class="feature-row__left-side">
@@ -19,7 +22,7 @@ Displays a big image on the right and tile with description on the left.
 
       <h1>{{include.title}}</h1>
       
-      <p>{{include.description}}</p>
+      <p>{{include.description | replace:"<a href='/",anchor_with_baseurl}}</p>
     </div>
 
     <div class="feature-row__right-side {% if include.is_image_full_height %}feature-row__right-side--no-paddings{% endif %}">
