@@ -20,7 +20,7 @@ A small post card with links to full post.
   <h3 class="link-card__title">
     <a
       {% if include.link_url and include.link_url != "" and include.link_url != nil %}
-        href="{{site.url}}{{include.link_url}}"
+        href="{{site.baseurl}}{{include.link_url}}"
       {% endif %}
     >
       {{include.title}}

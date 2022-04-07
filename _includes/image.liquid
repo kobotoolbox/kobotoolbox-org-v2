@@ -5,7 +5,7 @@ This is an image component/utility. Things to be passed:
 @param link - optional
 @param type - "left", "right", "full"
 {% endcomment %}
-{% capture full_image_path %}{{site.url}}/assets/images/{{include.file | url_escape}}{% endcapture %}
+{% capture full_image_path %}{{site.baseurl}}/assets/images/{{include.file | url_escape}}{% endcapture %}
 <figure
   class='image
     {% if include.type == "left" %}

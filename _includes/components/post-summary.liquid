@@ -7,7 +7,7 @@ A horizontal post summary with description and links to full post.
   <div class="post-summary__left">
     <a 
       class="post-summary__thumbnail" 
-      href="{{site.url}}{{include.post.url}}"
+      href="{{site.baseurl}}{{include.post.url}}"
     >
       {% include components/thumbnail.liquid image_url=include.post.thumbnail %}
     </a>
@@ -15,7 +15,7 @@ A horizontal post summary with description and links to full post.
 
   <div class="post-summary__right">
     <h2>
-      <a href="{{site.url}}{{include.post.url}}">
+      <a href="{{site.baseurl}}{{include.post.url}}">
         {{include.post.title}}
       </a>
     </h2>

@@ -7,13 +7,13 @@
         {% for partner in site.data.partners %}
           <li>
             <a href="{{partner.website_url}}" title="{{partner.name}}">
-              <load-file replaceWith src="{{site.url}}/assets/images/{{partner.image_url}}"></load-file>
+              <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
             </a>
           </li>
         {% endfor %}
       </ul>
 
-      <p>See the complete list of donours in our <a href="{{site.url}}/about-us">About page</a></p>
+      <p>See the complete list of donours in our <a href="{{site.baseurl}}/about-us">About page</a></p>
     </section>
   </div>
 </div>

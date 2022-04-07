@@ -4,7 +4,7 @@
 
     {% for item in site.data.footer-menu-org %}
     <li>
-      <a href="{{site.url}}{{item.path}}">{{item.label}}</a>
+      <a href="{{site.baseurl}}{{item.path}}">{{item.label}}</a>
     </li>
     {% endfor %}
   </ul>
@@ -14,7 +14,7 @@
 
     {% for item in site.data.footer-menu-inv %}
     <li>
-      <a href="{{site.url}}{{item.path}}">{{item.label}}</a>
+      <a href="{{site.baseurl}}{{item.path}}">{{item.label}}</a>
     </li>
     {% endfor %}
   </ul>
@@ -35,16 +35,16 @@
       {% for social_account in site.data.social-accounts %}
         <li>
           <a href="{{social.account_url}}">
-            <img src="{{site.url}}/assets/images/{{social.icon_url}}">
+            <img src="{{site.baseurl}}/assets/images/{{social.icon_url}}">
           </a>
         </li>
       {% endfor %}
     </nav>
 
 
-    <a class="footer-nav__logo" href="{{site.url}}/">
+    <a class="footer-nav__logo" href="{{site.baseurl}}/">
       <img
-        src="{{site.url}}/assets/images/common/kobotoolbox_logo_mono_white.svg"
+        src="{{site.baseurl}}/assets/images/common/kobotoolbox_logo_mono_white.svg"
       />
     </a>
   </section>

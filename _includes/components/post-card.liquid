@@ -6,19 +6,19 @@ A small post card with links to full post.
 <article class="post-card">
   <a
     class="post-card__thumbnail" 
-    href="{{site.url}}{{include.post.url}}"
+    href="{{site.baseurl}}{{include.post.url}}"
   >
     {% include components/thumbnail.liquid image_url=include.post.thumbnail %}
   </a>
 
   <h3>
-    <a href="{{site.url}}{{include.post.url}}">
+    <a href="{{site.baseurl}}{{include.post.url}}">
       {{include.post.title}}
     </a>
   </h3>
 
   <footer>
-    {% capture post_url_full %}{{site.url}}{{include.post.url}}{% endcapture %}
+    {% capture post_url_full %}{{site.baseurl}}{{include.post.url}}{% endcapture %}
     {% include components/button.liquid
       size="m"
       type="bare"

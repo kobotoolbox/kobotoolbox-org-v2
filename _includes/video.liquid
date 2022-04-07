@@ -4,7 +4,7 @@ This is a video component/utility. Things to be passed:
 @param caption - optional
 @param type - "left", "right", "full"
 {% endcomment %}
-{% capture full_video_path %}{{site.url}}/assets/videos/{{include.file | url_escape}}{% endcapture %}
+{% capture full_video_path %}{{site.baseurl}}/assets/videos/{{include.file | url_escape}}{% endcapture %}
 <figure
   class='video
     {% if include.type == "left" %}

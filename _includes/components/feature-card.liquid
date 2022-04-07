@@ -6,9 +6,9 @@ Displays a link to feature.
 @param icon_url - path to svg illustration
 @param enable_link
 {% endcomment %}
-<a class="feature-card" {% if include.enable_link %}href="{{site.url}}/features#{{feature.id}}"{% endif %}>
+<a class="feature-card" {% if include.enable_link %}href="{{site.baseurl}}/features#{{feature.id}}"{% endif %}>
   {% if include.icon_url and include.icon_url != "" and include.icon_url != nil %}
-    <img class="feature-card__icon" src="{{site.url}}/assets/images/{{include.icon_url}}"/>
+    <img class="feature-card__icon" src="{{site.baseurl}}/assets/images/{{include.icon_url}}"/>
   {% endif %}
   <label>{{include.title}}</label>
 </a>

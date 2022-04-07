@@ -17,7 +17,7 @@ The post tile and content. Uses global variables.
           {% if social_account.share_url_template %}
             <li>
               <a href="{{social_account.share_url_template | replace:'REPLACE_ME',page.url}}" target="_blank">
-                <img src="{{site.url}}/assets/images/{{social.icon_url}}" alt="{{social_account.id}}">
+                <img src="{{site.baseurl}}/assets/images/{{social.icon_url}}" alt="{{social_account.id}}">
               </a>
             </li>
           {% endif %}
