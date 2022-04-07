@@ -2,7 +2,7 @@
 name: "KoboToolbox"
 shortdescription: "Data Collection Tools for Challenging Environments"
 description: "KoboToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries."
-url: "https://www.kobotoolbox.org"
+url: "https://kobotoolbox.github.io/kobotoolbox-org-v2" # TEMPORARY URL FOR TESTING
 
 plugins:
   - jekyll-paginate
