@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+
+  <!-- home page -->
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17</loc>
+  </url>
+
+  <!-- blog -->
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog</loc>
+  </url>
+
+  <!-- terms -->
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/terms</loc>
+  </url>
+
+  <!-- privacy -->
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/privacy</loc>
+  </url>
+
+  <!-- all posts -->
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/how-the-caribbean-development-bank-is-using-kobotoolbox-to-enhance-community-resilience-in-the-caribbean</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/kobotoolbox-selected-as-gold-winner-for-best-humanitarian-product-in-the-inaugural-anthem-awards</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/building-better-longitudinal-surveys-with-dynamic-data-attachments</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/joint-initiative-announced-to-enhance-kobotoolbox-for-data-collection-and-analysis-in-displacement-contexts</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/using-the-public-collections-feature-to-power-your-survey-creation</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/how-kobotoolbox-and-purposefuls-radio-drama-show-support-girls-resistance-in-sierra-leone</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/the-syrian-refugee-crisis-in-lebanon-and-how-kobotoolbox-is-aiding-humanitarian-efforts</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/kobo-and-twb-develop-speech-recognition-software-marginalized-languages</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.kobotoolbox.org/temp_v2_2022_03_17/blog/blog/documenting-attacks-on-health-care-in-syria</loc>
+  </url>
+  
+
+</urlset>
