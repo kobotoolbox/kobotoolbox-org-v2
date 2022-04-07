@@ -38,6 +38,8 @@ collections:
     output: true
     permalink: /join-our-team/:name
 
+destination: docs
+
 # Jekyll configuration
 quiet: false
 future: true

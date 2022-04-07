@@ -1,0 +1,30 @@
+# This workflow builds live website into /docs for GH pages
+
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Install Node dependencies
+      run: npm install
+
+    - name: Install Gem dependencies
+      run: bundle install
+
+    - name: Copy some assets
+      run: npm run copy-files
+
+    - name: Build assets
+      run: npm run assets-build
+
+    - name: Build Jekyll website
+      run: npm run jekyll-build # builds to /docs
