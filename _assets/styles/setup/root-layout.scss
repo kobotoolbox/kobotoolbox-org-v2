@@ -77,6 +77,11 @@
   width: 100%;
   overflow: auto; // To keep color despite content margins
 
+  // Starts the background with some white color, and then switches to the selected one.
+  &.root__row--background-fold {
+    background-image: linear-gradient(180deg, colors.$kobo-white 0 sizes.$r50, transparent sizes.$r50 100%);
+  }
+
   &.root__row--light-blue {
     background-color: colors.$kobo-light-blue;
   }

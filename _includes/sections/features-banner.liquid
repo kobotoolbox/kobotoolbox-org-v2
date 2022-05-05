@@ -17,7 +17,7 @@ The `org_logos` are a list of `id`s from `partners.json`.
 
     <ul class="features-banner__logos">
       {% for org_id in org_logos %}
-        {% for partner in site.data.partners %}
+        {% for partner in site.data.organizations %}
           {% if partner.id == org_id %}
             <li>
               <a href="{{partner.website_url}}" title="{{partner.name}}">
