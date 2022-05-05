@@ -31,7 +31,9 @@
   </ul>
 
   <ul class="header-nav__buttons">
-    <li>{% include components/button.liquid size="m" type="frame" color="blue" label="Sign up" url="/sign-up" %}</li>
-    <li>{% include components/button.liquid size="m" type="full" color="blue" label="Donate" url="/donate" %}</li>
+    {% capture sign_up_url %}{{site.baseurl}}/sign-up{% endcapture %}
+    {% capture donate_url %}{{site.baseurl}}/donate{% endcapture %}
+    <li>{% include components/button.liquid size="m" type="frame" color="blue" label="Sign up" url=sign_up_url %}</li>
+    <li>{% include components/button.liquid size="m" type="full" color="blue" label="Donate" url=donate_url %}</li>
   </ul>
 </nav>
