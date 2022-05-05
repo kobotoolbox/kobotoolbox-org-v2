@@ -7,11 +7,11 @@ export default class WordTyper {
   /** Whether is not doing anything (neither typing nor deleting). */
   private isIdle = false;
   /** How long to wait before deleting after whole word was typed. */
-  private static endWaitTime = 2000;
+  private static endWaitTime = 1500;
   /** How long to wait before typing after whole word was deleted. */
-  private static startWaitTime = 500;
+  private static startWaitTime = 400;
   /** Single key press time (slightly randomized in code). */
-  private static characterTime = 300;
+  private static characterTime = 250;
   /** Added to element when not typing or deleting. */
   private static idleClassName = 'word-typer--is-idle';
 

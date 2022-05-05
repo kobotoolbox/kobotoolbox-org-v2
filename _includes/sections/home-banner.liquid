@@ -13,8 +13,10 @@ This is the banner section for home page.
     </h1>
     <h2>The free & open source data collection standard</h2>
     <ul class="home-banner__buttons">
-      <li>{% include components/button.liquid size="l" type="full" color="blue" label="Help us keep it free" url="/donate" %}</li>
-      <li>{% include components/button.liquid size="l" type="frame" color="blue" label="Create an account" url="/sign-up" %}</li>
+      {% capture sign_up_url %}{{site.baseurl}}/sign-up{% endcapture %}
+      {% capture donate_url %}{{site.baseurl}}/donate{% endcapture %}
+      <li>{% include components/button.liquid size="l" type="full" color="blue" label="Help us keep it free" url=donate_url %}</li>
+      <li>{% include components/button.liquid size="l" type="frame" color="blue" label="Create an account" url=sign_up_url %}</li>
     </ul>
   </div>
 </div>
