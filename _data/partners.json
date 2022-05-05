@@ -3,156 +3,182 @@
     "id": "bwh",
     "name": "Brigham and Women's Hospital",
     "website_url": "https://www.brighamandwomens.org",
-    "image_url": "partners/bwh.svg"
+    "image_url": "partners/bwh.svg",
+    "is_khc": false
   },
   {
     "id": "cisco",
     "name": "Cisco",
     "website_url": "https://cisco.com",
-    "image_url": "partners/cisco.svg"
+    "image_url": "partners/cisco.svg",
+    "is_khc": false
   },
   {
     "id": "fidelity",
     "name": "Fidelity Foundation",
     "website_url": "http://www.fidelityfoundation.org",
-    "image_url": "partners/fidelity.svg"
+    "image_url": "partners/fidelity.svg",
+    "is_khc": false
   },
   {
     "id": "hgc",
     "name": "Creating Hope in Conflict: A Humanitarian Grand Challenge",
     "website_url": "https://humanitariangrandchallenge.org",
-    "image_url": "partners/hgc.svg"
+    "image_url": "partners/hgc.svg",
+    "is_khc": false
   },
   {
     "id": "hhi",
     "name": "Harvard Humanitarian Initiative",
     "website_url": "https://hhi.harvard.edu",
-    "image_url": "partners/hhi.svg"
+    "image_url": "partners/hhi.svg",
+    "is_khc": true
   },
   {
     "id": "hilton",
     "name": "Conrad N. Hilton Foundation",
     "website_url": "https://hiltonfoundation.org",
-    "image_url": "partners/hilton.svg"
+    "image_url": "partners/hilton.svg",
+    "is_khc": false
   },
   {
     "id": "humanityunited",
     "name": "Humanity United",
     "website_url": "https://humanityunited.org",
-    "image_url": "partners/humanity-united.svg"
+    "image_url": "partners/humanity-united.svg",
+    "is_khc": false
   },
   {
     "id": "iom",
     "name": "International Organization for Migration",
     "website_url": "http://iom.by",
-    "image_url": "partners/iom.svg"
+    "image_url": "partners/iom.svg",
+    "is_khc": true
   },
   {
     "id": "irc",
     "name": "International Rescue Committee",
     "website_url": "https://rescue.org",
-    "image_url": "partners/irc.svg"
+    "image_url": "partners/irc.svg",
+    "is_khc": false
   },
   {
     "id": "jdc",
     "name": "Joint Data Center on Forced Displacement",
     "website_url": "https://www.jointdatacenter.org",
-    "image_url": "partners/jdc.svg"
+    "image_url": "partners/jdc.svg",
+    "is_khc": false
   },
   {
     "id": "koboinc",
     "name": "Kobo, Inc",
     "website_url": "https://www.kobotoolbox.org/kobo",
-    "image_url": "partners/kobo-inc.svg"
+    "image_url": "partners/kobo-inc.svg",
+    "is_khc": false
   },
   {
     "id": "m4m",
     "name": "Metrics for Management",
     "website_url": "https://m4mgmt.org",
-    "image_url": "partners/m4m.svg"
+    "image_url": "partners/m4m.svg",
+    "is_khc": false
   },
   {
     "id": "macarthur",
     "name": "MacArthur Foundation",
     "website_url": "https://macfound.org",
-    "image_url": "partners/macarthur.svg"
+    "image_url": "partners/macarthur.svg",
+    "is_khc": false
   },
   {
     "id": "msf",
     "name": "Médecins Sans Frontières",
     "website_url": "https://msf.org",
-    "image_url": "partners/msf.svg"
+    "image_url": "partners/msf.svg",
+    "is_khc": false
   },
   {
     "id": "pfhr",
     "name": "Physicians for Human Rights",
     "website_url": "https://physiciansforhumanrights.org",
-    "image_url": "partners/pfhr.svg"
+    "image_url": "partners/pfhr.svg",
+    "is_khc": false
   },
   {
     "id": "savethechildren",
     "name": "Save the Children",
     "website_url": "https://savethechildren.net",
-    "image_url": "partners/savethechildren.svg"
+    "image_url": "partners/savethechildren.svg",
+    "is_khc": false
   },
   {
     "id": "tides",
     "name": "Tides",
     "website_url": "http://tides.org",
-    "image_url": "partners/tides.svg"
+    "image_url": "partners/tides.svg",
+    "is_khc": false
   },
   {
     "id": "undp",
     "name": "United Nations Development Programme",
     "website_url": "https://undp.org",
-    "image_url": "partners/undp.svg"
+    "image_url": "partners/undp.svg",
+    "is_khc": false
   },
   {
     "id": "unhcr",
     "name": "United Nations High Commissioner for Refugees",
     "website_url": "https://unhcr.org",
-    "image_url": "partners/unhcr.svg"
+    "image_url": "partners/unhcr.svg",
+    "is_khc": true
   },
   {
     "id": "unicef",
     "name": "United Nations Children’s Fund",
     "website_url": "https://www.unicef.org/",
-    "image_url": "partners/unicef.svg"
+    "image_url": "partners/unicef.svg",
+    "is_khc": true
   },
   {
     "id": "unocha",
     "name": "United Nations Office for the Coordination of Humanitarian Affairs",
     "website_url": "https://unocha.org",
-    "image_url": "partners/unocha.svg"
+    "image_url": "partners/unocha.svg",
+    "is_khc": true
   },
   {
     "id": "usaid",
     "name": "United States Agency for International Development",
     "website_url": "https://usaid.gov",
-    "image_url": "partners/usaid.svg"
+    "image_url": "partners/usaid.svg",
+    "is_khc": false
   },
   {
     "id": "wcs",
     "name": "Wildlife Conservation Society",
     "website_url": "https://wcs.org",
-    "image_url": "partners/wcs.svg"
+    "image_url": "partners/wcs.svg",
+    "is_khc": false
   },
   {
     "id": "wfp",
     "name": "World Food Programme",
     "website_url": "https://wfp.org",
-    "image_url": "partners/wfp.svg"
+    "image_url": "partners/wfp.svg",
+    "is_khc": false
   },
   {
     "id": "worldbank",
     "name": "The World Bank Group",
     "website_url": "https://www.worldbank.org",
-    "image_url": "partners/twbg.svg"
+    "image_url": "partners/twbg.svg",
+    "is_khc": false
   },
   {
     "id": "wri",
     "name": "World Resources Institute",
     "website_url": "https://wri.org",
-    "image_url": "partners/wri.svg"
+    "image_url": "partners/wri.svg",
+    "is_khc": false
   }
 ]

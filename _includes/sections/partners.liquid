@@ -1,12 +1,14 @@
+{% assign khc_partners = site.data.partners | where:"is_khc",true %}
+
 <div class="root__row root__row--teal">
   <div class="root__row-content">
     <section class="partners">
       <h2>Partners</h2>
 
       <ul class="partners__list">
-        {% for partner in site.data.partners %}
+        {% for partner in khc_partners %}
           <li>
-            <a href="{{partner.website_url}}" title="{{partner.name}}">
+            <a href="{{partner.website_url}}" title="{{partner.name}}" target="_blank">
               <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
             </a>
           </li>
