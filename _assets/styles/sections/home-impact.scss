@@ -1,0 +1,63 @@
+@use 'colors';
+@use '_assets/styles/setup/fonts';
+@use '_assets/styles/setup/utils';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/variables';
+
+.home-impact {
+  h1 {
+    text-align: center;
+    font-size: sizes.$r36;
+    margin: sizes.$r70 auto sizes.$r24;
+  }
+}
+
+.home-impact__list {
+  margin: 0 0 sizes.$r30;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
+  li {
+    margin: 0 sizes.$r24;
+  }
+
+  figure {
+    color: colors.$kobo-blue;
+    font-size: sizes.$r24;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  figure em {
+    font-style: normal;
+    font-size: sizes.$r30;
+  }
+
+  label {
+    color: colors.$kobo-dark-blue;
+    font-size: sizes.$r19;
+    font-family: fonts.$family-headings;
+  }
+}
+
+@media screen and (min-width: #{variables.$blog-content-width + 1px}) {
+  .home-impact__list {
+    @include utils.center-row-flex;
+
+    justify-content: center;
+
+    li {
+      margin: 0 sizes.$r50;
+    }
+  }
+}
+
+@media screen and (max-width: #{variables.$blog-content-width}) {
+  .home-impact__list {
+    li {
+      display: inline-block;
+      margin: sizes.$r24;
+    }
+  }
+}
