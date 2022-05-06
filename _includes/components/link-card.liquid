@@ -8,7 +8,8 @@ A small post card with links to full post.
 @param [link_url] - required to enable links
 {% endcomment%}
 {% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.baseurl}}/assets/images/{{include.image_url}}{% else %}{{site.baseurl}}{{site.default_thumbnail}}{% endif %}{% endcapture %}
-<a class="link-card" href="{{include.link_url}}">
+{% capture final_url %}{% if include.link_url contains "http" %}{{include.link_url}}{% else %}{{site.baseurl}}{{include.link_url}}{% endif %}{% endcapture %}
+<a class="link-card" href="{{final_url}}">
   <figure
     class="link-card__thumbnail"
     style="background-image: url('{{thumbnail_url}}')"
