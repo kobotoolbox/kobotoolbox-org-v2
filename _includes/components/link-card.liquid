@@ -3,44 +3,29 @@ A small post card with links to full post.
 
 @param title
 @param description
-@param image
+@param image_url
 @param [link_title] - required together with `link_url` to produce button on bottom
 @param [link_url] - required to enable links
 {% endcomment%}
-<article class="link-card">
-  <a
+{% capture thumbnail_url %}{% if include.image_url and include.image_url != "" and include.image_url != nil %}{{site.baseurl}}/assets/images/{{include.image_url}}{% else %}{{site.baseurl}}{{site.default_thumbnail}}{% endif %}{% endcapture %}
+<a class="link-card" href="{{include.link_url}}">
+  <figure
     class="link-card__thumbnail"
-    {% if include.link_url and include.link_url != "" and include.link_url != nil %}
-      href="{{include.link_url}}"
-    {% endif %}
-  >
-    {% include components/thumbnail.liquid image_url=include.image %}
-  </a>
+    style="background-image: url('{{thumbnail_url}}')"
+  ></figure>
 
   <h3 class="link-card__title">
-    <a
-      {% if include.link_url and include.link_url != "" and include.link_url != nil %}
-        href="{{site.baseurl}}{{include.link_url}}"
-      {% endif %}
-    >
-      {{include.title}}
-    </a>
+    {{include.title}}
   </h3>
 
   <p class="link-card__description">
     {{include.description}}
   </p>
 
-  {% if include.link_url and include.link_url != "" and include.link_url != nil and include.link_title and include.link_title != "" and include.link_title != nil%}
-   <footer class="link-card__link">
-      {% capture link_title_full %}{{include.link_title}} &rarr;{% endcapture %}
-      {% include components/button.liquid
-        size="m"
-        type="bare"
-        color="blue"
-        label=link_title_full
-        url=include.link_url
-      %}
-    </footer>
+  {% if include.link_title and include.link_title != "" and include.link_title != nil%}
+   <span class="link-card__link">
+      {{include.link_title}}
+      <span class="link-card__link-icon">&rarr;</span>
+    </span>
   {% endif %}
-</article>
+</a>

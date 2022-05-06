@@ -29,10 +29,6 @@
 }
 
 @media screen and (max-width: #{variables.$wide-content-width}) {
-  .home-banner__buttons {
-    justify-content: center;
-  }
-
   .home-banner__word-typer-wrapper {
     display: block !important;
   }

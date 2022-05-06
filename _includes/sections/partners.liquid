@@ -1,15 +1,14 @@
-{% assign partners = site.data.organizations | where:"is_partner",true %}
-
+{% assign partner_orgs = site.data.organizations | where:"is_partner",true %}
 <div class="root__row root__row--teal">
   <div class="root__row-content">
     <section class="partners">
       <h2>Partners</h2>
 
       <ul class="partners__list">
-        {% for partner in partners %}
+        {% for org in partner_orgs %}
           <li>
-            <a href="{{partner.website_url}}" title="{{partner.name}}" target="_blank">
-              <load-file replaceWith src="{{site.baseurl}}/assets/images/{{partner.image_url}}"></load-file>
+            <a href="{{org.website_url}}" title="{{org.name}}" target="_blank">
+              <load-file replaceWith src="{{site.baseurl}}/assets/images/{{org.image_url}}"></load-file>
             </a>
           </li>
         {% endfor %}

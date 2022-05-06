@@ -27,10 +27,6 @@
   .banner-text h1 div {
     display: inline;
   }
-
-  .banner-text {
-    text-align: center;
-  }
 }
 
 @media screen and (min-width: #{variables.$content-width + 1px}) {

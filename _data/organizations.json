@@ -6,7 +6,7 @@
     "image_url": "partners/bwh.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": true
   },
   {
     "id": "cisco",
@@ -15,7 +15,7 @@
     "image_url": "partners/cisco.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": true
   },
   {
     "id": "fidelity",
@@ -24,7 +24,7 @@
     "image_url": "partners/fidelity.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": true
   },
   {
     "id": "hgc",
@@ -33,7 +33,7 @@
     "image_url": "partners/hgc.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": true
   },
   {
     "id": "hhi",
@@ -42,7 +42,7 @@
     "image_url": "partners/hhi.svg",
     "is_partner": true,
     "is_donor": false,
-    "is_user": false
+    "is_using": true
   },
   {
     "id": "hilton",
@@ -50,8 +50,8 @@
     "website_url": "https://hiltonfoundation.org",
     "image_url": "partners/hilton.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": true
   },
   {
     "id": "humanityunited",
@@ -59,8 +59,8 @@
     "website_url": "https://humanityunited.org",
     "image_url": "partners/humanity-united.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": true
   },
   {
     "id": "iom",
@@ -68,8 +68,8 @@
     "website_url": "http://iom.by",
     "image_url": "partners/iom.svg",
     "is_partner": true,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": true
   },
   {
     "id": "irc",
@@ -77,8 +77,8 @@
     "website_url": "https://rescue.org",
     "image_url": "partners/irc.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": true
   },
   {
     "id": "jdc",
@@ -86,8 +86,8 @@
     "website_url": "https://www.jointdatacenter.org",
     "image_url": "partners/jdc.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": true
   },
   {
     "id": "koboinc",
@@ -95,8 +95,8 @@
     "website_url": "https://www.kobotoolbox.org/kobo",
     "image_url": "partners/kobo-inc.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": false
   },
   {
     "id": "m4m",
@@ -104,8 +104,8 @@
     "website_url": "https://m4mgmt.org",
     "image_url": "partners/m4m.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": false
   },
   {
     "id": "macarthur",
@@ -113,8 +113,8 @@
     "website_url": "https://macfound.org",
     "image_url": "partners/macarthur.svg",
     "is_partner": false,
-    "is_donor": false,
-    "is_user": false
+    "is_donor": true,
+    "is_using": false
   },
   {
     "id": "msf",
@@ -123,7 +123,7 @@
     "image_url": "partners/msf.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "pfhr",
@@ -132,7 +132,7 @@
     "image_url": "partners/pfhr.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "savethechildren",
@@ -141,7 +141,7 @@
     "image_url": "partners/savethechildren.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "tides",
@@ -150,7 +150,7 @@
     "image_url": "partners/tides.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "undp",
@@ -159,7 +159,7 @@
     "image_url": "partners/undp.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "unhcr",
@@ -168,7 +168,7 @@
     "image_url": "partners/unhcr.svg",
     "is_partner": true,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "unicef",
@@ -177,7 +177,7 @@
     "image_url": "partners/unicef.svg",
     "is_partner": true,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "unocha",
@@ -186,7 +186,7 @@
     "image_url": "partners/unocha.svg",
     "is_partner": true,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "usaid",
@@ -195,7 +195,7 @@
     "image_url": "partners/usaid.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "wcs",
@@ -204,7 +204,7 @@
     "image_url": "partners/wcs.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "wfp",
@@ -213,7 +213,7 @@
     "image_url": "partners/wfp.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "worldbank",
@@ -222,7 +222,7 @@
     "image_url": "partners/twbg.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   },
   {
     "id": "wri",
@@ -231,6 +231,6 @@
     "image_url": "partners/wri.svg",
     "is_partner": false,
     "is_donor": false,
-    "is_user": false
+    "is_using": false
   }
 ]

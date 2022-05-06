@@ -1,0 +1,12 @@
+[data-child-cycler] {
+  > * {
+    transition: all 0.25s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .child-cycler-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

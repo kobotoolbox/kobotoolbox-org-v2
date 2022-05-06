@@ -1,0 +1,28 @@
+@use 'colors';
+@use '_assets/styles/setup/sizes';
+@use '_assets/styles/setup/utils';
+
+.donors-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: sizes.$r24;
+    display: inline-block;
+  }
+
+  li a {
+    display: block;
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  svg {
+    max-width: sizes.$r80;
+    max-height: sizes.$r80;
+  }
+}

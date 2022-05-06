@@ -2,18 +2,24 @@
 @use '_assets/styles/setup/sizes';
 @use '_assets/styles/setup/fonts';
 
-.link-card {
-  display: flex;
-  flex-direction: column;
+.link-card__thumbnail,
+.link-card__title,
+.link-card__description,
+.link-card__link-icon {
+  transition: transform 0.25s ease-in-out;
 }
 
 .link-card__thumbnail {
   display: block;
   position: relative;
   width: 100%;
+  margin: 0;
   height: sizes.$r200;
   border-radius: sizes.$r6;
   overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .link-card__title {
@@ -23,17 +29,35 @@
   color: colors.$kobo-gray-24;
   margin: sizes.$r30 0 sizes.$r24;
   flex: 1;
-
-  a:hover {
-    text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
-  }
 }
 
 .link-card__description {
   margin: 0 0 sizes.$r24;
 }
 
+.link-card {
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    .link-card__thumbnail,
+    .link-card__title,
+    .link-card__description {
+      transform: translateY(-1 * sizes.$r19);
+    }
+
+    .link-card__link-icon {
+      transform: translateX(sizes.$r6);
+    }
+  }
+}
+
 .link-card__link {
   margin: 0 0 sizes.$r15;
   text-align: right;
+  color: colors.$kobo-blue;
+}
+
+.link-card__link-icon {
+  display: inline-block;
 }

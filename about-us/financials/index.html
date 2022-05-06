@@ -13,6 +13,19 @@ menu:
     target_id: "three"
 ---
 
+<p>The high quality of our service is in great deal thanks to generous donations from these organizations:</p>
+
+{% assign donor_orgs = site.data.organizations | where:"is_donor",true %}
+<ul class="donors-list">
+  {% for org in donor_orgs %}
+    <li>
+      <a href="{{org.website_url}}" title="{{org.name}}">
+        <load-file replaceWith src="{{site.baseurl}}/assets/images/{{org.image_url}}"></load-file>
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
 <p>Nullam sed accumsan felis. Nam sagittis rutrum mauris, et ultricies justo dignissim varius. Suspendisse vitae lacus quis felis ullamcorper malesuada id at eros. Maecenas vulputate faucibus lacus, placerat consequat nisi vestibulum vestibulum. Donec nec viverra tellus, a pellentesque tellus. Fusce ullamcorper risus sit amet elit efficitur, vitae auctor justo venenatis. Suspendisse iaculis erat nibh, ac aliquet nisi ultrices sed. Aenean id justo pretium, facilisis enim sit amet, dictum eros. Suspendisse eleifend dui at nulla suscipit, eu mattis nunc cursus. Duis feugiat libero et auctor pellentesque. Morbi at eros quis nisi viverra venenatis a a lorem. Praesent sit amet iaculis justo. Phasellus lacinia cursus neque.</p>
 
 <h2 id="one">One</h2>
