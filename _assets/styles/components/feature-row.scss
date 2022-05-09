@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use 'colors';
 @use '_assets/styles/setup/utils';
 @use '_assets/styles/setup/sizes';
@@ -5,15 +6,16 @@
 @use '_assets/styles/setup/fonts';
 
 .feature-row {
+  width: 100%;
 }
 
 .feature-row__content {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: justify;
   margin: 0 auto;
   width: 100%;
-  max-width: utils.rem(variables.$full-content-width);
+  max-width: variables.$full-content-width;
 
   h1 {
     font-family: fonts.$family-default;
@@ -49,10 +51,12 @@
 }
 
 .feature-row__right-side {
+  @include utils.center-row-flex;
+
   width: 60%;
 
   &:not(.feature-row__right-side--no-paddings) {
-    padding: sizes.$r50 0;
+    padding: sizes.$r50 sizes.$r30 sizes.$r50 0;
   }
 }
 
@@ -64,4 +68,6 @@
 .feature-row__image {
   display: block;
   max-width: 100%;
+  border-radius: sizes.$r6;
+  box-shadow: 0 sizes.$r6 sizes.$r13 color.change(colors.$kobo-gray-40, $alpha: 0.25);
 }
