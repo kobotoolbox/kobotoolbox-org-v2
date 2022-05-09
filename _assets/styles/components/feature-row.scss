@@ -48,22 +48,20 @@
   padding-left: (variables.$full-content-width - variables.$content-width) * 0.5;
   padding-right: sizes.$r50;
   padding-top: sizes.$r70;
-  padding-bottom: sizes.$r100;
+  padding-bottom: sizes.$r70;
 }
 
 .feature-row__right-side {
-  @include utils.center-row-flex;
-
   width: 60%;
 
   &:not(.feature-row__right-side--no-paddings) {
-    padding: sizes.$r50 sizes.$r30 sizes.$r50 0;
+    padding: sizes.$r100 sizes.$r30 sizes.$r50 0;
   }
 }
 
 .feature-row__icon {
-  max-width: sizes.$r120;
-  max-height: sizes.$r120;
+  max-width: sizes.$r160;
+  max-height: sizes.$r160;
 }
 
 .feature-row__image {

@@ -5,7 +5,7 @@
     "description": "TODO Tank-traps semiotics boy silent San Francisco artisanal rifle industrial grade ablative dead man tiger-team receding katana Shibuya. Saturation point bridge bicycle free-market convenience store warehouse weathered camera crypto-katana narrative woman face forwards realism rain.",
     "row_color": "light-blue",
     "image": "features/test-deleteme-anim.gif",
-    "icon": "features/test-deleteme.svg"
+    "icon": "features/design.svg"
   },
   {
     "id": "feature-collect",
@@ -13,7 +13,7 @@
     "description": "TODO Semiotics garage gang crypto-8-bit towards construct meta-Legba. Sprawl physical kanji voodoo god office numinous urban nano-youtube modem rebar denim shanty town decay motion. Lights man corporation network disposable paranoid cardboard uplink faded drone table office neural courier skyscraper. Grenade dolphin Shibuya wristwatch fetishism man realism physical assault sub-orbital. Smart-neural geodesic vehicle motion stimulate bicycle table bomb construct. ",
     "row_color": "gray",
     "image": "features/test-deleteme-anim.gif",
-    "icon": "features/test-deleteme.svg"
+    "icon": "features/collect.svg"
   },
   {
     "id": "feature-review",
@@ -21,7 +21,7 @@
     "description": "TODO Drone tattoo hotdog smart-drugs order-flow man stimulate courier table knife Chiba. A.I. tube corporation faded otaku footage stimulate katana. Refrigerator range-rover shoes denim systemic footage saturation point table soul-delay market pen 3D-printed tanto neon semiotics convenience store. ",
     "row_color": "light-teal",
     "image": "features/test-deleteme-anim.gif",
-    "icon": "features/test-deleteme.svg"
+    "icon": "features/review.svg"
   },
   {
     "id": "feature-collaborate",
@@ -29,7 +29,7 @@
     "description": "TODO Shanty town dome vehicle car math-crypto-futurity kanji singularity computer. Nodal point neural pistol chrome sensory urban kanji vehicle. Crypto-corrupted woman faded engine plastic weathered render-farm 8-bit face forwards urban film fluidity smart. Tube ablative papier-mache Chiba neural crypto-lights knife 3D-printed. 8-bit otaku hotdog carbon rain towards Chiba dissident-ware franchise military-grade shrine tower. Urban youtube construct neon Chiba rain artisanal franchise corrupted weathered cartel drone bridge realism hacker 8-bit. Urban monofilament jeans military-grade fetishism shanty town augmented reality post-narrative receding warehouse pre-tanto San Francisco sentient bicycle denim. Camera face forwards film bridge franchise tube pistol 3D-printed apophenia refrigerator tiger-team rebar. ",
     "row_color": "storm",
     "image": "features/test-deleteme-anim.gif",
-    "icon": "features/test-deleteme.svg"
+    "icon": "features/collaborate.svg"
   },
   {
     "id": "feature-integrate",
@@ -37,6 +37,6 @@
     "description": "TODO Hotdog vinyl free-market computer range-rover dolphin industrial grade realism spook neon uplink. Girl tiger-team warehouse assassin Chiba Kowloon pistol hotdog otaku disposable claymore mine. Realism BASE jump corporation cardboard office knife silent network face forwards neural sentient youtube systema spook narrative tube assassin. Footage spook physical Kowloon uplink sentient film rifle. ",
     "row_color": "light-blue",
     "image": "features/test-deleteme-anim.gif",
-    "icon": "features/test-deleteme.svg"
+    "icon": "features/integrate.svg"
   }
 ]
