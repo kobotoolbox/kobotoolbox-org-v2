@@ -75,7 +75,6 @@
 
 .root__row {
   width: 100%;
-  overflow: auto; // To keep color despite content margins
 
   // Starts the background with some white color, and then switches to the selected one.
   &.root__row--background-fold {

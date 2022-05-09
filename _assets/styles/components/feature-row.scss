@@ -7,12 +7,13 @@
 
 .feature-row {
   width: 100%;
+  overflow: hidden;
 }
 
 .feature-row__content {
   display: flex;
   flex-direction: row;
-  align-items: justify;
+  align-items: stretch;
   margin: 0 auto;
   width: 100%;
   max-width: variables.$full-content-width;
@@ -68,6 +69,9 @@
 .feature-row__image {
   display: block;
   max-width: 100%;
-  border-radius: sizes.$r6;
-  box-shadow: 0 sizes.$r6 sizes.$r13 color.change(colors.$kobo-gray-40, $alpha: 0.25);
+
+  &.feature-row__image--raised {
+    border-radius: sizes.$r6;
+    box-shadow: 0 sizes.$r6 sizes.$r13 color.change(colors.$kobo-gray-40, $alpha: 0.25);
+  }
 }

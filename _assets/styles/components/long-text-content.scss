@@ -17,7 +17,8 @@
   @include utils.limit-content-width;
 
   font-size: sizes.$r46;
-  margin: sizes.$r70 auto sizes.$r36;
+  margin: 0 auto;
+  padding: sizes.$r70 0 sizes.$r36;
 }
 
 .long-text-content > h2 {
@@ -34,11 +35,11 @@
 
 .long-text-content > *:not(.video):not(.image):not(h1):not(:last-child) {
   // Leading size of paragraph
-  margin-bottom: fonts.$leading-default-rem;
+  padding-bottom: fonts.$leading-default-rem;
 }
 
 .long-text-content > *:not(.video):not(.image):not(h1):last-child {
-  margin-bottom: sizes.$r70;
+  padding-bottom: sizes.$r70;
 }
 
 .long-text-content a {

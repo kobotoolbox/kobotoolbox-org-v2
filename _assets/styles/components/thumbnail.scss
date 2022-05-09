@@ -39,18 +39,23 @@
     pointer-events: none;
   }
 
-  &:hover::after {
-    opacity: 0;
-    visibility: hidden;
-  }
-
   .thumbnail__image-preload {
     position: absolute;
     opacity: 0;
     pointer-events: none;
   }
+}
 
-  &:not(.thumbnail--has-hover-image):hover .thumbnail__image {
-    transform: scale(1.05);
-  }
+// NOTE: `.thumbnail-hover-wrapper` is used to activate thumbnail hover effects
+// when hovering the wrapper.
+
+.thumbnail:hover::after,
+.thumbnail-hover-wrapper:hover .thumbnail::after {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.thumbnail:not(.thumbnail--has-hover-image):hover .thumbnail__image,
+.thumbnail-hover-wrapper:hover .thumbnail:not(.thumbnail--has-hover-image) .thumbnail__image {
+  transform: scale(1.05);
 }

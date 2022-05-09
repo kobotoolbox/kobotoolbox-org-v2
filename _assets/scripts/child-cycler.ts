@@ -1,5 +1,6 @@
 export default class ChildCycler {
   private el: Element;
+  private isPaused = false;
   private static visibleLimit = 3;
   /** How long before next child is being displayed. */
   private static cycleTime = 2000;
@@ -8,7 +9,21 @@ export default class ChildCycler {
   constructor(el: Element) {
     this.el = el;
     this.hideChildren();
+    this.enableHoverPausing();
     setTimeout(this.tick.bind(this), ChildCycler.cycleTime);
+  }
+
+  enableHoverPausing() {
+    this.el.addEventListener('mouseenter', this.onElMouseEnter.bind(this));
+    this.el.addEventListener('mouseleave', this.onElMouseLeave.bind(this));
+  }
+
+  onElMouseEnter() {
+    this.isPaused = true;
+  }
+
+  onElMouseLeave() {
+    this.isPaused = false;
   }
 
   /** Hides all but first 4 children. */
@@ -23,14 +38,17 @@ export default class ChildCycler {
   }
 
   tick() {
-    // Step 1. move the last child element to the beginning.
-    const lastChildIndex = this.el.children.length - 1;
-    const lastChild = this.el.children[lastChildIndex];
-    this.el.children[lastChildIndex].remove();
-    this.el.insertBefore(lastChild, this.el.children[0]);
-    // Step 2. set hidden class names again.
-    // We use setTimeout to force the fade in animation to happen.
-    setTimeout(this.hideChildren.bind(this), 1);
+    if (!this.isPaused) {
+      // Step 1. move the last child element to the beginning.
+      const lastChildIndex = this.el.children.length - 1;
+      const lastChild = this.el.children[lastChildIndex];
+      this.el.children[lastChildIndex].remove();
+      this.el.insertBefore(lastChild, this.el.children[0]);
+      // Step 2. set hidden class names again.
+      // We use setTimeout to force the fade in animation to happen.
+      setTimeout(this.hideChildren.bind(this), 1);
+    }
+
     // Step 3. repeat.
     setTimeout(this.tick.bind(this), ChildCycler.cycleTime);
   }

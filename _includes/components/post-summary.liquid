@@ -3,25 +3,21 @@ A horizontal post summary with description and links to full post.
 
 @param post
 {% endcomment%}
-<article class="post-summary">
+<a class="post-summary thumbnail-hover-wrapper" href="{{site.baseurl}}{{include.post.url}}">
   <div class="post-summary__left">
-    <a 
+    <div
       class="post-summary__thumbnail" 
       href="{{site.baseurl}}{{include.post.url}}"
     >
       {% include components/thumbnail.liquid image_url=include.post.thumbnail %}
-    </a>
+    </div>
   </div>  
 
   <div class="post-summary__right">
-    <h2>
-      <a href="{{site.baseurl}}{{include.post.url}}">
-        {{include.post.title}}
-      </a>
-    </h2>
+    <h2>{{include.post.title}}</h2>
 
     <p>{{include.post.summary}}</p>
 
     {% include components/post-meta.liquid post=include.post %}
   </div>
-</article>
+</a>

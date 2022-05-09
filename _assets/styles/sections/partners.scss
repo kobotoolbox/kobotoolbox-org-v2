@@ -38,10 +38,9 @@
 
   li a {
     display: block;
-    transition: transform 0.25s ease-out;
 
     &:hover {
-      transform: scale(1.05);
+      color: colors.$kobo-gray-24;
     }
   }
 

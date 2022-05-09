@@ -8,13 +8,14 @@
   h1 {
     text-align: center;
     font-size: sizes.$r36;
-    margin: sizes.$r70 auto sizes.$r24;
+    margin: 0 auto;
+    padding: sizes.$r70 0 sizes.$r24;
   }
 }
 
 .home-impact__list {
-  margin: 0 0 sizes.$r30;
-  padding: 0;
+  padding: 0 0 sizes.$r30;
+  margin: 0;
   list-style: none;
   text-align: center;
 

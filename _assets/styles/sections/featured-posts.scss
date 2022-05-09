@@ -105,8 +105,3 @@
     display: none;
   }
 }
-
-// HACK FIX: tiny-slider shouldn't add this spacing for last item.
-#tns1 > .tns-item:last-child {
-  padding-right: 0 !important;
-}

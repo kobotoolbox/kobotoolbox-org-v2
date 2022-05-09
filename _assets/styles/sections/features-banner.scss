@@ -14,6 +14,8 @@
   margin: sizes.$r24 0 0;
   padding: 0;
   color: colors.$kobo-storm;
+  width: 100%;
+  overflow: hidden;
 
   li + li {
     margin-left: sizes.$r46;
@@ -21,10 +23,9 @@
 
   li a {
     display: block;
-    transition: transform 0.25s ease-out;
 
     &:hover {
-      transform: scale(1.05);
+      color: colors.$kobo-gray-24;
     }
   }
 

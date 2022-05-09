@@ -56,13 +56,13 @@
   display: grid;
   grid-template-rows: 0fr;
   overflow: hidden;
-  transition: grid-template-rows 0.25s ease-in;
+  transition: grid-template-rows 0.2s ease-in;
 }
 
 .faqs__answer-content {
   align-self: start;
   min-height: 0;
-  transition: visibility 0.25s ease-in;
+  transition: visibility 0.2s ease-in;
   visibility: hidden;
 
   p {

@@ -7,6 +7,7 @@ Displays a big image on the right and tile with description on the left.
 @param {string} row_color - for root__row
 @param {string} [icon_url] - path to svg illustration, relative to assets/images/
 @param {boolean} [is_image_full_height] - disables padding on right side
+@param {boolean} [is_image_raised] - adds shadow to image
 @param {string} [image_url] - path to big image on the right, relative to assets/images/
 @param {boolean} [show_fundraiseup] - special one-shot case to display fundraiseup plugin instead of image.
 {% endcomment %}
@@ -32,7 +33,7 @@ Displays a big image on the right and tile with description on the left.
         {% endcomment %}
         {% include components/donation-form.liquid in_box=true %}
       {% elsif include.image_url and include.image_url != "" and include.image_url != nil %}
-        <img class="feature-row__image" src="{{site.baseurl}}/assets/images/{{include.image_url}}"/>
+        <img class="feature-row__image{% if include.is_image_raised %} feature-row__image--raised{% endif %}" src="{{site.baseurl}}/assets/images/{{include.image_url}}"/>
       {% endif %}
     </div>
   </div>
