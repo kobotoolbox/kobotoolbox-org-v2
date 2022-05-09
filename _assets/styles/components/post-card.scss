@@ -9,6 +9,23 @@
   overflow: hidden;
   border: sizes.$r1 solid colors.$kobo-gray-85;
   background-color: colors.$kobo-white;
+
+  h3 {
+    font-size: sizes.$r19;
+    color: colors.$kobo-gray-24;
+    margin: sizes.$r30;
+    flex: 1;
+  }
+
+  &:hover {
+    h3 {
+      text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
+    }
+
+    .post-card__cta-icon {
+      transform: translateX(sizes.$r6);
+    }
+  }
 }
 
 .post-card__thumbnail {
@@ -26,18 +43,13 @@
   }
 }
 
-.post-card h3 {
-  font-size: sizes.$r19;
-  color: colors.$kobo-gray-24;
-  margin: sizes.$r30;
-  flex: 1;
-
-  a:hover {
-    text-decoration: underline solid #{sizes.$r4} colors.$kobo-teal;
-  }
+.post-card__cta {
+  margin: 0 sizes.$r30 sizes.$r15;
+  text-align: right;
+  color: colors.$kobo-storm;
 }
 
-.post-card footer {
-  margin: 0 sizes.$r15 sizes.$r15;
-  text-align: right;
+.post-card__cta-icon {
+  display: inline-block;
+  transition: transform 0.25s ease-in-out;
 }

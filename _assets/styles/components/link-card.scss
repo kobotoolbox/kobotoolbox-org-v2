@@ -5,7 +5,7 @@
 .link-card__thumbnail,
 .link-card__title,
 .link-card__description,
-.link-card__link-icon {
+.link-card__cta-icon {
   transition: transform 0.25s ease-in-out;
 }
 
@@ -35,6 +35,10 @@
   margin: 0 0 sizes.$r24;
 }
 
+.link-card__cta-icon {
+  display: inline-block;
+}
+
 .link-card {
   display: flex;
   flex-direction: column;
@@ -46,18 +50,14 @@
       transform: translateY(-1 * sizes.$r19);
     }
 
-    .link-card__link-icon {
+    .link-card__cta-icon {
       transform: translateX(sizes.$r6);
     }
   }
 }
 
-.link-card__link {
+.link-card__cta {
   margin: 0 0 sizes.$r15;
   text-align: right;
   color: colors.$kobo-blue;
-}
-
-.link-card__link-icon {
-  display: inline-block;
 }
