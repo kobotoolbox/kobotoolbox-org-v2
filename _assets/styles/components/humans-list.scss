@@ -24,10 +24,6 @@
   }
 }
 
-.humans-list__human-position {
-  font-size: sizes.$r19;
-}
-
 .humans-list__thumbnail {
   display: block;
   position: relative;
@@ -36,6 +32,13 @@
   border-radius: sizes.$r6;
   overflow: hidden;
   cursor: pointer;
+  transition: filter 0.25s ease-in-out;
+}
+
+.humans-list__human:not(:hover) {
+  .humans-list__thumbnail .thumbnail__image {
+    filter: grayscale(100%);
+  }
 }
 
 @media screen and (min-width: #{variables.$blog-content-width + 1px}) {
